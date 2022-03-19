@@ -36395,17 +36395,25 @@ a.u-link.u-text-hover-grey-90:hover {
     margin-right: 224px;
   }
 }
+@media (max-width: 991px) {
+  .u-header .u-image-1 {
+    margin-top: 13px;
+  }
 
+  .u-header .u-menu-1 {
+    width: auto;
+    margin-top: -56px;
+    margin-right: 27px;
+    margin-bottom: 33px;
+  }
+}
 @media (max-width: 767px) {
   .u-header .u-menu-1 {
-    margin-right: 168px;
+    margin-top: -56px;
+    margin-right: 27px;
   }
 }
-@media (max-width: 575px) {
-  .u-header .u-menu-1 {
-    margin-right: 106px;
-  }
-}
+
  .u-footer {
   background-image: none;
 }
