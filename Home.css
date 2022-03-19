@@ -261,6 +261,7 @@
   background-image: url("images/d73b016c-9a00-48c6-b342-d2a07431e67e.png");
   background-position: 50% 50%;
   min-height: 386px;
+  animation-timing-function: ease-in-out;
 }
 
 .u-section-3 .u-container-layout-3 {
@@ -514,7 +515,6 @@
 
 .u-section-5 .u-list-1 {
   grid-template-rows: repeat(1, auto);
-  height: auto;
   margin: 60px auto 60px 0;
 }
 
@@ -580,6 +580,7 @@
 
 @media (max-width: 1199px) {
   .u-section-5 .u-list-1 {
+    height: auto;
     margin-right: initial;
     margin-left: initial;
   }
