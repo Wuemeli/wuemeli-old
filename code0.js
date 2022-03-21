@@ -1,252 +1,139 @@
-gdjs.Downhill_32Bike_32DemoCode = {};
-gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects3_1final = [];
+gdjs.GameCode = {};
+gdjs.GameCode.GDBrushObjects1_1final = [];
 
-gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects3_1final = [];
+gdjs.GameCode.forEachCount0_3 = 0;
 
-gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects3_1final = [];
+gdjs.GameCode.forEachCount0_4 = 0;
 
-gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects3_1final = [];
+gdjs.GameCode.forEachCount1_3 = 0;
 
-gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects2_1final = [];
+gdjs.GameCode.forEachCount1_4 = 0;
 
-gdjs.Downhill_32Bike_32DemoCode.GDRightObjects3_1final = [];
+gdjs.GameCode.forEachCount2_3 = 0;
 
-gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDfloorObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDfloorObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDfloorObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDfloorObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDfloorObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTimingObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTimingObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTimingObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTimingObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTimingObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDFrontSuspensionBottomObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDFrontSuspensionBottomObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDFrontSuspensionBottomObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDFrontSuspensionBottomObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDFrontSuspensionBottomObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDWinObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDWinObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDWinObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDWinObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDWinObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDStartObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDStartObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDStartObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDStartObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDStartObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForceObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForceObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForceObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForceObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForceObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForceStrengthObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForceStrengthObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForceStrengthObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForceStrengthObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForceStrengthObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDDesktopControlsObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDDesktopControlsObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDDesktopControlsObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDDesktopControlsObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDDesktopControlsObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDJumpObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDJumpObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDJumpObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDJumpObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDJumpObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRightObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRightObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRightObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRightObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDRightObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTrackObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTrackObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTrackObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTrackObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTrackObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDCliffObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDCliffObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDCliffObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDCliffObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDCliffObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBackgroundObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBackgroundObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBackgroundObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBackgroundObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBackgroundObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTreeObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTreeObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTreeObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTreeObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDTreeObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBushObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBushObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBushObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBushObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDBushObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDGrassObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDGrassObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDGrassObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDGrassObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDGrassObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDSignObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDSignObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDSignObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDSignObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDSignObjects5= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects1= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects2= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects3= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4= [];
-gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects5= [];
+gdjs.GameCode.forEachCount3_3 = 0;
 
-gdjs.Downhill_32Bike_32DemoCode.conditionTrue_0 = {val:false};
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0 = {val:false};
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_0 = {val:false};
-gdjs.Downhill_32Bike_32DemoCode.condition2IsTrue_0 = {val:false};
-gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1 = {val:false};
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1 = {val:false};
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1 = {val:false};
-gdjs.Downhill_32Bike_32DemoCode.condition2IsTrue_1 = {val:false};
-gdjs.Downhill_32Bike_32DemoCode.conditionTrue_2 = {val:false};
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2 = {val:false};
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2 = {val:false};
-gdjs.Downhill_32Bike_32DemoCode.condition2IsTrue_2 = {val:false};
+gdjs.GameCode.forEachIndex2 = 0;
+
+gdjs.GameCode.forEachIndex3 = 0;
+
+gdjs.GameCode.forEachIndex4 = 0;
+
+gdjs.GameCode.forEachObjects2 = [];
+
+gdjs.GameCode.forEachObjects3 = [];
+
+gdjs.GameCode.forEachObjects4 = [];
+
+gdjs.GameCode.forEachTemporary2 = null;
+
+gdjs.GameCode.forEachTemporary3 = null;
+
+gdjs.GameCode.forEachTemporary4 = null;
+
+gdjs.GameCode.forEachTotalCount2 = 0;
+
+gdjs.GameCode.forEachTotalCount3 = 0;
+
+gdjs.GameCode.forEachTotalCount4 = 0;
+
+gdjs.GameCode.GDRoadObjects1= [];
+gdjs.GameCode.GDRoadObjects2= [];
+gdjs.GameCode.GDRoadObjects3= [];
+gdjs.GameCode.GDRoadObjects4= [];
+gdjs.GameCode.GDRoadObjects5= [];
+gdjs.GameCode.GDRoadLinkObjects1= [];
+gdjs.GameCode.GDRoadLinkObjects2= [];
+gdjs.GameCode.GDRoadLinkObjects3= [];
+gdjs.GameCode.GDRoadLinkObjects4= [];
+gdjs.GameCode.GDRoadLinkObjects5= [];
+gdjs.GameCode.GDMarketObjects1= [];
+gdjs.GameCode.GDMarketObjects2= [];
+gdjs.GameCode.GDMarketObjects3= [];
+gdjs.GameCode.GDMarketObjects4= [];
+gdjs.GameCode.GDMarketObjects5= [];
+gdjs.GameCode.GDMarketLinkObjects1= [];
+gdjs.GameCode.GDMarketLinkObjects2= [];
+gdjs.GameCode.GDMarketLinkObjects3= [];
+gdjs.GameCode.GDMarketLinkObjects4= [];
+gdjs.GameCode.GDMarketLinkObjects5= [];
+gdjs.GameCode.GDWellObjects1= [];
+gdjs.GameCode.GDWellObjects2= [];
+gdjs.GameCode.GDWellObjects3= [];
+gdjs.GameCode.GDWellObjects4= [];
+gdjs.GameCode.GDWellObjects5= [];
+gdjs.GameCode.GDWellLinkObjects1= [];
+gdjs.GameCode.GDWellLinkObjects2= [];
+gdjs.GameCode.GDWellLinkObjects3= [];
+gdjs.GameCode.GDWellLinkObjects4= [];
+gdjs.GameCode.GDWellLinkObjects5= [];
+gdjs.GameCode.GDHouseObjects1= [];
+gdjs.GameCode.GDHouseObjects2= [];
+gdjs.GameCode.GDHouseObjects3= [];
+gdjs.GameCode.GDHouseObjects4= [];
+gdjs.GameCode.GDHouseObjects5= [];
+gdjs.GameCode.GDHouseLinkObjects1= [];
+gdjs.GameCode.GDHouseLinkObjects2= [];
+gdjs.GameCode.GDHouseLinkObjects3= [];
+gdjs.GameCode.GDHouseLinkObjects4= [];
+gdjs.GameCode.GDHouseLinkObjects5= [];
+gdjs.GameCode.GDMarketDistanceTextObjects1= [];
+gdjs.GameCode.GDMarketDistanceTextObjects2= [];
+gdjs.GameCode.GDMarketDistanceTextObjects3= [];
+gdjs.GameCode.GDMarketDistanceTextObjects4= [];
+gdjs.GameCode.GDMarketDistanceTextObjects5= [];
+gdjs.GameCode.GDWellDistanceTextObjects1= [];
+gdjs.GameCode.GDWellDistanceTextObjects2= [];
+gdjs.GameCode.GDWellDistanceTextObjects3= [];
+gdjs.GameCode.GDWellDistanceTextObjects4= [];
+gdjs.GameCode.GDWellDistanceTextObjects5= [];
+gdjs.GameCode.GDRoadDistanceTextObjects1= [];
+gdjs.GameCode.GDRoadDistanceTextObjects2= [];
+gdjs.GameCode.GDRoadDistanceTextObjects3= [];
+gdjs.GameCode.GDRoadDistanceTextObjects4= [];
+gdjs.GameCode.GDRoadDistanceTextObjects5= [];
+gdjs.GameCode.GDMarketPaletteItemObjects1= [];
+gdjs.GameCode.GDMarketPaletteItemObjects2= [];
+gdjs.GameCode.GDMarketPaletteItemObjects3= [];
+gdjs.GameCode.GDMarketPaletteItemObjects4= [];
+gdjs.GameCode.GDMarketPaletteItemObjects5= [];
+gdjs.GameCode.GDWellPaletteItemObjects1= [];
+gdjs.GameCode.GDWellPaletteItemObjects2= [];
+gdjs.GameCode.GDWellPaletteItemObjects3= [];
+gdjs.GameCode.GDWellPaletteItemObjects4= [];
+gdjs.GameCode.GDWellPaletteItemObjects5= [];
+gdjs.GameCode.GDHousePaletteItemObjects1= [];
+gdjs.GameCode.GDHousePaletteItemObjects2= [];
+gdjs.GameCode.GDHousePaletteItemObjects3= [];
+gdjs.GameCode.GDHousePaletteItemObjects4= [];
+gdjs.GameCode.GDHousePaletteItemObjects5= [];
+gdjs.GameCode.GDRoadPaletteItemObjects1= [];
+gdjs.GameCode.GDRoadPaletteItemObjects2= [];
+gdjs.GameCode.GDRoadPaletteItemObjects3= [];
+gdjs.GameCode.GDRoadPaletteItemObjects4= [];
+gdjs.GameCode.GDRoadPaletteItemObjects5= [];
+gdjs.GameCode.GDEraserPaletteItemObjects1= [];
+gdjs.GameCode.GDEraserPaletteItemObjects2= [];
+gdjs.GameCode.GDEraserPaletteItemObjects3= [];
+gdjs.GameCode.GDEraserPaletteItemObjects4= [];
+gdjs.GameCode.GDEraserPaletteItemObjects5= [];
+gdjs.GameCode.GDBrushObjects1= [];
+gdjs.GameCode.GDBrushObjects2= [];
+gdjs.GameCode.GDBrushObjects3= [];
+gdjs.GameCode.GDBrushObjects4= [];
+gdjs.GameCode.GDBrushObjects5= [];
+
+gdjs.GameCode.conditionTrue_0 = {val:false};
+gdjs.GameCode.condition0IsTrue_0 = {val:false};
+gdjs.GameCode.condition1IsTrue_0 = {val:false};
+gdjs.GameCode.condition2IsTrue_0 = {val:false};
+gdjs.GameCode.conditionTrue_1 = {val:false};
+gdjs.GameCode.condition0IsTrue_1 = {val:false};
+gdjs.GameCode.condition1IsTrue_1 = {val:false};
+gdjs.GameCode.condition2IsTrue_1 = {val:false};
 
 
-gdjs.Downhill_32Bike_32DemoCode.eventsList0 = function(runtimeScene) {
+gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects2ObjectsGDgdjs_46GameCode_46GDMarketObjects2ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects2ObjectsGDgdjs_46GameCode_46GDWellObjects2ObjectsGDgdjs_46GameCode_46GDWellLinkObjects2ObjectsGDgdjs_46GameCode_46GDHouseObjects2ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects2Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects2, "RoadLink": gdjs.GameCode.GDRoadLinkObjects2, "Market": gdjs.GameCode.GDMarketObjects2, "MarketLink": gdjs.GameCode.GDMarketLinkObjects2, "Well": gdjs.GameCode.GDWellObjects2, "WellLink": gdjs.GameCode.GDWellLinkObjects2, "House": gdjs.GameCode.GDHouseObjects2, "HouseLink": gdjs.GameCode.GDHouseLinkObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects3ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects3ObjectsGDgdjs_46GameCode_46GDWellLinkObjects3ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects3Objects = Hashtable.newFrom({"RoadLink": gdjs.GameCode.GDRoadLinkObjects3, "MarketLink": gdjs.GameCode.GDMarketLinkObjects3, "WellLink": gdjs.GameCode.GDWellLinkObjects3, "HouseLink": gdjs.GameCode.GDHouseLinkObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadDistanceTextObjects4Objects = Hashtable.newFrom({"RoadDistanceText": gdjs.GameCode.GDRoadDistanceTextObjects4});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects4Objects = Hashtable.newFrom({"WellDistanceText": gdjs.GameCode.GDWellDistanceTextObjects4});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketDistanceTextObjects4Objects = Hashtable.newFrom({"MarketDistanceText": gdjs.GameCode.GDMarketDistanceTextObjects4});gdjs.GameCode.eventsList0 = function(runtimeScene) {
 
 {
 
@@ -258,11 +145,655 @@ gdjs.Downhill_32Bike_32DemoCode.eventsList0 = function(runtimeScene) {
 {
 
 
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
+
+}
+
+
 {
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = !(gdjs.evtTools.systemInfo.isMobile());
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.camera.hideLayer(runtimeScene, "Mobile");
+
+
+{
+gdjs.copyArray(gdjs.GameCode.GDHouseObjects3, gdjs.GameCode.GDHouseObjects4);
+
+gdjs.copyArray(gdjs.GameCode.GDMarketObjects3, gdjs.GameCode.GDMarketObjects4);
+
+gdjs.copyArray(gdjs.GameCode.GDRoadObjects3, gdjs.GameCode.GDRoadObjects4);
+
+gdjs.copyArray(gdjs.GameCode.GDWellObjects3, gdjs.GameCode.GDWellObjects4);
+
+gdjs.GameCode.GDMarketDistanceTextObjects4.length = 0;
+
+gdjs.GameCode.GDRoadDistanceTextObjects4.length = 0;
+
+gdjs.GameCode.GDWellDistanceTextObjects4.length = 0;
+
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadDistanceTextObjects4Objects, (( gdjs.GameCode.GDHouseObjects4.length === 0 ) ? (( gdjs.GameCode.GDWellObjects4.length === 0 ) ? (( gdjs.GameCode.GDMarketObjects4.length === 0 ) ? (( gdjs.GameCode.GDRoadObjects4.length === 0 ) ? 0 :gdjs.GameCode.GDRoadObjects4[0].getPointX("")) :gdjs.GameCode.GDMarketObjects4[0].getPointX("")) :gdjs.GameCode.GDWellObjects4[0].getPointX("")) :gdjs.GameCode.GDHouseObjects4[0].getPointX("")) - 8, (( gdjs.GameCode.GDHouseObjects4.length === 0 ) ? (( gdjs.GameCode.GDWellObjects4.length === 0 ) ? (( gdjs.GameCode.GDMarketObjects4.length === 0 ) ? (( gdjs.GameCode.GDRoadObjects4.length === 0 ) ? 0 :gdjs.GameCode.GDRoadObjects4[0].getPointY("")) :gdjs.GameCode.GDMarketObjects4[0].getPointY("")) :gdjs.GameCode.GDWellObjects4[0].getPointY("")) :gdjs.GameCode.GDHouseObjects4[0].getPointY("")) - 15, "DistanceText");
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects4Objects, (( gdjs.GameCode.GDHouseObjects4.length === 0 ) ? (( gdjs.GameCode.GDWellObjects4.length === 0 ) ? (( gdjs.GameCode.GDMarketObjects4.length === 0 ) ? (( gdjs.GameCode.GDRoadObjects4.length === 0 ) ? 0 :gdjs.GameCode.GDRoadObjects4[0].getPointX("")) :gdjs.GameCode.GDMarketObjects4[0].getPointX("")) :gdjs.GameCode.GDWellObjects4[0].getPointX("")) :gdjs.GameCode.GDHouseObjects4[0].getPointX("")) - 15, (( gdjs.GameCode.GDHouseObjects4.length === 0 ) ? (( gdjs.GameCode.GDWellObjects4.length === 0 ) ? (( gdjs.GameCode.GDMarketObjects4.length === 0 ) ? (( gdjs.GameCode.GDRoadObjects4.length === 0 ) ? 0 :gdjs.GameCode.GDRoadObjects4[0].getPointY("")) :gdjs.GameCode.GDMarketObjects4[0].getPointY("")) :gdjs.GameCode.GDWellObjects4[0].getPointY("")) :gdjs.GameCode.GDHouseObjects4[0].getPointY("")) - 5, "DistanceText");
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketDistanceTextObjects4Objects, (( gdjs.GameCode.GDHouseObjects4.length === 0 ) ? (( gdjs.GameCode.GDWellObjects4.length === 0 ) ? (( gdjs.GameCode.GDMarketObjects4.length === 0 ) ? (( gdjs.GameCode.GDRoadObjects4.length === 0 ) ? 0 :gdjs.GameCode.GDRoadObjects4[0].getPointX("")) :gdjs.GameCode.GDMarketObjects4[0].getPointX("")) :gdjs.GameCode.GDWellObjects4[0].getPointX("")) :gdjs.GameCode.GDHouseObjects4[0].getPointX("")) + 5, (( gdjs.GameCode.GDHouseObjects4.length === 0 ) ? (( gdjs.GameCode.GDWellObjects4.length === 0 ) ? (( gdjs.GameCode.GDMarketObjects4.length === 0 ) ? (( gdjs.GameCode.GDRoadObjects4.length === 0 ) ? 0 :gdjs.GameCode.GDRoadObjects4[0].getPointY("")) :gdjs.GameCode.GDMarketObjects4[0].getPointY("")) :gdjs.GameCode.GDWellObjects4[0].getPointY("")) :gdjs.GameCode.GDHouseObjects4[0].getPointY("")) - 5, "DistanceText");
+}{gdjs.evtTools.linkedObjects.linkObjects(runtimeScene, (gdjs.GameCode.GDRoadDistanceTextObjects4.length !== 0 ? gdjs.GameCode.GDRoadDistanceTextObjects4[0] : null), (gdjs.GameCode.GDRoadObjects4.length !== 0 ? gdjs.GameCode.GDRoadObjects4[0] : (gdjs.GameCode.GDMarketObjects4.length !== 0 ? gdjs.GameCode.GDMarketObjects4[0] : (gdjs.GameCode.GDWellObjects4.length !== 0 ? gdjs.GameCode.GDWellObjects4[0] : (gdjs.GameCode.GDHouseObjects4.length !== 0 ? gdjs.GameCode.GDHouseObjects4[0] : null)))));
+}{gdjs.evtTools.linkedObjects.linkObjects(runtimeScene, (gdjs.GameCode.GDWellDistanceTextObjects4.length !== 0 ? gdjs.GameCode.GDWellDistanceTextObjects4[0] : null), (gdjs.GameCode.GDRoadObjects4.length !== 0 ? gdjs.GameCode.GDRoadObjects4[0] : (gdjs.GameCode.GDMarketObjects4.length !== 0 ? gdjs.GameCode.GDMarketObjects4[0] : (gdjs.GameCode.GDWellObjects4.length !== 0 ? gdjs.GameCode.GDWellObjects4[0] : (gdjs.GameCode.GDHouseObjects4.length !== 0 ? gdjs.GameCode.GDHouseObjects4[0] : null)))));
+}{gdjs.evtTools.linkedObjects.linkObjects(runtimeScene, (gdjs.GameCode.GDMarketDistanceTextObjects4.length !== 0 ? gdjs.GameCode.GDMarketDistanceTextObjects4[0] : null), (gdjs.GameCode.GDRoadObjects4.length !== 0 ? gdjs.GameCode.GDRoadObjects4[0] : (gdjs.GameCode.GDMarketObjects4.length !== 0 ? gdjs.GameCode.GDMarketObjects4[0] : (gdjs.GameCode.GDWellObjects4.length !== 0 ? gdjs.GameCode.GDWellObjects4[0] : (gdjs.GameCode.GDHouseObjects4.length !== 0 ? gdjs.GameCode.GDHouseObjects4[0] : null)))));
+}{for(var i = 0, len = gdjs.GameCode.GDWellDistanceTextObjects4.length ;i < len;++i) {
+    gdjs.GameCode.GDWellDistanceTextObjects4[i].setScale(0.5);
+}
+for(var i = 0, len = gdjs.GameCode.GDRoadDistanceTextObjects4.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadDistanceTextObjects4[i].setScale(0.5);
+}
+for(var i = 0, len = gdjs.GameCode.GDMarketDistanceTextObjects4.length ;i < len;++i) {
+    gdjs.GameCode.GDMarketDistanceTextObjects4[i].setScale(0.5);
+}
+}}
+
+}
+
+
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDMarketObjects2ObjectsGDgdjs_46GameCode_46GDWellObjects2ObjectsGDgdjs_46GameCode_46GDHouseObjects2Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects2, "Market": gdjs.GameCode.GDMarketObjects2, "Well": gdjs.GameCode.GDWellObjects2, "House": gdjs.GameCode.GDHouseObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects2ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects2ObjectsGDgdjs_46GameCode_46GDWellLinkObjects2ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects2Objects = Hashtable.newFrom({"RoadLink": gdjs.GameCode.GDRoadLinkObjects2, "MarketLink": gdjs.GameCode.GDMarketLinkObjects2, "WellLink": gdjs.GameCode.GDWellLinkObjects2, "HouseLink": gdjs.GameCode.GDHouseLinkObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects1ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects1ObjectsGDgdjs_46GameCode_46GDMarketObjects1ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects1ObjectsGDgdjs_46GameCode_46GDWellObjects1ObjectsGDgdjs_46GameCode_46GDWellLinkObjects1ObjectsGDgdjs_46GameCode_46GDHouseObjects1ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects1Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects1, "RoadLink": gdjs.GameCode.GDRoadLinkObjects1, "Market": gdjs.GameCode.GDMarketObjects1, "MarketLink": gdjs.GameCode.GDMarketLinkObjects1, "Well": gdjs.GameCode.GDWellObjects1, "WellLink": gdjs.GameCode.GDWellLinkObjects1, "House": gdjs.GameCode.GDHouseObjects1, "HouseLink": gdjs.GameCode.GDHouseLinkObjects1});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects1ObjectsGDgdjs_46GameCode_46GDRoadDistanceTextObjects1ObjectsGDgdjs_46GameCode_46GDMarketDistanceTextObjects1Objects = Hashtable.newFrom({"WellDistanceText": gdjs.GameCode.GDWellDistanceTextObjects1, "RoadDistanceText": gdjs.GameCode.GDRoadDistanceTextObjects1, "MarketDistanceText": gdjs.GameCode.GDMarketDistanceTextObjects1});gdjs.GameCode.eventsList1 = function(runtimeScene) {
+
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects2ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects2Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects2, "HouseLink": gdjs.GameCode.GDHouseLinkObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects2Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects2, "RoadLink": gdjs.GameCode.GDRoadLinkObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadDistanceTextObjects3Objects = Hashtable.newFrom({"RoadDistanceText": gdjs.GameCode.GDRoadDistanceTextObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects3Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects3Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects3});gdjs.GameCode.eventsList2 = function(runtimeScene) {
+
+};gdjs.GameCode.eventsList3 = function(runtimeScene) {
+
+{
+
+/* Reuse gdjs.GameCode.GDHouseObjects2 */
+
+for(gdjs.GameCode.forEachIndex3 = 0;gdjs.GameCode.forEachIndex3 < gdjs.GameCode.GDHouseObjects2.length;++gdjs.GameCode.forEachIndex3) {
+gdjs.copyArray(gdjs.GameCode.GDRoadDistanceTextObjects1, gdjs.GameCode.GDRoadDistanceTextObjects3);
+
+gdjs.GameCode.GDHouseObjects3.length = 0;
+
+
+gdjs.GameCode.forEachTemporary3 = gdjs.GameCode.GDHouseObjects2[gdjs.GameCode.forEachIndex3];
+gdjs.GameCode.GDHouseObjects3.push(gdjs.GameCode.forEachTemporary3);
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.linkedObjects.pickObjectsLinkedTo(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadDistanceTextObjects3Objects, (gdjs.GameCode.GDHouseObjects3.length !== 0 ? gdjs.GameCode.GDHouseObjects3[0] : null), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+{for(var i = 0, len = gdjs.GameCode.GDRoadDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadDistanceTextObjects3[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.GameCode.GDRoadDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadDistanceTextObjects3[i].setString(gdjs.evtTools.common.toString(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
+}
+}{for(var i = 0, len = gdjs.GameCode.GDHouseObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDHouseObjects3[i].returnVariable(gdjs.GameCode.GDHouseObjects3[i].getVariables().getFromIndex(2)).setNumber(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+}}
+}
+
+}
+
+
+};gdjs.GameCode.eventsList4 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.GameCode.GDHouseObjects1, gdjs.GameCode.GDHouseObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDHouseLinkObjects1, gdjs.GameCode.GDHouseLinkObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDRoadObjects1, gdjs.GameCode.GDRoadObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDRoadLinkObjects1, gdjs.GameCode.GDRoadLinkObjects2);
+
+
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtsExt__LinkTools__CanReachWithMaxLength.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects2ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects2Objects, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects2Objects, 2, "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+
+{ //Subevents
+gdjs.GameCode.eventsList3(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects2Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects2, "RoadLink": gdjs.GameCode.GDRoadLinkObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellObjects2ObjectsGDgdjs_46GameCode_46GDWellLinkObjects2Objects = Hashtable.newFrom({"Well": gdjs.GameCode.GDWellObjects2, "WellLink": gdjs.GameCode.GDWellLinkObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects4Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects4});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects4Objects = Hashtable.newFrom({"RoadLink": gdjs.GameCode.GDRoadLinkObjects4});gdjs.GameCode.eventsList5 = function(runtimeScene) {
+
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects4Objects = Hashtable.newFrom({"WellDistanceText": gdjs.GameCode.GDWellDistanceTextObjects4});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects4Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects4});gdjs.GameCode.eventsList6 = function(runtimeScene) {
+
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects2ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects2Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects2, "HouseLink": gdjs.GameCode.GDHouseLinkObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects2Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects2, "RoadLink": gdjs.GameCode.GDRoadLinkObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects3Objects = Hashtable.newFrom({"WellDistanceText": gdjs.GameCode.GDWellDistanceTextObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects3Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects3Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects3});gdjs.GameCode.eventsList7 = function(runtimeScene) {
+
+};gdjs.GameCode.eventsList8 = function(runtimeScene) {
+
+{
+
+/* Reuse gdjs.GameCode.GDHouseObjects2 */
+
+for(gdjs.GameCode.forEachIndex3 = 0;gdjs.GameCode.forEachIndex3 < gdjs.GameCode.GDHouseObjects2.length;++gdjs.GameCode.forEachIndex3) {
+gdjs.copyArray(gdjs.GameCode.GDWellDistanceTextObjects1, gdjs.GameCode.GDWellDistanceTextObjects3);
+
+gdjs.GameCode.GDHouseObjects3.length = 0;
+
+
+gdjs.GameCode.forEachTemporary3 = gdjs.GameCode.GDHouseObjects2[gdjs.GameCode.forEachIndex3];
+gdjs.GameCode.GDHouseObjects3.push(gdjs.GameCode.forEachTemporary3);
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.linkedObjects.pickObjectsLinkedTo(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects3Objects, (gdjs.GameCode.GDHouseObjects3.length !== 0 ? gdjs.GameCode.GDHouseObjects3[0] : null), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+{for(var i = 0, len = gdjs.GameCode.GDWellDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDWellDistanceTextObjects3[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.GameCode.GDWellDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDWellDistanceTextObjects3[i].setString(gdjs.evtTools.common.toString(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
+}
+}{for(var i = 0, len = gdjs.GameCode.GDHouseObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDHouseObjects3[i].returnVariable(gdjs.GameCode.GDHouseObjects3[i].getVariables().getFromIndex(0)).setNumber(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+}}
+}
+
+}
+
+
+};gdjs.GameCode.eventsList9 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(gdjs.GameCode.GDRoadObjects2, gdjs.GameCode.GDRoadObjects3);
+
+gdjs.copyArray(gdjs.GameCode.GDRoadLinkObjects2, gdjs.GameCode.GDRoadLinkObjects3);
+
+
+gdjs.GameCode.forEachTotalCount4 = 0;
+gdjs.GameCode.forEachObjects4.length = 0;
+gdjs.GameCode.forEachCount0_4 = gdjs.GameCode.GDRoadObjects3.length;
+gdjs.GameCode.forEachTotalCount4 += gdjs.GameCode.forEachCount0_4;
+gdjs.GameCode.forEachObjects4.push.apply(gdjs.GameCode.forEachObjects4,gdjs.GameCode.GDRoadObjects3);
+gdjs.GameCode.forEachCount1_4 = gdjs.GameCode.GDRoadLinkObjects3.length;
+gdjs.GameCode.forEachTotalCount4 += gdjs.GameCode.forEachCount1_4;
+gdjs.GameCode.forEachObjects4.push.apply(gdjs.GameCode.forEachObjects4,gdjs.GameCode.GDRoadLinkObjects3);
+for(gdjs.GameCode.forEachIndex4 = 0;gdjs.GameCode.forEachIndex4 < gdjs.GameCode.forEachTotalCount4;++gdjs.GameCode.forEachIndex4) {
+gdjs.GameCode.GDRoadObjects4.length = 0;
+
+gdjs.GameCode.GDRoadLinkObjects4.length = 0;
+
+
+if (gdjs.GameCode.forEachIndex4 < gdjs.GameCode.forEachCount0_4) {
+    gdjs.GameCode.GDRoadObjects4.push(gdjs.GameCode.forEachObjects4[gdjs.GameCode.forEachIndex4]);
+}
+else if (gdjs.GameCode.forEachIndex4 < gdjs.GameCode.forEachCount0_4+gdjs.GameCode.forEachCount1_4) {
+    gdjs.GameCode.GDRoadLinkObjects4.push(gdjs.GameCode.forEachObjects4[gdjs.GameCode.forEachIndex4]);
+}
+if (true) {
+{for(var i = 0, len = gdjs.GameCode.GDRoadObjects4.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadObjects4[i].returnVariable(gdjs.GameCode.GDRoadObjects4[i].getVariables().get("wellDistance")).setNumber(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects4Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+for(var i = 0, len = gdjs.GameCode.GDRoadLinkObjects4.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadLinkObjects4[i].returnVariable(gdjs.GameCode.GDRoadLinkObjects4[i].getVariables().get("wellDistance")).setNumber(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects4Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+}}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.GameCode.GDRoadObjects2, gdjs.GameCode.GDRoadObjects3);
+
+
+for(gdjs.GameCode.forEachIndex4 = 0;gdjs.GameCode.forEachIndex4 < gdjs.GameCode.GDRoadObjects3.length;++gdjs.GameCode.forEachIndex4) {
+gdjs.copyArray(gdjs.GameCode.GDWellDistanceTextObjects1, gdjs.GameCode.GDWellDistanceTextObjects4);
+
+gdjs.GameCode.GDRoadObjects4.length = 0;
+
+
+gdjs.GameCode.forEachTemporary4 = gdjs.GameCode.GDRoadObjects3[gdjs.GameCode.forEachIndex4];
+gdjs.GameCode.GDRoadObjects4.push(gdjs.GameCode.forEachTemporary4);
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.linkedObjects.pickObjectsLinkedTo(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects4Objects, (gdjs.GameCode.GDRoadObjects4.length !== 0 ? gdjs.GameCode.GDRoadObjects4[0] : null), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+{for(var i = 0, len = gdjs.GameCode.GDWellDistanceTextObjects4.length ;i < len;++i) {
+    gdjs.GameCode.GDWellDistanceTextObjects4[i].setString(gdjs.evtTools.common.toString(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects4Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
+}
+}{for(var i = 0, len = gdjs.GameCode.GDWellDistanceTextObjects4.length ;i < len;++i) {
+    gdjs.GameCode.GDWellDistanceTextObjects4[i].hide(false);
+}
+}}
+}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.GameCode.GDHouseObjects1, gdjs.GameCode.GDHouseObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDHouseLinkObjects1, gdjs.GameCode.GDHouseLinkObjects2);
+
+/* Reuse gdjs.GameCode.GDRoadObjects2 */
+/* Reuse gdjs.GameCode.GDRoadLinkObjects2 */
+
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtsExt__LinkTools__CanReachWithMaxWeight.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects2ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects2Objects, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects2Objects, "wellDistance", 12, "", 2, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+
+{ //Subevents
+gdjs.GameCode.eventsList8(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.GameCode.eventsList10 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.GameCode.GDRoadObjects1, gdjs.GameCode.GDRoadObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDRoadLinkObjects1, gdjs.GameCode.GDRoadLinkObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDWellObjects1, gdjs.GameCode.GDWellObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDWellLinkObjects1, gdjs.GameCode.GDWellLinkObjects2);
+
+
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtsExt__LinkTools__CanReachWithMaxLength.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects2Objects, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellObjects2ObjectsGDgdjs_46GameCode_46GDWellLinkObjects2Objects, 12, "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+
+{ //Subevents
+gdjs.GameCode.eventsList9(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects1ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects1Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects1, "RoadLink": gdjs.GameCode.GDRoadLinkObjects1});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketObjects1ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects1Objects = Hashtable.newFrom({"Market": gdjs.GameCode.GDMarketObjects1, "MarketLink": gdjs.GameCode.GDMarketLinkObjects1});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects3Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects3Objects = Hashtable.newFrom({"RoadLink": gdjs.GameCode.GDRoadLinkObjects3});gdjs.GameCode.eventsList11 = function(runtimeScene) {
+
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketDistanceTextObjects3Objects = Hashtable.newFrom({"MarketDistanceText": gdjs.GameCode.GDMarketDistanceTextObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects3Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects3});gdjs.GameCode.eventsList12 = function(runtimeScene) {
+
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects1ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects1Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects1, "HouseLink": gdjs.GameCode.GDHouseLinkObjects1});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects1ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects1Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects1, "RoadLink": gdjs.GameCode.GDRoadLinkObjects1});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketDistanceTextObjects2Objects = Hashtable.newFrom({"MarketDistanceText": gdjs.GameCode.GDMarketDistanceTextObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects2Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects2Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects2});gdjs.GameCode.eventsList13 = function(runtimeScene) {
+
+};gdjs.GameCode.eventsList14 = function(runtimeScene) {
+
+{
+
+/* Reuse gdjs.GameCode.GDHouseObjects1 */
+
+for(gdjs.GameCode.forEachIndex2 = 0;gdjs.GameCode.forEachIndex2 < gdjs.GameCode.GDHouseObjects1.length;++gdjs.GameCode.forEachIndex2) {
+gdjs.copyArray(gdjs.GameCode.GDMarketDistanceTextObjects1, gdjs.GameCode.GDMarketDistanceTextObjects2);
+
+gdjs.GameCode.GDHouseObjects2.length = 0;
+
+
+gdjs.GameCode.forEachTemporary2 = gdjs.GameCode.GDHouseObjects1[gdjs.GameCode.forEachIndex2];
+gdjs.GameCode.GDHouseObjects2.push(gdjs.GameCode.forEachTemporary2);
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.linkedObjects.pickObjectsLinkedTo(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketDistanceTextObjects2Objects, (gdjs.GameCode.GDHouseObjects2.length !== 0 ? gdjs.GameCode.GDHouseObjects2[0] : null), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+{for(var i = 0, len = gdjs.GameCode.GDMarketDistanceTextObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDMarketDistanceTextObjects2[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.GameCode.GDMarketDistanceTextObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDMarketDistanceTextObjects2[i].setString(gdjs.evtTools.common.toString(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects2Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
+}
+}{for(var i = 0, len = gdjs.GameCode.GDHouseObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDHouseObjects2[i].returnVariable(gdjs.GameCode.GDHouseObjects2[i].getVariables().getFromIndex(1)).setNumber(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects2Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+}}
+}
+
+}
+
+
+};gdjs.GameCode.eventsList15 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(gdjs.GameCode.GDRoadObjects1, gdjs.GameCode.GDRoadObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDRoadLinkObjects1, gdjs.GameCode.GDRoadLinkObjects2);
+
+
+gdjs.GameCode.forEachTotalCount3 = 0;
+gdjs.GameCode.forEachObjects3.length = 0;
+gdjs.GameCode.forEachCount0_3 = gdjs.GameCode.GDRoadObjects2.length;
+gdjs.GameCode.forEachTotalCount3 += gdjs.GameCode.forEachCount0_3;
+gdjs.GameCode.forEachObjects3.push.apply(gdjs.GameCode.forEachObjects3,gdjs.GameCode.GDRoadObjects2);
+gdjs.GameCode.forEachCount1_3 = gdjs.GameCode.GDRoadLinkObjects2.length;
+gdjs.GameCode.forEachTotalCount3 += gdjs.GameCode.forEachCount1_3;
+gdjs.GameCode.forEachObjects3.push.apply(gdjs.GameCode.forEachObjects3,gdjs.GameCode.GDRoadLinkObjects2);
+for(gdjs.GameCode.forEachIndex3 = 0;gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachTotalCount3;++gdjs.GameCode.forEachIndex3) {
+gdjs.GameCode.GDRoadObjects3.length = 0;
+
+gdjs.GameCode.GDRoadLinkObjects3.length = 0;
+
+
+if (gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachCount0_3) {
+    gdjs.GameCode.GDRoadObjects3.push(gdjs.GameCode.forEachObjects3[gdjs.GameCode.forEachIndex3]);
+}
+else if (gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachCount0_3+gdjs.GameCode.forEachCount1_3) {
+    gdjs.GameCode.GDRoadLinkObjects3.push(gdjs.GameCode.forEachObjects3[gdjs.GameCode.forEachIndex3]);
+}
+if (true) {
+{for(var i = 0, len = gdjs.GameCode.GDRoadObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadObjects3[i].returnVariable(gdjs.GameCode.GDRoadObjects3[i].getVariables().get("marketDistance")).setNumber(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+for(var i = 0, len = gdjs.GameCode.GDRoadLinkObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadLinkObjects3[i].returnVariable(gdjs.GameCode.GDRoadLinkObjects3[i].getVariables().get("marketDistance")).setNumber(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+}}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.GameCode.GDRoadObjects1, gdjs.GameCode.GDRoadObjects2);
+
+
+for(gdjs.GameCode.forEachIndex3 = 0;gdjs.GameCode.forEachIndex3 < gdjs.GameCode.GDRoadObjects2.length;++gdjs.GameCode.forEachIndex3) {
+gdjs.copyArray(gdjs.GameCode.GDMarketDistanceTextObjects1, gdjs.GameCode.GDMarketDistanceTextObjects3);
+
+gdjs.GameCode.GDRoadObjects3.length = 0;
+
+
+gdjs.GameCode.forEachTemporary3 = gdjs.GameCode.GDRoadObjects2[gdjs.GameCode.forEachIndex3];
+gdjs.GameCode.GDRoadObjects3.push(gdjs.GameCode.forEachTemporary3);
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.linkedObjects.pickObjectsLinkedTo(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketDistanceTextObjects3Objects, (gdjs.GameCode.GDRoadObjects3.length !== 0 ? gdjs.GameCode.GDRoadObjects3[0] : null), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+{for(var i = 0, len = gdjs.GameCode.GDMarketDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDMarketDistanceTextObjects3[i].setString(gdjs.evtTools.common.toString(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
+}
+}{for(var i = 0, len = gdjs.GameCode.GDMarketDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDMarketDistanceTextObjects3[i].hide(false);
+}
+}}
+}
+
+}
+
+
+{
+
+/* Reuse gdjs.GameCode.GDHouseObjects1 */
+/* Reuse gdjs.GameCode.GDHouseLinkObjects1 */
+/* Reuse gdjs.GameCode.GDRoadObjects1 */
+/* Reuse gdjs.GameCode.GDRoadLinkObjects1 */
+
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtsExt__LinkTools__CanReachWithMaxWeight.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects1ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects1Objects, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects1ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects1Objects, "marketDistance", 12, "", 2, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+
+{ //Subevents
+gdjs.GameCode.eventsList14(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.GameCode.eventsList16 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+/* Reuse gdjs.GameCode.GDMarketObjects1 */
+/* Reuse gdjs.GameCode.GDMarketLinkObjects1 */
+/* Reuse gdjs.GameCode.GDRoadObjects1 */
+/* Reuse gdjs.GameCode.GDRoadLinkObjects1 */
+
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtsExt__LinkTools__CanReachWithMaxLength.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects1ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects1Objects, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketObjects1ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects1Objects, 12, "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+
+{ //Subevents
+gdjs.GameCode.eventsList15(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.GameCode.eventsList17 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.GameCode.GDMarketDistanceTextObjects1, gdjs.GameCode.GDMarketDistanceTextObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDRoadDistanceTextObjects1, gdjs.GameCode.GDRoadDistanceTextObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDWellDistanceTextObjects1, gdjs.GameCode.GDWellDistanceTextObjects2);
+
+
+gdjs.GameCode.forEachTotalCount3 = 0;
+gdjs.GameCode.forEachObjects3.length = 0;
+gdjs.GameCode.forEachCount0_3 = gdjs.GameCode.GDWellDistanceTextObjects2.length;
+gdjs.GameCode.forEachTotalCount3 += gdjs.GameCode.forEachCount0_3;
+gdjs.GameCode.forEachObjects3.push.apply(gdjs.GameCode.forEachObjects3,gdjs.GameCode.GDWellDistanceTextObjects2);
+gdjs.GameCode.forEachCount1_3 = gdjs.GameCode.GDRoadDistanceTextObjects2.length;
+gdjs.GameCode.forEachTotalCount3 += gdjs.GameCode.forEachCount1_3;
+gdjs.GameCode.forEachObjects3.push.apply(gdjs.GameCode.forEachObjects3,gdjs.GameCode.GDRoadDistanceTextObjects2);
+gdjs.GameCode.forEachCount2_3 = gdjs.GameCode.GDMarketDistanceTextObjects2.length;
+gdjs.GameCode.forEachTotalCount3 += gdjs.GameCode.forEachCount2_3;
+gdjs.GameCode.forEachObjects3.push.apply(gdjs.GameCode.forEachObjects3,gdjs.GameCode.GDMarketDistanceTextObjects2);
+for(gdjs.GameCode.forEachIndex3 = 0;gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachTotalCount3;++gdjs.GameCode.forEachIndex3) {
+gdjs.GameCode.GDMarketDistanceTextObjects3.length = 0;
+
+gdjs.GameCode.GDRoadDistanceTextObjects3.length = 0;
+
+gdjs.GameCode.GDWellDistanceTextObjects3.length = 0;
+
+
+if (gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachCount0_3) {
+    gdjs.GameCode.GDWellDistanceTextObjects3.push(gdjs.GameCode.forEachObjects3[gdjs.GameCode.forEachIndex3]);
+}
+else if (gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachCount0_3+gdjs.GameCode.forEachCount1_3) {
+    gdjs.GameCode.GDRoadDistanceTextObjects3.push(gdjs.GameCode.forEachObjects3[gdjs.GameCode.forEachIndex3]);
+}
+else if (gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachCount0_3+gdjs.GameCode.forEachCount1_3+gdjs.GameCode.forEachCount2_3) {
+    gdjs.GameCode.GDMarketDistanceTextObjects3.push(gdjs.GameCode.forEachObjects3[gdjs.GameCode.forEachIndex3]);
+}
+if (true) {
+{for(var i = 0, len = gdjs.GameCode.GDWellDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDWellDistanceTextObjects3[i].hide();
+}
+for(var i = 0, len = gdjs.GameCode.GDRoadDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadDistanceTextObjects3[i].hide();
+}
+for(var i = 0, len = gdjs.GameCode.GDMarketDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDMarketDistanceTextObjects3[i].hide();
+}
+}}
+}
+
+}
+
+
+{
+
+
+gdjs.GameCode.eventsList4(runtimeScene);
+}
+
+
+{
+
+
+gdjs.GameCode.eventsList10(runtimeScene);
+}
+
+
+{
+
+
+gdjs.GameCode.eventsList16(runtimeScene);
+}
+
+
+};gdjs.GameCode.eventsList18 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+
+{
+gdjs.copyArray(runtimeScene.getObjects("House"), gdjs.GameCode.GDHouseObjects2);
+gdjs.copyArray(runtimeScene.getObjects("HouseLink"), gdjs.GameCode.GDHouseLinkObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Market"), gdjs.GameCode.GDMarketObjects2);
+gdjs.copyArray(runtimeScene.getObjects("MarketLink"), gdjs.GameCode.GDMarketLinkObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Road"), gdjs.GameCode.GDRoadObjects2);
+gdjs.copyArray(runtimeScene.getObjects("RoadLink"), gdjs.GameCode.GDRoadLinkObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Well"), gdjs.GameCode.GDWellObjects2);
+gdjs.copyArray(runtimeScene.getObjects("WellLink"), gdjs.GameCode.GDWellLinkObjects2);
+{gdjs.evtsExt__Isometry__SnapObjectToIsometricVirtualGrid.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects2ObjectsGDgdjs_46GameCode_46GDMarketObjects2ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects2ObjectsGDgdjs_46GameCode_46GDWellObjects2ObjectsGDgdjs_46GameCode_46GDWellLinkObjects2ObjectsGDgdjs_46GameCode_46GDHouseObjects2ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects2Objects, 62, 31, 0, 31, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("House"), gdjs.GameCode.GDHouseObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Market"), gdjs.GameCode.GDMarketObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Road"), gdjs.GameCode.GDRoadObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Well"), gdjs.GameCode.GDWellObjects2);
+
+gdjs.GameCode.forEachTotalCount3 = 0;
+gdjs.GameCode.forEachObjects3.length = 0;
+gdjs.GameCode.forEachCount0_3 = gdjs.GameCode.GDRoadObjects2.length;
+gdjs.GameCode.forEachTotalCount3 += gdjs.GameCode.forEachCount0_3;
+gdjs.GameCode.forEachObjects3.push.apply(gdjs.GameCode.forEachObjects3,gdjs.GameCode.GDRoadObjects2);
+gdjs.GameCode.forEachCount1_3 = gdjs.GameCode.GDMarketObjects2.length;
+gdjs.GameCode.forEachTotalCount3 += gdjs.GameCode.forEachCount1_3;
+gdjs.GameCode.forEachObjects3.push.apply(gdjs.GameCode.forEachObjects3,gdjs.GameCode.GDMarketObjects2);
+gdjs.GameCode.forEachCount2_3 = gdjs.GameCode.GDWellObjects2.length;
+gdjs.GameCode.forEachTotalCount3 += gdjs.GameCode.forEachCount2_3;
+gdjs.GameCode.forEachObjects3.push.apply(gdjs.GameCode.forEachObjects3,gdjs.GameCode.GDWellObjects2);
+gdjs.GameCode.forEachCount3_3 = gdjs.GameCode.GDHouseObjects2.length;
+gdjs.GameCode.forEachTotalCount3 += gdjs.GameCode.forEachCount3_3;
+gdjs.GameCode.forEachObjects3.push.apply(gdjs.GameCode.forEachObjects3,gdjs.GameCode.GDHouseObjects2);
+for(gdjs.GameCode.forEachIndex3 = 0;gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachTotalCount3;++gdjs.GameCode.forEachIndex3) {
+gdjs.GameCode.GDHouseLinkObjects3.length = 0;
+
+gdjs.GameCode.GDMarketLinkObjects3.length = 0;
+
+gdjs.GameCode.GDRoadLinkObjects3.length = 0;
+
+gdjs.GameCode.GDWellLinkObjects3.length = 0;
+
+gdjs.GameCode.GDHouseObjects3.length = 0;
+
+gdjs.GameCode.GDMarketObjects3.length = 0;
+
+gdjs.GameCode.GDRoadObjects3.length = 0;
+
+gdjs.GameCode.GDWellObjects3.length = 0;
+
+
+if (gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachCount0_3) {
+    gdjs.GameCode.GDRoadObjects3.push(gdjs.GameCode.forEachObjects3[gdjs.GameCode.forEachIndex3]);
+}
+else if (gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachCount0_3+gdjs.GameCode.forEachCount1_3) {
+    gdjs.GameCode.GDMarketObjects3.push(gdjs.GameCode.forEachObjects3[gdjs.GameCode.forEachIndex3]);
+}
+else if (gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachCount0_3+gdjs.GameCode.forEachCount1_3+gdjs.GameCode.forEachCount2_3) {
+    gdjs.GameCode.GDWellObjects3.push(gdjs.GameCode.forEachObjects3[gdjs.GameCode.forEachIndex3]);
+}
+else if (gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachCount0_3+gdjs.GameCode.forEachCount1_3+gdjs.GameCode.forEachCount2_3+gdjs.GameCode.forEachCount3_3) {
+    gdjs.GameCode.GDHouseObjects3.push(gdjs.GameCode.forEachObjects3[gdjs.GameCode.forEachIndex3]);
+}
+if (true) {
+{gdjs.evtTools.object.createObjectFromGroupOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects3ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects3ObjectsGDgdjs_46GameCode_46GDWellLinkObjects3ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects3Objects, (( gdjs.GameCode.GDHouseObjects3.length === 0 ) ? (( gdjs.GameCode.GDWellObjects3.length === 0 ) ? (( gdjs.GameCode.GDMarketObjects3.length === 0 ) ? (( gdjs.GameCode.GDRoadObjects3.length === 0 ) ? "" :gdjs.GameCode.GDRoadObjects3[0].getName()) :gdjs.GameCode.GDMarketObjects3[0].getName()) :gdjs.GameCode.GDWellObjects3[0].getName()) :gdjs.GameCode.GDHouseObjects3[0].getName()) + "Link", (( gdjs.GameCode.GDHouseObjects3.length === 0 ) ? (( gdjs.GameCode.GDWellObjects3.length === 0 ) ? (( gdjs.GameCode.GDMarketObjects3.length === 0 ) ? (( gdjs.GameCode.GDRoadObjects3.length === 0 ) ? 0 :gdjs.GameCode.GDRoadObjects3[0].getPointX("")) :gdjs.GameCode.GDMarketObjects3[0].getPointX("")) :gdjs.GameCode.GDWellObjects3[0].getPointX("")) :gdjs.GameCode.GDHouseObjects3[0].getPointX("")), (( gdjs.GameCode.GDHouseObjects3.length === 0 ) ? (( gdjs.GameCode.GDWellObjects3.length === 0 ) ? (( gdjs.GameCode.GDMarketObjects3.length === 0 ) ? (( gdjs.GameCode.GDRoadObjects3.length === 0 ) ? 0 :gdjs.GameCode.GDRoadObjects3[0].getPointY("")) :gdjs.GameCode.GDMarketObjects3[0].getPointY("")) :gdjs.GameCode.GDWellObjects3[0].getPointY("")) :gdjs.GameCode.GDHouseObjects3[0].getPointY("")), "");
+}{for(var i = 0, len = gdjs.GameCode.GDRoadLinkObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadLinkObjects3[i].hide();
+}
+for(var i = 0, len = gdjs.GameCode.GDMarketLinkObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDMarketLinkObjects3[i].hide();
+}
+for(var i = 0, len = gdjs.GameCode.GDWellLinkObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDWellLinkObjects3[i].hide();
+}
+for(var i = 0, len = gdjs.GameCode.GDHouseLinkObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDHouseLinkObjects3[i].hide();
+}
+}
+{ //Subevents: 
+gdjs.GameCode.eventsList0(runtimeScene);} //Subevents end.
+}
+}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+
+{
+gdjs.copyArray(runtimeScene.getObjects("House"), gdjs.GameCode.GDHouseObjects2);
+gdjs.copyArray(runtimeScene.getObjects("HouseLink"), gdjs.GameCode.GDHouseLinkObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Market"), gdjs.GameCode.GDMarketObjects2);
+gdjs.copyArray(runtimeScene.getObjects("MarketLink"), gdjs.GameCode.GDMarketLinkObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Road"), gdjs.GameCode.GDRoadObjects2);
+gdjs.copyArray(runtimeScene.getObjects("RoadLink"), gdjs.GameCode.GDRoadLinkObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Well"), gdjs.GameCode.GDWellObjects2);
+gdjs.copyArray(runtimeScene.getObjects("WellLink"), gdjs.GameCode.GDWellLinkObjects2);
+{gdjs.evtsExt__LinkTools__LinkIsometricRectangularNeighbors.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDMarketObjects2ObjectsGDgdjs_46GameCode_46GDWellObjects2ObjectsGDgdjs_46GameCode_46GDHouseObjects2Objects, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects2ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects2ObjectsGDgdjs_46GameCode_46GDWellLinkObjects2ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects2Objects, 62, 31, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }}
 
 }
@@ -271,50 +802,6 @@ gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = !(gdjs.evtTools.systemI
 {
 
 
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.systemInfo.isMobile();
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("Backward"), gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects2);
-gdjs.copyArray(gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects1, gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects2);
-
-gdjs.copyArray(runtimeScene.getObjects("DesktopControls"), gdjs.Downhill_32Bike_32DemoCode.GDDesktopControlsObjects2);
-gdjs.copyArray(gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects1, gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects2);
-
-gdjs.copyArray(runtimeScene.getObjects("Left"), gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Retry"), gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects2);
-gdjs.copyArray(gdjs.Downhill_32Bike_32DemoCode.GDRightObjects1, gdjs.Downhill_32Bike_32DemoCode.GDRightObjects2);
-
-{gdjs.evtTools.window.setFullScreen(runtimeScene, true, true);
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRightObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRightObjects2[i].setOpacity(180);
-}
-for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects2[i].setOpacity(180);
-}
-for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects2[i].setOpacity(180);
-}
-for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects2[i].setOpacity(180);
-}
-for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects2[i].setOpacity(180);
-}
-for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects2[i].setOpacity(180);
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDDesktopControlsObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDDesktopControlsObjects2[i].hide();
-}
-}}
-
-}
-
-
-{
-
-
 
 }
 
@@ -323,474 +810,89 @@ for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects2.length ;i <
 
 
 {
-gdjs.copyArray(runtimeScene.getObjects("MainFrame"), gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Seat"), gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[i].getBehavior("Physics2").addWeldJoint((gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[i].getPointX("Seat")), (gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[i].getPointY("Seat")), (gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects2[0].getPointX("Connect")), (( gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects2[0].getPointY("Connect")), 0, 30, 1, false, gdjs.VariablesContainer.badVariable);
+gdjs.copyArray(runtimeScene.getObjects("House"), gdjs.GameCode.GDHouseObjects1);
+gdjs.copyArray(runtimeScene.getObjects("HouseLink"), gdjs.GameCode.GDHouseLinkObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Market"), gdjs.GameCode.GDMarketObjects1);
+gdjs.copyArray(runtimeScene.getObjects("MarketDistanceText"), gdjs.GameCode.GDMarketDistanceTextObjects1);
+gdjs.copyArray(runtimeScene.getObjects("MarketLink"), gdjs.GameCode.GDMarketLinkObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Road"), gdjs.GameCode.GDRoadObjects1);
+gdjs.copyArray(runtimeScene.getObjects("RoadDistanceText"), gdjs.GameCode.GDRoadDistanceTextObjects1);
+gdjs.copyArray(runtimeScene.getObjects("RoadLink"), gdjs.GameCode.GDRoadLinkObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Well"), gdjs.GameCode.GDWellObjects1);
+gdjs.copyArray(runtimeScene.getObjects("WellDistanceText"), gdjs.GameCode.GDWellDistanceTextObjects1);
+gdjs.copyArray(runtimeScene.getObjects("WellLink"), gdjs.GameCode.GDWellLinkObjects1);
+{gdjs.evtTools.object.pickAllObjects((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects1ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects1ObjectsGDgdjs_46GameCode_46GDMarketObjects1ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects1ObjectsGDgdjs_46GameCode_46GDWellObjects1ObjectsGDgdjs_46GameCode_46GDWellLinkObjects1ObjectsGDgdjs_46GameCode_46GDHouseObjects1ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects1Objects);
+}{gdjs.evtTools.object.pickAllObjects((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects1ObjectsGDgdjs_46GameCode_46GDRoadDistanceTextObjects1ObjectsGDgdjs_46GameCode_46GDMarketDistanceTextObjects1Objects);
+}{for(var i = 0, len = gdjs.GameCode.GDHouseObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDHouseObjects1[i].returnVariable(gdjs.GameCode.GDHouseObjects1[i].getVariables().getFromIndex(2)).setNumber(0);
 }
-}}
-
+}{for(var i = 0, len = gdjs.GameCode.GDHouseObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDHouseObjects1[i].returnVariable(gdjs.GameCode.GDHouseObjects1[i].getVariables().getFromIndex(0)).setNumber(0);
 }
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("Crank"), gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2);
-gdjs.copyArray(runtimeScene.getObjects("MainFrame"), gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[i].getPointX("Crank")), (gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[i].getPointY("Crank")), (gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2[0].getPointX("Centre")), (( gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2[0].getPointY("Centre")), false, 0, 0, 0, true, 10, 20, false, runtimeScene.getVariables().get("crank"));
+}{for(var i = 0, len = gdjs.GameCode.GDHouseObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDHouseObjects1[i].returnVariable(gdjs.GameCode.GDHouseObjects1[i].getVariables().getFromIndex(1)).setNumber(0);
 }
-}}
-
+}{for(var i = 0, len = gdjs.GameCode.GDRoadObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadObjects1[i].returnVariable(gdjs.GameCode.GDRoadObjects1[i].getVariables().get("wellDistance")).setNumber(0);
 }
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("FrontWheel"), gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects2);
-gdjs.copyArray(runtimeScene.getObjects("MainFrame"), gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[i].getBehavior("Physics2").addWheelJoint((gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[i].getPointX("FrontWheelAxis")), (gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[i].getPointY("FrontWheelAxis")), (gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects2[0].getPointX("Centre")), (( gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects2[0].getPointY("Centre")), 335, 14, 0.7, false, 0, 0, false, gdjs.VariablesContainer.badVariable);
+for(var i = 0, len = gdjs.GameCode.GDRoadLinkObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadLinkObjects1[i].returnVariable(gdjs.GameCode.GDRoadLinkObjects1[i].getVariables().get("wellDistance")).setNumber(0);
 }
-}}
-
+}{for(var i = 0, len = gdjs.GameCode.GDRoadObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadObjects1[i].returnVariable(gdjs.GameCode.GDRoadObjects1[i].getVariables().get("marketDistance")).setNumber(0);
 }
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("BackWheel"), gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects2);
-gdjs.copyArray(runtimeScene.getObjects("MainFrame"), gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[i].getBehavior("Physics2").addWheelJoint((gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[i].getPointX("RearWheelAxis")), (gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[i].getPointY("RearWheelAxis")), (gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects2[0].getPointX("Centre")), (( gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects2[0].getPointY("Centre")), 90, 14, 0.7, true, 1, 50, false, runtimeScene.getVariables().get("rearJoint"));
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("BackWheel"), gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects2);
-gdjs.copyArray(runtimeScene.getObjects("RearSuspension"), gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects2[i].getPointX("WheelAxis")), (gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects2[i].getPointY("WheelAxis")), (gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects2[0].getPointX("Centre")), (( gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects2[0].getPointY("Centre")), false, 12, 0.7, 0, true, 150, 0, false, gdjs.VariablesContainer.badVariable);
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("Crank"), gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2);
-gdjs.copyArray(runtimeScene.getObjects("RPedal"), gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2[i].getPointX("RPedal")), (gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2[i].getPointY("RPedal")), (gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects2[0].getPointX("Centre")), (( gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects2[0].getPointY("Centre")), false, 0, 0, 0, false, 0, 0, false, gdjs.VariablesContainer.badVariable);
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("Crank"), gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2);
-gdjs.copyArray(runtimeScene.getObjects("LPedal"), gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2[i].getPointX("LPedal")), (gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2[i].getPointY("LPedal")), (gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects2[0].getPointX("Centre")), (( gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects2[0].getPointY("Centre")), false, 0, 0, 0, false, 0, 0, false, gdjs.VariablesContainer.badVariable);
-}
-}}
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("MainFrame"), gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Torso"), gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getPointX("SeatConnect")), (gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getPointY("SeatConnect")), (gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[0].getPointX("Sit")), (( gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[0].getPointY("Sit")), true, 0, -(10), 10, false, 0, 0, false, runtimeScene.getVariables().get("torsoForce"));
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("Head"), gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Torso"), gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getPointX("UConnect")), (gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getPointY("UConnect")), (gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects2[0].getPointX("Connect")), (( gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects2[0].getPointY("Connect")), true, 0, -(20), 20, false, 0, 0, false, runtimeScene.getVariables().get("headConn"));
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("RightThigh"), gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Torso"), gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getPointX("LConnect")), (gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getPointY("LConnect")), (gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2[0].getPointX("UConnect")), (( gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2[0].getPointY("UConnect")), false, 0, 100, -(45), false, 0, 0, false, runtimeScene.getVariables().get("rightThigh"));
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("LeftThigh"), gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Torso"), gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getPointX("LConnect")), (gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getPointY("LConnect")), (gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2[0].getPointX("UConnect")), (( gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2[0].getPointY("UConnect")), false, 0, 100, -(45), false, 0, 0, false, runtimeScene.getVariables().get("leftThigh"));
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("RightLeg"), gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2);
-gdjs.copyArray(runtimeScene.getObjects("RightThigh"), gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2[i].getPointX("Connect")), (gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2[i].getPointY("Connect")), (gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2[0].getPointX("LConnect")), (( gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2[0].getPointY("LConnect")), true, 0, -(130), 0, false, 0, 0, false, runtimeScene.getVariables().get("rightLeg"));
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("LeftLeg"), gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2);
-gdjs.copyArray(runtimeScene.getObjects("LeftThigh"), gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2[i].getPointX("Connect")), (gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2[i].getPointY("Connect")), (gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2[0].getPointX("LConnect")), (( gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2[0].getPointY("LConnect")), true, 0, -(130), 0, false, 0, 0, false, runtimeScene.getVariables().get("leftLeg"));
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("LPedal"), gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects2);
-gdjs.copyArray(runtimeScene.getObjects("LeftLeg"), gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2[i].getPointX("Pedal")), (gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2[i].getPointY("Pedal")), (gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects2[0].getPointX("Center")), (( gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects2[0].getPointY("Center")), false, 0, -(10), 10, false, 0, 0, false, runtimeScene.getVariables().get("ragdollLpedal"));
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("RPedal"), gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects2);
-gdjs.copyArray(runtimeScene.getObjects("RightLeg"), gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2[i].getPointX("Pedal")), (gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2[i].getPointY("Pedal")), (gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects2[0].getPointX("Center")), (( gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects2[0].getPointY("Center")), false, 0, -(10), 10, false, 0, 0, false, runtimeScene.getVariables().get("ragdollRpedal"));
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("LUpperArm"), gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Torso"), gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getPointX("ArmConnect")), (gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getPointY("ArmConnect")), (gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2[0].getPointX("UConnect")), (( gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2[0].getPointY("UConnect")), false, 0, 0, 0, false, 0, 0, false, gdjs.VariablesContainer.badVariable);
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("RUpperArm"), gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Torso"), gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getPointX("ArmConnect")), (gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[i].getPointY("ArmConnect")), (gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2[0].getPointX("UConnect")), (( gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2[0].getPointY("UConnect")), false, 0, 0, 0, false, 0, 0, false, gdjs.VariablesContainer.badVariable);
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("RArm"), gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects2);
-gdjs.copyArray(runtimeScene.getObjects("RUpperArm"), gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects2[i].getPointX("Connect")), (gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects2[i].getPointY("Connect")), (gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2[0].getPointX("LConnect")), (( gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2[0].getPointY("LConnect")), true, 0, -(40), 85, false, 0, 0, false, gdjs.VariablesContainer.badVariable);
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("LArm"), gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects2);
-gdjs.copyArray(runtimeScene.getObjects("LUpperArm"), gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects2[i].getPointX("Connect")), (gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects2[i].getPointY("Connect")), (gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2[0].getPointX("LConnect")), (( gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2[0].getPointY("LConnect")), true, 0, -(40), 85, false, 0, 0, false, gdjs.VariablesContainer.badVariable);
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("LArm"), gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects2);
-gdjs.copyArray(runtimeScene.getObjects("MainFrame"), gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects2[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects2[i].getPointX("Handlebar")), (gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects2[i].getPointY("Handlebar")), (gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[0].getPointX("Hands")), (( gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[0].getPointY("Hands")), false, 0, 0, 0, false, 0, 0, false, runtimeScene.getVariables().get("ragdollLhand"));
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("MainFrame"), gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects1);
-gdjs.copyArray(runtimeScene.getObjects("RArm"), gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects1);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects1.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects1[i].getBehavior("Physics2").addRevoluteJointBetweenTwoBodies((gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects1[i].getPointX("Handlebar")), (gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects1[i].getPointY("Handlebar")), (gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects1.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects1[0] : null), (( gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects1.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects1[0].getPointX("Hands")), (( gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects1.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects1[0].getPointY("Hands")), false, 0, 0, 0, false, 0, 0, false, runtimeScene.getVariables().get("ragdollRhand"));
-}
-}}
-
-}
-
-
-};gdjs.Downhill_32Bike_32DemoCode.eventsList1 = function(runtimeScene) {
-
-{
-
-
-
-}
-
-
-{
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("Brake"), gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Elapsed"), gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Forward"), gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Right"), gdjs.Downhill_32Bike_32DemoCode.GDRightObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Timing"), gdjs.Downhill_32Bike_32DemoCode.GDTimingObjects1);
-{runtimeScene.getVariables().getFromIndex(0).setNumber(3000);
-}{runtimeScene.getVariables().getFromIndex(1).setNumber(0);
-}{runtimeScene.getVariables().getFromIndex(7).setNumber(0.18);
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects1.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects1[i].setX(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) - 40);
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRightObjects1.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRightObjects1[i].setX(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) - 40);
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects1.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects1[i].setX((gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2));
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDTimingObjects1.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDTimingObjects1[i].setX(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) - 260);
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects1.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects1[i].setX(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) - 140);
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects1.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects1[i].setWidth((gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2));
+for(var i = 0, len = gdjs.GameCode.GDRoadLinkObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadLinkObjects1[i].returnVariable(gdjs.GameCode.GDRoadLinkObjects1[i].getVariables().get("marketDistance")).setNumber(0);
 }
 }
 { //Subevents
-gdjs.Downhill_32Bike_32DemoCode.eventsList0(runtimeScene);} //End of subevents
+gdjs.GameCode.eventsList17(runtimeScene);} //End of subevents
 }
 
 }
 
 
-};gdjs.Downhill_32Bike_32DemoCode.eventsList2 = function(runtimeScene) {
+};gdjs.GameCode.eventsList19 = function(runtimeScene) {
 
 {
 
 
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(14)) <= 1000;
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-{runtimeScene.getVariables().getFromIndex(15).sub(1);
-}}
-
+gdjs.GameCode.eventsList18(runtimeScene);
 }
 
 
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDBrushObjects2Objects = Hashtable.newFrom({"Brush": gdjs.GameCode.GDBrushObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketPaletteItemObjects2ObjectsGDgdjs_46GameCode_46GDWellPaletteItemObjects2ObjectsGDgdjs_46GameCode_46GDHousePaletteItemObjects2ObjectsGDgdjs_46GameCode_46GDRoadPaletteItemObjects2ObjectsGDgdjs_46GameCode_46GDEraserPaletteItemObjects2Objects = Hashtable.newFrom({"MarketPaletteItem": gdjs.GameCode.GDMarketPaletteItemObjects2, "WellPaletteItem": gdjs.GameCode.GDWellPaletteItemObjects2, "HousePaletteItem": gdjs.GameCode.GDHousePaletteItemObjects2, "RoadPaletteItem": gdjs.GameCode.GDRoadPaletteItemObjects2, "EraserPaletteItem": gdjs.GameCode.GDEraserPaletteItemObjects2});gdjs.GameCode.eventsList20 = function(runtimeScene) {
+
 {
 
 
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
+gdjs.GameCode.condition0IsTrue_0.val = false;
 {
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(15)) > 0;
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("ForceIndicator"), gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4[i].setFillColor("186;255;66");
+{gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition0IsTrue_0;
+gdjs.GameCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9511332);
 }
-}}
-
-}
-
-
-{
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(15)) > 250;
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("ForceIndicator"), gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4[i].setFillColor("250;237;86");
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("Brush"), gdjs.GameCode.GDBrushObjects2);
+/* Reuse gdjs.GameCode.GDEraserPaletteItemObjects2 */
+/* Reuse gdjs.GameCode.GDHousePaletteItemObjects2 */
+/* Reuse gdjs.GameCode.GDMarketPaletteItemObjects2 */
+/* Reuse gdjs.GameCode.GDRoadPaletteItemObjects2 */
+/* Reuse gdjs.GameCode.GDWellPaletteItemObjects2 */
+{runtimeScene.getVariables().getFromIndex(0).setString((gdjs.RuntimeObject.getVariableString(((gdjs.GameCode.GDEraserPaletteItemObjects2.length === 0 ) ? ((gdjs.GameCode.GDRoadPaletteItemObjects2.length === 0 ) ? ((gdjs.GameCode.GDHousePaletteItemObjects2.length === 0 ) ? ((gdjs.GameCode.GDWellPaletteItemObjects2.length === 0 ) ? ((gdjs.GameCode.GDMarketPaletteItemObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.GameCode.GDMarketPaletteItemObjects2[0].getVariables()) : gdjs.GameCode.GDWellPaletteItemObjects2[0].getVariables()) : gdjs.GameCode.GDHousePaletteItemObjects2[0].getVariables()) : gdjs.GameCode.GDRoadPaletteItemObjects2[0].getVariables()) : gdjs.GameCode.GDEraserPaletteItemObjects2[0].getVariables()).get("tool"))));
+}{runtimeScene.getVariables().getFromIndex(1).setString((gdjs.RuntimeObject.getVariableString(((gdjs.GameCode.GDEraserPaletteItemObjects2.length === 0 ) ? ((gdjs.GameCode.GDRoadPaletteItemObjects2.length === 0 ) ? ((gdjs.GameCode.GDHousePaletteItemObjects2.length === 0 ) ? ((gdjs.GameCode.GDWellPaletteItemObjects2.length === 0 ) ? ((gdjs.GameCode.GDMarketPaletteItemObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.GameCode.GDMarketPaletteItemObjects2[0].getVariables()) : gdjs.GameCode.GDWellPaletteItemObjects2[0].getVariables()) : gdjs.GameCode.GDHousePaletteItemObjects2[0].getVariables()) : gdjs.GameCode.GDRoadPaletteItemObjects2[0].getVariables()) : gdjs.GameCode.GDEraserPaletteItemObjects2[0].getVariables()).get("material"))));
+}{for(var i = 0, len = gdjs.GameCode.GDBrushObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDBrushObjects2[i].setAnimationName((gdjs.RuntimeObject.getVariableString(((gdjs.GameCode.GDEraserPaletteItemObjects2.length === 0 ) ? ((gdjs.GameCode.GDRoadPaletteItemObjects2.length === 0 ) ? ((gdjs.GameCode.GDHousePaletteItemObjects2.length === 0 ) ? ((gdjs.GameCode.GDWellPaletteItemObjects2.length === 0 ) ? ((gdjs.GameCode.GDMarketPaletteItemObjects2.length === 0 ) ? gdjs.VariablesContainer.badVariablesContainer : gdjs.GameCode.GDMarketPaletteItemObjects2[0].getVariables()) : gdjs.GameCode.GDWellPaletteItemObjects2[0].getVariables()) : gdjs.GameCode.GDHousePaletteItemObjects2[0].getVariables()) : gdjs.GameCode.GDRoadPaletteItemObjects2[0].getVariables()) : gdjs.GameCode.GDEraserPaletteItemObjects2[0].getVariables()).get("material"))));
 }
 }}
 
 }
 
 
-{
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(15)) > 500;
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("ForceIndicator"), gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4[i].setFillColor("245;166;35");
-}
-}}
-
-}
-
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects2ObjectsGDgdjs_46GameCode_46GDRoadDistanceTextObjects2ObjectsGDgdjs_46GameCode_46GDMarketDistanceTextObjects2Objects = Hashtable.newFrom({"WellDistanceText": gdjs.GameCode.GDWellDistanceTextObjects2, "RoadDistanceText": gdjs.GameCode.GDRoadDistanceTextObjects2, "MarketDistanceText": gdjs.GameCode.GDMarketDistanceTextObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDMarketObjects2ObjectsGDgdjs_46GameCode_46GDWellObjects2ObjectsGDgdjs_46GameCode_46GDHouseObjects2Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects2, "Market": gdjs.GameCode.GDMarketObjects2, "Well": gdjs.GameCode.GDWellObjects2, "House": gdjs.GameCode.GDHouseObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects2ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects2ObjectsGDgdjs_46GameCode_46GDWellLinkObjects2ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects2Objects = Hashtable.newFrom({"RoadLink": gdjs.GameCode.GDRoadLinkObjects2, "MarketLink": gdjs.GameCode.GDMarketLinkObjects2, "WellLink": gdjs.GameCode.GDWellLinkObjects2, "HouseLink": gdjs.GameCode.GDHouseLinkObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadDistanceTextObjects3Objects = Hashtable.newFrom({"RoadDistanceText": gdjs.GameCode.GDRoadDistanceTextObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects3Objects = Hashtable.newFrom({"WellDistanceText": gdjs.GameCode.GDWellDistanceTextObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketDistanceTextObjects3Objects = Hashtable.newFrom({"MarketDistanceText": gdjs.GameCode.GDMarketDistanceTextObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects3ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects3ObjectsGDgdjs_46GameCode_46GDWellLinkObjects3ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects3Objects = Hashtable.newFrom({"RoadLink": gdjs.GameCode.GDRoadLinkObjects3, "MarketLink": gdjs.GameCode.GDMarketLinkObjects3, "WellLink": gdjs.GameCode.GDWellLinkObjects3, "HouseLink": gdjs.GameCode.GDHouseLinkObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects3ObjectsGDgdjs_46GameCode_46GDMarketObjects3ObjectsGDgdjs_46GameCode_46GDWellObjects3ObjectsGDgdjs_46GameCode_46GDHouseObjects3Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects3, "Market": gdjs.GameCode.GDMarketObjects3, "Well": gdjs.GameCode.GDWellObjects3, "House": gdjs.GameCode.GDHouseObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects3ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects3ObjectsGDgdjs_46GameCode_46GDWellLinkObjects3ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects3Objects = Hashtable.newFrom({"RoadLink": gdjs.GameCode.GDRoadLinkObjects3, "MarketLink": gdjs.GameCode.GDMarketLinkObjects3, "WellLink": gdjs.GameCode.GDWellLinkObjects3, "HouseLink": gdjs.GameCode.GDHouseLinkObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDMarketObjects2ObjectsGDgdjs_46GameCode_46GDWellObjects2ObjectsGDgdjs_46GameCode_46GDHouseObjects2Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects2, "Market": gdjs.GameCode.GDMarketObjects2, "Well": gdjs.GameCode.GDWellObjects2, "House": gdjs.GameCode.GDHouseObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects2ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects2ObjectsGDgdjs_46GameCode_46GDWellLinkObjects2ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects2Objects = Hashtable.newFrom({"RoadLink": gdjs.GameCode.GDRoadLinkObjects2, "MarketLink": gdjs.GameCode.GDMarketLinkObjects2, "WellLink": gdjs.GameCode.GDWellLinkObjects2, "HouseLink": gdjs.GameCode.GDHouseLinkObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDMarketObjects2ObjectsGDgdjs_46GameCode_46GDWellObjects2ObjectsGDgdjs_46GameCode_46GDHouseObjects2Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects2, "Market": gdjs.GameCode.GDMarketObjects2, "Well": gdjs.GameCode.GDWellObjects2, "House": gdjs.GameCode.GDHouseObjects2});gdjs.GameCode.eventsList21 = function(runtimeScene) {
 
 {
 
 
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(15)) > 750;
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("ForceIndicator"), gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4[i].setFillColor("255;105;65");
-}
-}}
-
-}
-
-
-{
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(14)) > 1000;
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("ForceIndicator"), gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4[i].setFillColor("255;0;0");
-}
-}}
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("Force"), gdjs.Downhill_32Bike_32DemoCode.GDForceObjects3);
-gdjs.copyArray(runtimeScene.getObjects("ForceIndicator"), gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects3);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects3[i].drawLine((( gdjs.Downhill_32Bike_32DemoCode.GDForceObjects3.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDForceObjects3[0].getX()) + 20, 125, (( gdjs.Downhill_32Bike_32DemoCode.GDForceObjects3.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDForceObjects3[0].getX()) + (gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(15)) / 3) + 20, 125, 16);
-}
-}}
-
-}
-
-
-};gdjs.Downhill_32Bike_32DemoCode.eventsList3 = function(runtimeScene) {
-
-{
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.common.logicalNegation(false);
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("Torso"), gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3);
-{runtimeScene.getVariables().getFromIndex(13).setNumber((( gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3[0].getBehavior("Physics2").getJointReactionForce(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("torsoForce")))));
-}}
 
 }
 
@@ -805,14 +907,35 @@ gdjs.copyArray(runtimeScene.getObjects("Torso"), gdjs.Downhill_32Bike_32DemoCode
 {
 
 
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
 {
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(13)) > gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(14));
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("ForceStrength"), gdjs.Downhill_32Bike_32DemoCode.GDForceStrengthObjects3);
-{runtimeScene.getVariables().getFromIndex(14).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(13)));
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDForceStrengthObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDForceStrengthObjects3[i].setString(gdjs.evtTools.common.toString(Math.floor(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(14)))));
+gdjs.copyArray(gdjs.GameCode.GDHouseObjects2, gdjs.GameCode.GDHouseObjects3);
+
+gdjs.copyArray(gdjs.GameCode.GDMarketObjects2, gdjs.GameCode.GDMarketObjects3);
+
+gdjs.copyArray(gdjs.GameCode.GDRoadObjects2, gdjs.GameCode.GDRoadObjects3);
+
+gdjs.copyArray(gdjs.GameCode.GDWellObjects2, gdjs.GameCode.GDWellObjects3);
+
+gdjs.GameCode.GDMarketDistanceTextObjects3.length = 0;
+
+gdjs.GameCode.GDRoadDistanceTextObjects3.length = 0;
+
+gdjs.GameCode.GDWellDistanceTextObjects3.length = 0;
+
+{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadDistanceTextObjects3Objects, (( gdjs.GameCode.GDHouseObjects3.length === 0 ) ? (( gdjs.GameCode.GDWellObjects3.length === 0 ) ? (( gdjs.GameCode.GDMarketObjects3.length === 0 ) ? (( gdjs.GameCode.GDRoadObjects3.length === 0 ) ? 0 :gdjs.GameCode.GDRoadObjects3[0].getPointX("")) :gdjs.GameCode.GDMarketObjects3[0].getPointX("")) :gdjs.GameCode.GDWellObjects3[0].getPointX("")) :gdjs.GameCode.GDHouseObjects3[0].getPointX("")) - 8, (( gdjs.GameCode.GDHouseObjects3.length === 0 ) ? (( gdjs.GameCode.GDWellObjects3.length === 0 ) ? (( gdjs.GameCode.GDMarketObjects3.length === 0 ) ? (( gdjs.GameCode.GDRoadObjects3.length === 0 ) ? 0 :gdjs.GameCode.GDRoadObjects3[0].getPointY("")) :gdjs.GameCode.GDMarketObjects3[0].getPointY("")) :gdjs.GameCode.GDWellObjects3[0].getPointY("")) :gdjs.GameCode.GDHouseObjects3[0].getPointY("")) - 15, "DistanceText");
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects3Objects, (( gdjs.GameCode.GDHouseObjects3.length === 0 ) ? (( gdjs.GameCode.GDWellObjects3.length === 0 ) ? (( gdjs.GameCode.GDMarketObjects3.length === 0 ) ? (( gdjs.GameCode.GDRoadObjects3.length === 0 ) ? 0 :gdjs.GameCode.GDRoadObjects3[0].getPointX("")) :gdjs.GameCode.GDMarketObjects3[0].getPointX("")) :gdjs.GameCode.GDWellObjects3[0].getPointX("")) :gdjs.GameCode.GDHouseObjects3[0].getPointX("")) - 15, (( gdjs.GameCode.GDHouseObjects3.length === 0 ) ? (( gdjs.GameCode.GDWellObjects3.length === 0 ) ? (( gdjs.GameCode.GDMarketObjects3.length === 0 ) ? (( gdjs.GameCode.GDRoadObjects3.length === 0 ) ? 0 :gdjs.GameCode.GDRoadObjects3[0].getPointY("")) :gdjs.GameCode.GDMarketObjects3[0].getPointY("")) :gdjs.GameCode.GDWellObjects3[0].getPointY("")) :gdjs.GameCode.GDHouseObjects3[0].getPointY("")) - 5, "DistanceText");
+}{gdjs.evtTools.object.createObjectOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketDistanceTextObjects3Objects, (( gdjs.GameCode.GDHouseObjects3.length === 0 ) ? (( gdjs.GameCode.GDWellObjects3.length === 0 ) ? (( gdjs.GameCode.GDMarketObjects3.length === 0 ) ? (( gdjs.GameCode.GDRoadObjects3.length === 0 ) ? 0 :gdjs.GameCode.GDRoadObjects3[0].getPointX("")) :gdjs.GameCode.GDMarketObjects3[0].getPointX("")) :gdjs.GameCode.GDWellObjects3[0].getPointX("")) :gdjs.GameCode.GDHouseObjects3[0].getPointX("")) + 5, (( gdjs.GameCode.GDHouseObjects3.length === 0 ) ? (( gdjs.GameCode.GDWellObjects3.length === 0 ) ? (( gdjs.GameCode.GDMarketObjects3.length === 0 ) ? (( gdjs.GameCode.GDRoadObjects3.length === 0 ) ? 0 :gdjs.GameCode.GDRoadObjects3[0].getPointY("")) :gdjs.GameCode.GDMarketObjects3[0].getPointY("")) :gdjs.GameCode.GDWellObjects3[0].getPointY("")) :gdjs.GameCode.GDHouseObjects3[0].getPointY("")) - 5, "DistanceText");
+}{gdjs.evtTools.linkedObjects.linkObjects(runtimeScene, (gdjs.GameCode.GDRoadDistanceTextObjects3.length !== 0 ? gdjs.GameCode.GDRoadDistanceTextObjects3[0] : null), (gdjs.GameCode.GDRoadObjects3.length !== 0 ? gdjs.GameCode.GDRoadObjects3[0] : (gdjs.GameCode.GDMarketObjects3.length !== 0 ? gdjs.GameCode.GDMarketObjects3[0] : (gdjs.GameCode.GDWellObjects3.length !== 0 ? gdjs.GameCode.GDWellObjects3[0] : (gdjs.GameCode.GDHouseObjects3.length !== 0 ? gdjs.GameCode.GDHouseObjects3[0] : null)))));
+}{gdjs.evtTools.linkedObjects.linkObjects(runtimeScene, (gdjs.GameCode.GDWellDistanceTextObjects3.length !== 0 ? gdjs.GameCode.GDWellDistanceTextObjects3[0] : null), (gdjs.GameCode.GDRoadObjects3.length !== 0 ? gdjs.GameCode.GDRoadObjects3[0] : (gdjs.GameCode.GDMarketObjects3.length !== 0 ? gdjs.GameCode.GDMarketObjects3[0] : (gdjs.GameCode.GDWellObjects3.length !== 0 ? gdjs.GameCode.GDWellObjects3[0] : (gdjs.GameCode.GDHouseObjects3.length !== 0 ? gdjs.GameCode.GDHouseObjects3[0] : null)))));
+}{gdjs.evtTools.linkedObjects.linkObjects(runtimeScene, (gdjs.GameCode.GDMarketDistanceTextObjects3.length !== 0 ? gdjs.GameCode.GDMarketDistanceTextObjects3[0] : null), (gdjs.GameCode.GDRoadObjects3.length !== 0 ? gdjs.GameCode.GDRoadObjects3[0] : (gdjs.GameCode.GDMarketObjects3.length !== 0 ? gdjs.GameCode.GDMarketObjects3[0] : (gdjs.GameCode.GDWellObjects3.length !== 0 ? gdjs.GameCode.GDWellObjects3[0] : (gdjs.GameCode.GDHouseObjects3.length !== 0 ? gdjs.GameCode.GDHouseObjects3[0] : null)))));
+}{for(var i = 0, len = gdjs.GameCode.GDWellDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDWellDistanceTextObjects3[i].setScale(0.5);
+}
+for(var i = 0, len = gdjs.GameCode.GDRoadDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadDistanceTextObjects3[i].setScale(0.5);
+}
+for(var i = 0, len = gdjs.GameCode.GDMarketDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDMarketDistanceTextObjects3[i].setScale(0.5);
 }
 }}
 
@@ -829,11 +952,25 @@ gdjs.copyArray(runtimeScene.getObjects("ForceStrength"), gdjs.Downhill_32Bike_32
 {
 
 
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
 {
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(13)) > gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(15));
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-{runtimeScene.getVariables().getFromIndex(15).setNumber(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(13)));
+gdjs.copyArray(gdjs.GameCode.GDHouseObjects2, gdjs.GameCode.GDHouseObjects3);
+
+gdjs.copyArray(gdjs.GameCode.GDHouseLinkObjects2, gdjs.GameCode.GDHouseLinkObjects3);
+
+gdjs.copyArray(gdjs.GameCode.GDMarketObjects2, gdjs.GameCode.GDMarketObjects3);
+
+gdjs.copyArray(gdjs.GameCode.GDMarketLinkObjects2, gdjs.GameCode.GDMarketLinkObjects3);
+
+gdjs.copyArray(gdjs.GameCode.GDRoadObjects2, gdjs.GameCode.GDRoadObjects3);
+
+gdjs.copyArray(gdjs.GameCode.GDRoadLinkObjects2, gdjs.GameCode.GDRoadLinkObjects3);
+
+gdjs.copyArray(gdjs.GameCode.GDWellObjects2, gdjs.GameCode.GDWellObjects3);
+
+gdjs.copyArray(gdjs.GameCode.GDWellLinkObjects2, gdjs.GameCode.GDWellLinkObjects3);
+
+{gdjs.evtTools.object.pickAllObjects((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects3ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects3ObjectsGDgdjs_46GameCode_46GDWellLinkObjects3ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects3Objects);
+}{gdjs.evtsExt__LinkTools__LinkIsometricRectangularNeighbors.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects3ObjectsGDgdjs_46GameCode_46GDMarketObjects3ObjectsGDgdjs_46GameCode_46GDWellObjects3ObjectsGDgdjs_46GameCode_46GDHouseObjects3Objects, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects3ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects3ObjectsGDgdjs_46GameCode_46GDWellLinkObjects3ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects3Objects, 62, 31, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }}
 
 }
@@ -842,153 +979,197 @@ gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.
 {
 
 
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
 {
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(15)) > 0;
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
+/* Reuse gdjs.GameCode.GDHouseObjects2 */
+/* Reuse gdjs.GameCode.GDHouseLinkObjects2 */
+/* Reuse gdjs.GameCode.GDMarketObjects2 */
+/* Reuse gdjs.GameCode.GDMarketLinkObjects2 */
+/* Reuse gdjs.GameCode.GDRoadObjects2 */
+/* Reuse gdjs.GameCode.GDRoadLinkObjects2 */
+/* Reuse gdjs.GameCode.GDWellObjects2 */
+/* Reuse gdjs.GameCode.GDWellLinkObjects2 */
+{gdjs.evtTools.object.pickAllObjects((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDMarketObjects2ObjectsGDgdjs_46GameCode_46GDWellObjects2ObjectsGDgdjs_46GameCode_46GDHouseObjects2Objects);
+}{gdjs.evtsExt__LinkTools__LinkIsometricRectangularNeighbors.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects2ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects2ObjectsGDgdjs_46GameCode_46GDWellLinkObjects2ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects2Objects, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDMarketObjects2ObjectsGDgdjs_46GameCode_46GDWellObjects2ObjectsGDgdjs_46GameCode_46GDHouseObjects2Objects, 62, 31, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}}
+
+}
+
+
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects1ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects1ObjectsGDgdjs_46GameCode_46GDMarketObjects1ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects1ObjectsGDgdjs_46GameCode_46GDWellObjects1ObjectsGDgdjs_46GameCode_46GDWellLinkObjects1ObjectsGDgdjs_46GameCode_46GDHouseObjects1ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects1Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects1, "RoadLink": gdjs.GameCode.GDRoadLinkObjects1, "Market": gdjs.GameCode.GDMarketObjects1, "MarketLink": gdjs.GameCode.GDMarketLinkObjects1, "Well": gdjs.GameCode.GDWellObjects1, "WellLink": gdjs.GameCode.GDWellLinkObjects1, "House": gdjs.GameCode.GDHouseObjects1, "HouseLink": gdjs.GameCode.GDHouseLinkObjects1});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects1ObjectsGDgdjs_46GameCode_46GDRoadDistanceTextObjects1ObjectsGDgdjs_46GameCode_46GDMarketDistanceTextObjects1Objects = Hashtable.newFrom({"WellDistanceText": gdjs.GameCode.GDWellDistanceTextObjects1, "RoadDistanceText": gdjs.GameCode.GDRoadDistanceTextObjects1, "MarketDistanceText": gdjs.GameCode.GDMarketDistanceTextObjects1});gdjs.GameCode.eventsList22 = function(runtimeScene) {
+
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects2ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects2Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects2, "HouseLink": gdjs.GameCode.GDHouseLinkObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects2Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects2, "RoadLink": gdjs.GameCode.GDRoadLinkObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadDistanceTextObjects3Objects = Hashtable.newFrom({"RoadDistanceText": gdjs.GameCode.GDRoadDistanceTextObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects3Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects3Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects3});gdjs.GameCode.eventsList23 = function(runtimeScene) {
+
+};gdjs.GameCode.eventsList24 = function(runtimeScene) {
+
+{
+
+/* Reuse gdjs.GameCode.GDHouseObjects2 */
+
+for(gdjs.GameCode.forEachIndex3 = 0;gdjs.GameCode.forEachIndex3 < gdjs.GameCode.GDHouseObjects2.length;++gdjs.GameCode.forEachIndex3) {
+gdjs.copyArray(gdjs.GameCode.GDRoadDistanceTextObjects1, gdjs.GameCode.GDRoadDistanceTextObjects3);
+
+gdjs.GameCode.GDHouseObjects3.length = 0;
+
+
+gdjs.GameCode.forEachTemporary3 = gdjs.GameCode.GDHouseObjects2[gdjs.GameCode.forEachIndex3];
+gdjs.GameCode.GDHouseObjects3.push(gdjs.GameCode.forEachTemporary3);
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.linkedObjects.pickObjectsLinkedTo(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadDistanceTextObjects3Objects, (gdjs.GameCode.GDHouseObjects3.length !== 0 ? gdjs.GameCode.GDHouseObjects3[0] : null), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+{for(var i = 0, len = gdjs.GameCode.GDRoadDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadDistanceTextObjects3[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.GameCode.GDRoadDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadDistanceTextObjects3[i].setString(gdjs.evtTools.common.toString(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
+}
+}{for(var i = 0, len = gdjs.GameCode.GDHouseObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDHouseObjects3[i].returnVariable(gdjs.GameCode.GDHouseObjects3[i].getVariables().getFromIndex(2)).setNumber(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+}}
+}
+
+}
+
+
+};gdjs.GameCode.eventsList25 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.GameCode.GDHouseObjects1, gdjs.GameCode.GDHouseObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDHouseLinkObjects1, gdjs.GameCode.GDHouseLinkObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDRoadObjects1, gdjs.GameCode.GDRoadObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDRoadLinkObjects1, gdjs.GameCode.GDRoadLinkObjects2);
+
+
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtsExt__LinkTools__CanReachWithMaxLength.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects2ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects2Objects, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects2Objects, 2, "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
 
 { //Subevents
-gdjs.Downhill_32Bike_32DemoCode.eventsList2(runtimeScene);} //End of subevents
+gdjs.GameCode.eventsList24(runtimeScene);} //End of subevents
 }
 
 }
 
+
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects2Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects2, "RoadLink": gdjs.GameCode.GDRoadLinkObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellObjects2ObjectsGDgdjs_46GameCode_46GDWellLinkObjects2Objects = Hashtable.newFrom({"Well": gdjs.GameCode.GDWellObjects2, "WellLink": gdjs.GameCode.GDWellLinkObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects4Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects4});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects4Objects = Hashtable.newFrom({"RoadLink": gdjs.GameCode.GDRoadLinkObjects4});gdjs.GameCode.eventsList26 = function(runtimeScene) {
+
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects4Objects = Hashtable.newFrom({"WellDistanceText": gdjs.GameCode.GDWellDistanceTextObjects4});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects4Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects4});gdjs.GameCode.eventsList27 = function(runtimeScene) {
+
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects2ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects2Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects2, "HouseLink": gdjs.GameCode.GDHouseLinkObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects2Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects2, "RoadLink": gdjs.GameCode.GDRoadLinkObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects3Objects = Hashtable.newFrom({"WellDistanceText": gdjs.GameCode.GDWellDistanceTextObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects3Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects3Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects3});gdjs.GameCode.eventsList28 = function(runtimeScene) {
+
+};gdjs.GameCode.eventsList29 = function(runtimeScene) {
 
 {
 
+/* Reuse gdjs.GameCode.GDHouseObjects2 */
+
+for(gdjs.GameCode.forEachIndex3 = 0;gdjs.GameCode.forEachIndex3 < gdjs.GameCode.GDHouseObjects2.length;++gdjs.GameCode.forEachIndex3) {
+gdjs.copyArray(gdjs.GameCode.GDWellDistanceTextObjects1, gdjs.GameCode.GDWellDistanceTextObjects3);
+
+gdjs.GameCode.GDHouseObjects3.length = 0;
 
 
-}
-
-
+gdjs.GameCode.forEachTemporary3 = gdjs.GameCode.GDHouseObjects2[gdjs.GameCode.forEachIndex3];
+gdjs.GameCode.GDHouseObjects3.push(gdjs.GameCode.forEachTemporary3);
+gdjs.GameCode.condition0IsTrue_0.val = false;
 {
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(13)) > 100;
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-{gdjs.deviceVibration.startVibration(50);
-}}
-
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.linkedObjects.pickObjectsLinkedTo(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects3Objects, (gdjs.GameCode.GDHouseObjects3.length !== 0 ? gdjs.GameCode.GDHouseObjects3[0] : null), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+{for(var i = 0, len = gdjs.GameCode.GDWellDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDWellDistanceTextObjects3[i].hide(false);
 }
-
-
-};gdjs.Downhill_32Bike_32DemoCode.eventsList4 = function(runtimeScene) {
-
-};gdjs.Downhill_32Bike_32DemoCode.eventsList5 = function(runtimeScene) {
-
-{
-
-
-
+}{for(var i = 0, len = gdjs.GameCode.GDWellDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDWellDistanceTextObjects3[i].setString(gdjs.evtTools.common.toString(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
 }
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("LArm"), gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects3);
-gdjs.copyArray(runtimeScene.getObjects("LeftLeg"), gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects3);
-gdjs.copyArray(runtimeScene.getObjects("RArm"), gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects3);
-gdjs.copyArray(runtimeScene.getObjects("RightLeg"), gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects3);
-gdjs.copyArray(runtimeScene.getObjects("Seat"), gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects3);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects3[i].getBehavior("Physics2").removeJoint(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("torsoForce")));
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects3[i].getBehavior("Physics2").removeJoint(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("ragdollRpedal")));
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects3[i].getBehavior("Physics2").removeJoint(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("ragdollLpedal")));
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects3[i].getBehavior("Physics2").removeJoint(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("ragdollRhand")));
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects3[i].getBehavior("Physics2").removeJoint(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("ragdollLhand")));
+}{for(var i = 0, len = gdjs.GameCode.GDHouseObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDHouseObjects3[i].returnVariable(gdjs.GameCode.GDHouseObjects3[i].getVariables().getFromIndex(0)).setNumber(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
 }
 }}
+}
 
 }
 
+
+};gdjs.GameCode.eventsList30 = function(runtimeScene) {
 
 {
 
+gdjs.copyArray(gdjs.GameCode.GDRoadObjects2, gdjs.GameCode.GDRoadObjects3);
+
+gdjs.copyArray(gdjs.GameCode.GDRoadLinkObjects2, gdjs.GameCode.GDRoadLinkObjects3);
 
 
+gdjs.GameCode.forEachTotalCount4 = 0;
+gdjs.GameCode.forEachObjects4.length = 0;
+gdjs.GameCode.forEachCount0_4 = gdjs.GameCode.GDRoadObjects3.length;
+gdjs.GameCode.forEachTotalCount4 += gdjs.GameCode.forEachCount0_4;
+gdjs.GameCode.forEachObjects4.push.apply(gdjs.GameCode.forEachObjects4,gdjs.GameCode.GDRoadObjects3);
+gdjs.GameCode.forEachCount1_4 = gdjs.GameCode.GDRoadLinkObjects3.length;
+gdjs.GameCode.forEachTotalCount4 += gdjs.GameCode.forEachCount1_4;
+gdjs.GameCode.forEachObjects4.push.apply(gdjs.GameCode.forEachObjects4,gdjs.GameCode.GDRoadLinkObjects3);
+for(gdjs.GameCode.forEachIndex4 = 0;gdjs.GameCode.forEachIndex4 < gdjs.GameCode.forEachTotalCount4;++gdjs.GameCode.forEachIndex4) {
+gdjs.GameCode.GDRoadObjects4.length = 0;
+
+gdjs.GameCode.GDRoadLinkObjects4.length = 0;
+
+
+if (gdjs.GameCode.forEachIndex4 < gdjs.GameCode.forEachCount0_4) {
+    gdjs.GameCode.GDRoadObjects4.push(gdjs.GameCode.forEachObjects4[gdjs.GameCode.forEachIndex4]);
 }
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("LeftLeg"), gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2);
-gdjs.copyArray(runtimeScene.getObjects("LeftThigh"), gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2);
-gdjs.copyArray(runtimeScene.getObjects("RightLeg"), gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2);
-gdjs.copyArray(runtimeScene.getObjects("RightThigh"), gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2[i].getBehavior("Physics2").enableRevoluteJointLimits(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("rightThigh")), true);
+else if (gdjs.GameCode.forEachIndex4 < gdjs.GameCode.forEachCount0_4+gdjs.GameCode.forEachCount1_4) {
+    gdjs.GameCode.GDRoadLinkObjects4.push(gdjs.GameCode.forEachObjects4[gdjs.GameCode.forEachIndex4]);
 }
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2[i].getBehavior("Physics2").enableRevoluteJointLimits(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("leftThigh")), true);
+if (true) {
+{for(var i = 0, len = gdjs.GameCode.GDRoadObjects4.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadObjects4[i].returnVariable(gdjs.GameCode.GDRoadObjects4[i].getVariables().get("wellDistance")).setNumber(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects4Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
 }
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2[i].getBehavior("Physics2").enableRevoluteJointLimits(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("leftLeg")), true);
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2[i].getBehavior("Physics2").enableRevoluteJointLimits(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("rightLeg")), true);
+for(var i = 0, len = gdjs.GameCode.GDRoadLinkObjects4.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadLinkObjects4[i].returnVariable(gdjs.GameCode.GDRoadLinkObjects4[i].getVariables().get("wellDistance")).setNumber(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects4Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
 }
 }}
-
 }
-
-
-};gdjs.Downhill_32Bike_32DemoCode.eventsList6 = function(runtimeScene) {
-
-};gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDHeadObjects2ObjectsGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDTorsoObjects2ObjectsGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDRArmObjects2ObjectsGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDLArmObjects2ObjectsGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDRUpperArmObjects2ObjectsGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDLUpperArmObjects2Objects = Hashtable.newFrom({"Head": gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects2, "Torso": gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2, "RArm": gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects2, "LArm": gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects2, "RUpperArm": gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2, "LUpperArm": gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2});gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDfloorObjects2ObjectsGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDJumpObjects2Objects = Hashtable.newFrom({"floor": gdjs.Downhill_32Bike_32DemoCode.GDfloorObjects2, "Jump": gdjs.Downhill_32Bike_32DemoCode.GDJumpObjects2});gdjs.Downhill_32Bike_32DemoCode.eventsList7 = function(runtimeScene) {
-
-{
-
-
 
 }
 
 
 {
 
+gdjs.copyArray(gdjs.GameCode.GDRoadObjects2, gdjs.GameCode.GDRoadObjects3);
 
+
+for(gdjs.GameCode.forEachIndex4 = 0;gdjs.GameCode.forEachIndex4 < gdjs.GameCode.GDRoadObjects3.length;++gdjs.GameCode.forEachIndex4) {
+gdjs.copyArray(gdjs.GameCode.GDWellDistanceTextObjects1, gdjs.GameCode.GDWellDistanceTextObjects4);
+
+gdjs.GameCode.GDRoadObjects4.length = 0;
+
+
+gdjs.GameCode.forEachTemporary4 = gdjs.GameCode.GDRoadObjects3[gdjs.GameCode.forEachIndex4];
+gdjs.GameCode.GDRoadObjects4.push(gdjs.GameCode.forEachTemporary4);
+gdjs.GameCode.condition0IsTrue_0.val = false;
 {
-gdjs.copyArray(gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects2, gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects3);
-
-gdjs.copyArray(runtimeScene.getObjects("LeftLeg"), gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects3);
-gdjs.copyArray(gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects2, gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects3);
-
-gdjs.copyArray(runtimeScene.getObjects("RightLeg"), gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects3);
-gdjs.copyArray(runtimeScene.getObjects("Seat"), gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects3);
-gdjs.copyArray(gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2, gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3);
-
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects3[i].getBehavior("Physics2").removeJoint(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("torsoForce")));
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.linkedObjects.pickObjectsLinkedTo(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects4Objects, (gdjs.GameCode.GDRoadObjects4.length !== 0 ? gdjs.GameCode.GDRoadObjects4[0] : null), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+{for(var i = 0, len = gdjs.GameCode.GDWellDistanceTextObjects4.length ;i < len;++i) {
+    gdjs.GameCode.GDWellDistanceTextObjects4[i].setString(gdjs.evtTools.common.toString(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects4Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
 }
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects3[i].getBehavior("Physics2").removeJoint(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("ragdollRpedal")));
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects3[i].getBehavior("Physics2").removeJoint(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("ragdollLpedal")));
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects3[i].getBehavior("Physics2").removeJoint(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("ragdollRhand")));
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects3[i].getBehavior("Physics2").removeJoint(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("ragdollLhand")));
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3[i].getBehavior("Physics2").removeJoint(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("headcoll")));
+}{for(var i = 0, len = gdjs.GameCode.GDWellDistanceTextObjects4.length ;i < len;++i) {
+    gdjs.GameCode.GDWellDistanceTextObjects4[i].hide(false);
 }
 }}
+}
 
 }
 
@@ -1002,30 +1183,187 @@ gdjs.copyArray(gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2, gdjs.Downhill_32
 
 {
 
+gdjs.copyArray(gdjs.GameCode.GDHouseObjects1, gdjs.GameCode.GDHouseObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDHouseLinkObjects1, gdjs.GameCode.GDHouseLinkObjects2);
+
+/* Reuse gdjs.GameCode.GDRoadObjects2 */
+/* Reuse gdjs.GameCode.GDRoadLinkObjects2 */
+
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtsExt__LinkTools__CanReachWithMaxWeight.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects2ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects2Objects, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects2Objects, "wellDistance", 12, "", 2, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+
+{ //Subevents
+gdjs.GameCode.eventsList29(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.GameCode.eventsList31 = function(runtimeScene) {
 
 {
-gdjs.copyArray(runtimeScene.getObjects("LeftLeg"), gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2);
-gdjs.copyArray(runtimeScene.getObjects("LeftThigh"), gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2);
-gdjs.copyArray(runtimeScene.getObjects("RightLeg"), gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2);
-gdjs.copyArray(runtimeScene.getObjects("RightThigh"), gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2[i].getBehavior("Physics2").enableRevoluteJointLimits(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("rightThigh")), true);
+
+
+
 }
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2[i].getBehavior("Physics2").enableRevoluteJointLimits(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("leftThigh")), true);
+
+
+{
+
+gdjs.copyArray(gdjs.GameCode.GDRoadObjects1, gdjs.GameCode.GDRoadObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDRoadLinkObjects1, gdjs.GameCode.GDRoadLinkObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDWellObjects1, gdjs.GameCode.GDWellObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDWellLinkObjects1, gdjs.GameCode.GDWellLinkObjects2);
+
+
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtsExt__LinkTools__CanReachWithMaxLength.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects2Objects, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellObjects2ObjectsGDgdjs_46GameCode_46GDWellLinkObjects2Objects, 12, "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+
+{ //Subevents
+gdjs.GameCode.eventsList30(runtimeScene);} //End of subevents
 }
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2[i].getBehavior("Physics2").enableRevoluteJointLimits(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("leftLeg")), true);
+
 }
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2[i].getBehavior("Physics2").enableRevoluteJointLimits(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("rightLeg")), true);
+
+
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects1ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects1Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects1, "RoadLink": gdjs.GameCode.GDRoadLinkObjects1});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketObjects1ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects1Objects = Hashtable.newFrom({"Market": gdjs.GameCode.GDMarketObjects1, "MarketLink": gdjs.GameCode.GDMarketLinkObjects1});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects3Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects3Objects = Hashtable.newFrom({"RoadLink": gdjs.GameCode.GDRoadLinkObjects3});gdjs.GameCode.eventsList32 = function(runtimeScene) {
+
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketDistanceTextObjects3Objects = Hashtable.newFrom({"MarketDistanceText": gdjs.GameCode.GDMarketDistanceTextObjects3});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects3Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects3});gdjs.GameCode.eventsList33 = function(runtimeScene) {
+
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects1ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects1Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects1, "HouseLink": gdjs.GameCode.GDHouseLinkObjects1});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects1ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects1Objects = Hashtable.newFrom({"Road": gdjs.GameCode.GDRoadObjects1, "RoadLink": gdjs.GameCode.GDRoadLinkObjects1});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketDistanceTextObjects2Objects = Hashtable.newFrom({"MarketDistanceText": gdjs.GameCode.GDMarketDistanceTextObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects2Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects2Objects = Hashtable.newFrom({"House": gdjs.GameCode.GDHouseObjects2});gdjs.GameCode.eventsList34 = function(runtimeScene) {
+
+};gdjs.GameCode.eventsList35 = function(runtimeScene) {
+
+{
+
+/* Reuse gdjs.GameCode.GDHouseObjects1 */
+
+for(gdjs.GameCode.forEachIndex2 = 0;gdjs.GameCode.forEachIndex2 < gdjs.GameCode.GDHouseObjects1.length;++gdjs.GameCode.forEachIndex2) {
+gdjs.copyArray(gdjs.GameCode.GDMarketDistanceTextObjects1, gdjs.GameCode.GDMarketDistanceTextObjects2);
+
+gdjs.GameCode.GDHouseObjects2.length = 0;
+
+
+gdjs.GameCode.forEachTemporary2 = gdjs.GameCode.GDHouseObjects1[gdjs.GameCode.forEachIndex2];
+gdjs.GameCode.GDHouseObjects2.push(gdjs.GameCode.forEachTemporary2);
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.linkedObjects.pickObjectsLinkedTo(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketDistanceTextObjects2Objects, (gdjs.GameCode.GDHouseObjects2.length !== 0 ? gdjs.GameCode.GDHouseObjects2[0] : null), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+{for(var i = 0, len = gdjs.GameCode.GDMarketDistanceTextObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDMarketDistanceTextObjects2[i].hide(false);
+}
+}{for(var i = 0, len = gdjs.GameCode.GDMarketDistanceTextObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDMarketDistanceTextObjects2[i].setString(gdjs.evtTools.common.toString(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects2Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
+}
+}{for(var i = 0, len = gdjs.GameCode.GDHouseObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDHouseObjects2[i].returnVariable(gdjs.GameCode.GDHouseObjects2[i].getVariables().getFromIndex(1)).setNumber(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects2Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
 }
 }}
+}
 
 }
 
 
-};gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDForwardObjects4Objects = Hashtable.newFrom({"Forward": gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects4});gdjs.Downhill_32Bike_32DemoCode.eventsList8 = function(runtimeScene) {
+};gdjs.GameCode.eventsList36 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(gdjs.GameCode.GDRoadObjects1, gdjs.GameCode.GDRoadObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDRoadLinkObjects1, gdjs.GameCode.GDRoadLinkObjects2);
+
+
+gdjs.GameCode.forEachTotalCount3 = 0;
+gdjs.GameCode.forEachObjects3.length = 0;
+gdjs.GameCode.forEachCount0_3 = gdjs.GameCode.GDRoadObjects2.length;
+gdjs.GameCode.forEachTotalCount3 += gdjs.GameCode.forEachCount0_3;
+gdjs.GameCode.forEachObjects3.push.apply(gdjs.GameCode.forEachObjects3,gdjs.GameCode.GDRoadObjects2);
+gdjs.GameCode.forEachCount1_3 = gdjs.GameCode.GDRoadLinkObjects2.length;
+gdjs.GameCode.forEachTotalCount3 += gdjs.GameCode.forEachCount1_3;
+gdjs.GameCode.forEachObjects3.push.apply(gdjs.GameCode.forEachObjects3,gdjs.GameCode.GDRoadLinkObjects2);
+for(gdjs.GameCode.forEachIndex3 = 0;gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachTotalCount3;++gdjs.GameCode.forEachIndex3) {
+gdjs.GameCode.GDRoadObjects3.length = 0;
+
+gdjs.GameCode.GDRoadLinkObjects3.length = 0;
+
+
+if (gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachCount0_3) {
+    gdjs.GameCode.GDRoadObjects3.push(gdjs.GameCode.forEachObjects3[gdjs.GameCode.forEachIndex3]);
+}
+else if (gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachCount0_3+gdjs.GameCode.forEachCount1_3) {
+    gdjs.GameCode.GDRoadLinkObjects3.push(gdjs.GameCode.forEachObjects3[gdjs.GameCode.forEachIndex3]);
+}
+if (true) {
+{for(var i = 0, len = gdjs.GameCode.GDRoadObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadObjects3[i].returnVariable(gdjs.GameCode.GDRoadObjects3[i].getVariables().get("marketDistance")).setNumber(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+for(var i = 0, len = gdjs.GameCode.GDRoadLinkObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadLinkObjects3[i].returnVariable(gdjs.GameCode.GDRoadLinkObjects3[i].getVariables().get("marketDistance")).setNumber(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)));
+}
+}}
+}
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.GameCode.GDRoadObjects1, gdjs.GameCode.GDRoadObjects2);
+
+
+for(gdjs.GameCode.forEachIndex3 = 0;gdjs.GameCode.forEachIndex3 < gdjs.GameCode.GDRoadObjects2.length;++gdjs.GameCode.forEachIndex3) {
+gdjs.copyArray(gdjs.GameCode.GDMarketDistanceTextObjects1, gdjs.GameCode.GDMarketDistanceTextObjects3);
+
+gdjs.GameCode.GDRoadObjects3.length = 0;
+
+
+gdjs.GameCode.forEachTemporary3 = gdjs.GameCode.GDRoadObjects2[gdjs.GameCode.forEachIndex3];
+gdjs.GameCode.GDRoadObjects3.push(gdjs.GameCode.forEachTemporary3);
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.linkedObjects.pickObjectsLinkedTo(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketDistanceTextObjects3Objects, (gdjs.GameCode.GDRoadObjects3.length !== 0 ? gdjs.GameCode.GDRoadObjects3[0] : null), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+{for(var i = 0, len = gdjs.GameCode.GDMarketDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDMarketDistanceTextObjects3[i].setString(gdjs.evtTools.common.toString(gdjs.evtsExt__LinkTools__CostSum.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects3Objects, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
+}
+}{for(var i = 0, len = gdjs.GameCode.GDMarketDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDMarketDistanceTextObjects3[i].hide(false);
+}
+}}
+}
+
+}
+
+
+{
+
+/* Reuse gdjs.GameCode.GDHouseObjects1 */
+/* Reuse gdjs.GameCode.GDHouseLinkObjects1 */
+/* Reuse gdjs.GameCode.GDRoadObjects1 */
+/* Reuse gdjs.GameCode.GDRoadLinkObjects1 */
+
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtsExt__LinkTools__CanReachWithMaxWeight.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDHouseObjects1ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects1Objects, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects1ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects1Objects, "marketDistance", 12, "", 2, false, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+
+{ //Subevents
+gdjs.GameCode.eventsList35(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.GameCode.eventsList37 = function(runtimeScene) {
 
 {
 
@@ -1036,575 +1374,459 @@ gdjs.copyArray(runtimeScene.getObjects("RightThigh"), gdjs.Downhill_32Bike_32Dem
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("GameInstructions"), gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects3);
+/* Reuse gdjs.GameCode.GDMarketObjects1 */
+/* Reuse gdjs.GameCode.GDMarketLinkObjects1 */
+/* Reuse gdjs.GameCode.GDRoadObjects1 */
+/* Reuse gdjs.GameCode.GDRoadLinkObjects1 */
 
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
+gdjs.GameCode.condition0IsTrue_0.val = false;
 {
-for(var i = 0, k = 0, l = gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects3.length;i<l;++i) {
-    if ( gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects3[i].isVisible() ) {
-        gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = true;
-        gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects3[k] = gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects3[i];
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtsExt__LinkTools__CanReachWithMaxLength.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects1ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects1Objects, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketObjects1ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects1Objects, 12, "", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+
+{ //Subevents
+gdjs.GameCode.eventsList36(runtimeScene);} //End of subevents
+}
+
+}
+
+
+};gdjs.GameCode.eventsList38 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.GameCode.GDMarketDistanceTextObjects1, gdjs.GameCode.GDMarketDistanceTextObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDRoadDistanceTextObjects1, gdjs.GameCode.GDRoadDistanceTextObjects2);
+
+gdjs.copyArray(gdjs.GameCode.GDWellDistanceTextObjects1, gdjs.GameCode.GDWellDistanceTextObjects2);
+
+
+gdjs.GameCode.forEachTotalCount3 = 0;
+gdjs.GameCode.forEachObjects3.length = 0;
+gdjs.GameCode.forEachCount0_3 = gdjs.GameCode.GDWellDistanceTextObjects2.length;
+gdjs.GameCode.forEachTotalCount3 += gdjs.GameCode.forEachCount0_3;
+gdjs.GameCode.forEachObjects3.push.apply(gdjs.GameCode.forEachObjects3,gdjs.GameCode.GDWellDistanceTextObjects2);
+gdjs.GameCode.forEachCount1_3 = gdjs.GameCode.GDRoadDistanceTextObjects2.length;
+gdjs.GameCode.forEachTotalCount3 += gdjs.GameCode.forEachCount1_3;
+gdjs.GameCode.forEachObjects3.push.apply(gdjs.GameCode.forEachObjects3,gdjs.GameCode.GDRoadDistanceTextObjects2);
+gdjs.GameCode.forEachCount2_3 = gdjs.GameCode.GDMarketDistanceTextObjects2.length;
+gdjs.GameCode.forEachTotalCount3 += gdjs.GameCode.forEachCount2_3;
+gdjs.GameCode.forEachObjects3.push.apply(gdjs.GameCode.forEachObjects3,gdjs.GameCode.GDMarketDistanceTextObjects2);
+for(gdjs.GameCode.forEachIndex3 = 0;gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachTotalCount3;++gdjs.GameCode.forEachIndex3) {
+gdjs.GameCode.GDMarketDistanceTextObjects3.length = 0;
+
+gdjs.GameCode.GDRoadDistanceTextObjects3.length = 0;
+
+gdjs.GameCode.GDWellDistanceTextObjects3.length = 0;
+
+
+if (gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachCount0_3) {
+    gdjs.GameCode.GDWellDistanceTextObjects3.push(gdjs.GameCode.forEachObjects3[gdjs.GameCode.forEachIndex3]);
+}
+else if (gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachCount0_3+gdjs.GameCode.forEachCount1_3) {
+    gdjs.GameCode.GDRoadDistanceTextObjects3.push(gdjs.GameCode.forEachObjects3[gdjs.GameCode.forEachIndex3]);
+}
+else if (gdjs.GameCode.forEachIndex3 < gdjs.GameCode.forEachCount0_3+gdjs.GameCode.forEachCount1_3+gdjs.GameCode.forEachCount2_3) {
+    gdjs.GameCode.GDMarketDistanceTextObjects3.push(gdjs.GameCode.forEachObjects3[gdjs.GameCode.forEachIndex3]);
+}
+if (true) {
+{for(var i = 0, len = gdjs.GameCode.GDWellDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDWellDistanceTextObjects3[i].hide();
+}
+for(var i = 0, len = gdjs.GameCode.GDRoadDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadDistanceTextObjects3[i].hide();
+}
+for(var i = 0, len = gdjs.GameCode.GDMarketDistanceTextObjects3.length ;i < len;++i) {
+    gdjs.GameCode.GDMarketDistanceTextObjects3[i].hide();
+}
+}}
+}
+
+}
+
+
+{
+
+
+gdjs.GameCode.eventsList25(runtimeScene);
+}
+
+
+{
+
+
+gdjs.GameCode.eventsList31(runtimeScene);
+}
+
+
+{
+
+
+gdjs.GameCode.eventsList37(runtimeScene);
+}
+
+
+};gdjs.GameCode.eventsList39 = function(runtimeScene) {
+
+{
+
+
+
+}
+
+
+{
+
+gdjs.copyArray(gdjs.GameCode.GDBrushObjects1, gdjs.GameCode.GDBrushObjects2);
+
+gdjs.copyArray(runtimeScene.getObjects("House"), gdjs.GameCode.GDHouseObjects2);
+gdjs.copyArray(runtimeScene.getObjects("HouseLink"), gdjs.GameCode.GDHouseLinkObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Market"), gdjs.GameCode.GDMarketObjects2);
+gdjs.copyArray(runtimeScene.getObjects("MarketDistanceText"), gdjs.GameCode.GDMarketDistanceTextObjects2);
+gdjs.copyArray(runtimeScene.getObjects("MarketLink"), gdjs.GameCode.GDMarketLinkObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Road"), gdjs.GameCode.GDRoadObjects2);
+gdjs.copyArray(runtimeScene.getObjects("RoadDistanceText"), gdjs.GameCode.GDRoadDistanceTextObjects2);
+gdjs.copyArray(runtimeScene.getObjects("RoadLink"), gdjs.GameCode.GDRoadLinkObjects2);
+gdjs.copyArray(runtimeScene.getObjects("Well"), gdjs.GameCode.GDWellObjects2);
+gdjs.copyArray(runtimeScene.getObjects("WellDistanceText"), gdjs.GameCode.GDWellDistanceTextObjects2);
+gdjs.copyArray(runtimeScene.getObjects("WellLink"), gdjs.GameCode.GDWellLinkObjects2);
+
+gdjs.GameCode.condition0IsTrue_0.val = false;
+gdjs.GameCode.condition1IsTrue_0.val = false;
+{
+for(var i = 0, k = 0, l = gdjs.GameCode.GDRoadObjects2.length;i<l;++i) {
+    if ( gdjs.GameCode.GDRoadObjects2[i].isCollidingWithPoint((( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointX("")), (( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointY(""))) ) {
+        gdjs.GameCode.condition0IsTrue_0.val = true;
+        gdjs.GameCode.GDRoadObjects2[k] = gdjs.GameCode.GDRoadObjects2[i];
         ++k;
     }
 }
-gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects3.length = k;}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("DesktopControls"), gdjs.Downhill_32Bike_32DemoCode.GDDesktopControlsObjects3);
-/* Reuse gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects3 */
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDDesktopControlsObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDDesktopControlsObjects3[i].hide();
+gdjs.GameCode.GDRoadObjects2.length = k;for(var i = 0, k = 0, l = gdjs.GameCode.GDRoadLinkObjects2.length;i<l;++i) {
+    if ( gdjs.GameCode.GDRoadLinkObjects2[i].isCollidingWithPoint((( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointX("")), (( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointY(""))) ) {
+        gdjs.GameCode.condition0IsTrue_0.val = true;
+        gdjs.GameCode.GDRoadLinkObjects2[k] = gdjs.GameCode.GDRoadLinkObjects2[i];
+        ++k;
+    }
 }
-for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects3[i].hide();
+gdjs.GameCode.GDRoadLinkObjects2.length = k;for(var i = 0, k = 0, l = gdjs.GameCode.GDMarketObjects2.length;i<l;++i) {
+    if ( gdjs.GameCode.GDMarketObjects2[i].isCollidingWithPoint((( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointX("")), (( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointY(""))) ) {
+        gdjs.GameCode.condition0IsTrue_0.val = true;
+        gdjs.GameCode.GDMarketObjects2[k] = gdjs.GameCode.GDMarketObjects2[i];
+        ++k;
+    }
+}
+gdjs.GameCode.GDMarketObjects2.length = k;for(var i = 0, k = 0, l = gdjs.GameCode.GDMarketLinkObjects2.length;i<l;++i) {
+    if ( gdjs.GameCode.GDMarketLinkObjects2[i].isCollidingWithPoint((( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointX("")), (( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointY(""))) ) {
+        gdjs.GameCode.condition0IsTrue_0.val = true;
+        gdjs.GameCode.GDMarketLinkObjects2[k] = gdjs.GameCode.GDMarketLinkObjects2[i];
+        ++k;
+    }
+}
+gdjs.GameCode.GDMarketLinkObjects2.length = k;for(var i = 0, k = 0, l = gdjs.GameCode.GDWellObjects2.length;i<l;++i) {
+    if ( gdjs.GameCode.GDWellObjects2[i].isCollidingWithPoint((( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointX("")), (( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointY(""))) ) {
+        gdjs.GameCode.condition0IsTrue_0.val = true;
+        gdjs.GameCode.GDWellObjects2[k] = gdjs.GameCode.GDWellObjects2[i];
+        ++k;
+    }
+}
+gdjs.GameCode.GDWellObjects2.length = k;for(var i = 0, k = 0, l = gdjs.GameCode.GDWellLinkObjects2.length;i<l;++i) {
+    if ( gdjs.GameCode.GDWellLinkObjects2[i].isCollidingWithPoint((( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointX("")), (( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointY(""))) ) {
+        gdjs.GameCode.condition0IsTrue_0.val = true;
+        gdjs.GameCode.GDWellLinkObjects2[k] = gdjs.GameCode.GDWellLinkObjects2[i];
+        ++k;
+    }
+}
+gdjs.GameCode.GDWellLinkObjects2.length = k;for(var i = 0, k = 0, l = gdjs.GameCode.GDHouseObjects2.length;i<l;++i) {
+    if ( gdjs.GameCode.GDHouseObjects2[i].isCollidingWithPoint((( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointX("")), (( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointY(""))) ) {
+        gdjs.GameCode.condition0IsTrue_0.val = true;
+        gdjs.GameCode.GDHouseObjects2[k] = gdjs.GameCode.GDHouseObjects2[i];
+        ++k;
+    }
+}
+gdjs.GameCode.GDHouseObjects2.length = k;for(var i = 0, k = 0, l = gdjs.GameCode.GDHouseLinkObjects2.length;i<l;++i) {
+    if ( gdjs.GameCode.GDHouseLinkObjects2[i].isCollidingWithPoint((( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointX("")), (( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointY(""))) ) {
+        gdjs.GameCode.condition0IsTrue_0.val = true;
+        gdjs.GameCode.GDHouseLinkObjects2[k] = gdjs.GameCode.GDHouseLinkObjects2[i];
+        ++k;
+    }
+}
+gdjs.GameCode.GDHouseLinkObjects2.length = k;}if ( gdjs.GameCode.condition0IsTrue_0.val ) {
+{
+gdjs.GameCode.condition1IsTrue_0.val = gdjs.evtTools.linkedObjects.pickObjectsLinkedTo(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects2ObjectsGDgdjs_46GameCode_46GDRoadDistanceTextObjects2ObjectsGDgdjs_46GameCode_46GDMarketDistanceTextObjects2Objects, (gdjs.GameCode.GDRoadObjects2.length !== 0 ? gdjs.GameCode.GDRoadObjects2[0] : (gdjs.GameCode.GDMarketObjects2.length !== 0 ? gdjs.GameCode.GDMarketObjects2[0] : (gdjs.GameCode.GDWellObjects2.length !== 0 ? gdjs.GameCode.GDWellObjects2[0] : (gdjs.GameCode.GDHouseObjects2.length !== 0 ? gdjs.GameCode.GDHouseObjects2[0] : null)))), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}}
+if (gdjs.GameCode.condition1IsTrue_0.val) {
+/* Reuse gdjs.GameCode.GDHouseObjects2 */
+/* Reuse gdjs.GameCode.GDHouseLinkObjects2 */
+/* Reuse gdjs.GameCode.GDMarketObjects2 */
+/* Reuse gdjs.GameCode.GDMarketDistanceTextObjects2 */
+/* Reuse gdjs.GameCode.GDMarketLinkObjects2 */
+/* Reuse gdjs.GameCode.GDRoadObjects2 */
+/* Reuse gdjs.GameCode.GDRoadDistanceTextObjects2 */
+/* Reuse gdjs.GameCode.GDRoadLinkObjects2 */
+/* Reuse gdjs.GameCode.GDWellObjects2 */
+/* Reuse gdjs.GameCode.GDWellDistanceTextObjects2 */
+/* Reuse gdjs.GameCode.GDWellLinkObjects2 */
+{for(var i = 0, len = gdjs.GameCode.GDRoadObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadObjects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.GameCode.GDRoadLinkObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadLinkObjects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.GameCode.GDMarketObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDMarketObjects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.GameCode.GDMarketLinkObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDMarketLinkObjects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.GameCode.GDWellObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDWellObjects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.GameCode.GDWellLinkObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDWellLinkObjects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.GameCode.GDHouseObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDHouseObjects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.GameCode.GDHouseLinkObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDHouseLinkObjects2[i].deleteFromScene(runtimeScene);
+}
+}{for(var i = 0, len = gdjs.GameCode.GDWellDistanceTextObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDWellDistanceTextObjects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.GameCode.GDRoadDistanceTextObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadDistanceTextObjects2[i].deleteFromScene(runtimeScene);
+}
+for(var i = 0, len = gdjs.GameCode.GDMarketDistanceTextObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDMarketDistanceTextObjects2[i].deleteFromScene(runtimeScene);
 }
 }}
 
 }
 
 
-};gdjs.Downhill_32Bike_32DemoCode.eventsList9 = function(runtimeScene) {
+{
+
+
+
+}
+
 
 {
 
-gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects3.length = 0;
+
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().getFromIndex(0)) == "Brush";
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+gdjs.copyArray(gdjs.GameCode.GDBrushObjects1, gdjs.GameCode.GDBrushObjects2);
+
+gdjs.GameCode.GDHouseObjects2.length = 0;
+
+gdjs.GameCode.GDHouseLinkObjects2.length = 0;
+
+gdjs.GameCode.GDMarketObjects2.length = 0;
+
+gdjs.GameCode.GDMarketLinkObjects2.length = 0;
+
+gdjs.GameCode.GDRoadObjects2.length = 0;
+
+gdjs.GameCode.GDRoadLinkObjects2.length = 0;
+
+gdjs.GameCode.GDWellObjects2.length = 0;
+
+gdjs.GameCode.GDWellLinkObjects2.length = 0;
+
+{gdjs.evtTools.object.createObjectFromGroupOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects2ObjectsGDgdjs_46GameCode_46GDMarketObjects2ObjectsGDgdjs_46GameCode_46GDWellObjects2ObjectsGDgdjs_46GameCode_46GDHouseObjects2Objects, gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().getFromIndex(1)), (( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointX("")), (( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointY("")), "");
+}{gdjs.evtTools.object.createObjectFromGroupOnScene((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadLinkObjects2ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects2ObjectsGDgdjs_46GameCode_46GDWellLinkObjects2ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects2Objects, gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().getFromIndex(1)) + "Link", (( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointX("")), (( gdjs.GameCode.GDBrushObjects2.length === 0 ) ? 0 :gdjs.GameCode.GDBrushObjects2[0].getPointY("")), "");
+}
+{ //Subevents
+gdjs.GameCode.eventsList21(runtimeScene);} //End of subevents
+}
+
+}
 
 
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
 {
-{gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1 = gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0;
-gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects3_1final.length = 0;gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val = false;
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1.val = false;
+
+
+
+}
+
+
 {
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Up");
-if( gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val ) {
-    gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1.val = true;
+
+
+
+}
+
+
+{
+
+
+{
+gdjs.copyArray(runtimeScene.getObjects("House"), gdjs.GameCode.GDHouseObjects1);
+gdjs.copyArray(runtimeScene.getObjects("HouseLink"), gdjs.GameCode.GDHouseLinkObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Market"), gdjs.GameCode.GDMarketObjects1);
+gdjs.copyArray(runtimeScene.getObjects("MarketDistanceText"), gdjs.GameCode.GDMarketDistanceTextObjects1);
+gdjs.copyArray(runtimeScene.getObjects("MarketLink"), gdjs.GameCode.GDMarketLinkObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Road"), gdjs.GameCode.GDRoadObjects1);
+gdjs.copyArray(runtimeScene.getObjects("RoadDistanceText"), gdjs.GameCode.GDRoadDistanceTextObjects1);
+gdjs.copyArray(runtimeScene.getObjects("RoadLink"), gdjs.GameCode.GDRoadLinkObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Well"), gdjs.GameCode.GDWellObjects1);
+gdjs.copyArray(runtimeScene.getObjects("WellDistanceText"), gdjs.GameCode.GDWellDistanceTextObjects1);
+gdjs.copyArray(runtimeScene.getObjects("WellLink"), gdjs.GameCode.GDWellLinkObjects1);
+{gdjs.evtTools.object.pickAllObjects((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDRoadObjects1ObjectsGDgdjs_46GameCode_46GDRoadLinkObjects1ObjectsGDgdjs_46GameCode_46GDMarketObjects1ObjectsGDgdjs_46GameCode_46GDMarketLinkObjects1ObjectsGDgdjs_46GameCode_46GDWellObjects1ObjectsGDgdjs_46GameCode_46GDWellLinkObjects1ObjectsGDgdjs_46GameCode_46GDHouseObjects1ObjectsGDgdjs_46GameCode_46GDHouseLinkObjects1Objects);
+}{gdjs.evtTools.object.pickAllObjects((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : runtimeScene), gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDWellDistanceTextObjects1ObjectsGDgdjs_46GameCode_46GDRoadDistanceTextObjects1ObjectsGDgdjs_46GameCode_46GDMarketDistanceTextObjects1Objects);
+}{for(var i = 0, len = gdjs.GameCode.GDHouseObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDHouseObjects1[i].returnVariable(gdjs.GameCode.GDHouseObjects1[i].getVariables().getFromIndex(2)).setNumber(0);
+}
+}{for(var i = 0, len = gdjs.GameCode.GDHouseObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDHouseObjects1[i].returnVariable(gdjs.GameCode.GDHouseObjects1[i].getVariables().getFromIndex(0)).setNumber(0);
+}
+}{for(var i = 0, len = gdjs.GameCode.GDHouseObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDHouseObjects1[i].returnVariable(gdjs.GameCode.GDHouseObjects1[i].getVariables().getFromIndex(1)).setNumber(0);
+}
+}{for(var i = 0, len = gdjs.GameCode.GDRoadObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadObjects1[i].returnVariable(gdjs.GameCode.GDRoadObjects1[i].getVariables().get("wellDistance")).setNumber(0);
+}
+for(var i = 0, len = gdjs.GameCode.GDRoadLinkObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadLinkObjects1[i].returnVariable(gdjs.GameCode.GDRoadLinkObjects1[i].getVariables().get("wellDistance")).setNumber(0);
+}
+}{for(var i = 0, len = gdjs.GameCode.GDRoadObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadObjects1[i].returnVariable(gdjs.GameCode.GDRoadObjects1[i].getVariables().get("marketDistance")).setNumber(0);
+}
+for(var i = 0, len = gdjs.GameCode.GDRoadLinkObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDRoadLinkObjects1[i].returnVariable(gdjs.GameCode.GDRoadLinkObjects1[i].getVariables().get("marketDistance")).setNumber(0);
 }
 }
-{
-gdjs.copyArray(runtimeScene.getObjects("Forward"), gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects4);
-{gdjs.Downhill_32Bike_32DemoCode.conditionTrue_2 = gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1;
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val = false;
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val = gdjs.evtTools.input.cursorOnObject(gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDForwardObjects4Objects, runtimeScene, true, false);
-}if ( gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val ) {
-{
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}}
-gdjs.Downhill_32Bike_32DemoCode.conditionTrue_2.val = true && gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val && gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val;
+{ //Subevents
+gdjs.GameCode.eventsList38(runtimeScene);} //End of subevents
 }
-if( gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1.val ) {
-    gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1.val = true;
-    for(var j = 0, jLen = gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects4.length;j<jLen;++j) {
-        if ( gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects3_1final.indexOf(gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects4[j]) === -1 )
-            gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects3_1final.push(gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects4[j]);
+
+}
+
+
+};gdjs.GameCode.eventsList40 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("EraserPaletteItem"), gdjs.GameCode.GDEraserPaletteItemObjects2);
+gdjs.copyArray(runtimeScene.getObjects("HousePaletteItem"), gdjs.GameCode.GDHousePaletteItemObjects2);
+gdjs.copyArray(runtimeScene.getObjects("MarketPaletteItem"), gdjs.GameCode.GDMarketPaletteItemObjects2);
+gdjs.copyArray(runtimeScene.getObjects("RoadPaletteItem"), gdjs.GameCode.GDRoadPaletteItemObjects2);
+gdjs.copyArray(runtimeScene.getObjects("WellPaletteItem"), gdjs.GameCode.GDWellPaletteItemObjects2);
+
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDMarketPaletteItemObjects2ObjectsGDgdjs_46GameCode_46GDWellPaletteItemObjects2ObjectsGDgdjs_46GameCode_46GDHousePaletteItemObjects2ObjectsGDgdjs_46GameCode_46GDRoadPaletteItemObjects2ObjectsGDgdjs_46GameCode_46GDEraserPaletteItemObjects2Objects, runtimeScene, true, false);
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getVariables().get("cursorOnTools"), true);
+}
+{ //Subevents
+gdjs.GameCode.eventsList20(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+
+}
+
+
+{
+
+gdjs.GameCode.GDBrushObjects1.length = 0;
+
+
+gdjs.GameCode.condition0IsTrue_0.val = false;
+gdjs.GameCode.condition1IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableBoolean(runtimeScene.getVariables().get("cursorOnTools"), false);
+}if ( gdjs.GameCode.condition0IsTrue_0.val ) {
+{
+{gdjs.GameCode.conditionTrue_1 = gdjs.GameCode.condition1IsTrue_0;
+gdjs.GameCode.GDBrushObjects1_1final.length = 0;gdjs.GameCode.condition0IsTrue_1.val = false;
+gdjs.GameCode.condition1IsTrue_1.val = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("Brush"), gdjs.GameCode.GDBrushObjects2);
+for(var i = 0, k = 0, l = gdjs.GameCode.GDBrushObjects2.length;i<l;++i) {
+    if ( gdjs.GameCode.GDBrushObjects2[i].getX() != (gdjs.RuntimeObject.getVariableNumber(gdjs.GameCode.GDBrushObjects2[i].getVariables().get("lastX"))) ) {
+        gdjs.GameCode.condition0IsTrue_1.val = true;
+        gdjs.GameCode.GDBrushObjects2[k] = gdjs.GameCode.GDBrushObjects2[i];
+        ++k;
+    }
+}
+gdjs.GameCode.GDBrushObjects2.length = k;if( gdjs.GameCode.condition0IsTrue_1.val ) {
+    gdjs.GameCode.conditionTrue_1.val = true;
+    for(var j = 0, jLen = gdjs.GameCode.GDBrushObjects2.length;j<jLen;++j) {
+        if ( gdjs.GameCode.GDBrushObjects1_1final.indexOf(gdjs.GameCode.GDBrushObjects2[j]) === -1 )
+            gdjs.GameCode.GDBrushObjects1_1final.push(gdjs.GameCode.GDBrushObjects2[j]);
     }
 }
 }
 {
-gdjs.copyArray(gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects3_1final, gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects3);
+gdjs.copyArray(runtimeScene.getObjects("Brush"), gdjs.GameCode.GDBrushObjects2);
+for(var i = 0, k = 0, l = gdjs.GameCode.GDBrushObjects2.length;i<l;++i) {
+    if ( gdjs.GameCode.GDBrushObjects2[i].getY() != (gdjs.RuntimeObject.getVariableNumber(gdjs.GameCode.GDBrushObjects2[i].getVariables().get("lastY"))) ) {
+        gdjs.GameCode.condition1IsTrue_1.val = true;
+        gdjs.GameCode.GDBrushObjects2[k] = gdjs.GameCode.GDBrushObjects2[i];
+        ++k;
+    }
 }
-}
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("BackWheel"), gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects3);
-{runtimeScene.getVariables().getFromIndex(1).add(100);
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects3[i].getBehavior("Physics2").setWheelJointMaxMotorTorque(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("rearJoint")), 50);
-}
-}{runtimeScene.getVariables().getFromIndex(2).setNumber(1);
-}
-{ //Subevents
-gdjs.Downhill_32Bike_32DemoCode.eventsList8(runtimeScene);} //End of subevents
-}
-
-}
-
-
-};gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDBackwardObjects4Objects = Hashtable.newFrom({"Backward": gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects4});gdjs.Downhill_32Bike_32DemoCode.eventsList10 = function(runtimeScene) {
-
-{
-
-gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects3.length = 0;
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-{gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1 = gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0;
-gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects3_1final.length = 0;gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val = false;
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Down");
-if( gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val ) {
-    gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1.val = true;
-}
-}
-{
-gdjs.copyArray(runtimeScene.getObjects("Backward"), gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects4);
-{gdjs.Downhill_32Bike_32DemoCode.conditionTrue_2 = gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1;
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val = false;
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val = gdjs.evtTools.input.cursorOnObject(gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDBackwardObjects4Objects, runtimeScene, true, false);
-}if ( gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val ) {
-{
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}}
-gdjs.Downhill_32Bike_32DemoCode.conditionTrue_2.val = true && gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val && gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val;
-}
-if( gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1.val ) {
-    gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1.val = true;
-    for(var j = 0, jLen = gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects4.length;j<jLen;++j) {
-        if ( gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects3_1final.indexOf(gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects4[j]) === -1 )
-            gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects3_1final.push(gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects4[j]);
+gdjs.GameCode.GDBrushObjects2.length = k;if( gdjs.GameCode.condition1IsTrue_1.val ) {
+    gdjs.GameCode.conditionTrue_1.val = true;
+    for(var j = 0, jLen = gdjs.GameCode.GDBrushObjects2.length;j<jLen;++j) {
+        if ( gdjs.GameCode.GDBrushObjects1_1final.indexOf(gdjs.GameCode.GDBrushObjects2[j]) === -1 )
+            gdjs.GameCode.GDBrushObjects1_1final.push(gdjs.GameCode.GDBrushObjects2[j]);
     }
 }
 }
 {
-gdjs.copyArray(gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects3_1final, gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects3);
+gdjs.copyArray(gdjs.GameCode.GDBrushObjects1_1final, gdjs.GameCode.GDBrushObjects1);
 }
-}
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("BackWheel"), gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects3);
-{runtimeScene.getVariables().getFromIndex(1).sub(100);
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects3[i].getBehavior("Physics2").setWheelJointMaxMotorTorque(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("rearJoint")), 50);
-}
-}{runtimeScene.getVariables().getFromIndex(2).setNumber(1);
-}}
-
-}
-
-
-};gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDBrakeObjects4Objects = Hashtable.newFrom({"Brake": gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects4});gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDRightObjects4Objects = Hashtable.newFrom({"Right": gdjs.Downhill_32Bike_32DemoCode.GDRightObjects4});gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDLeftObjects4Objects = Hashtable.newFrom({"Left": gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects4});gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDRetryObjects3Objects = Hashtable.newFrom({"Retry": gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects3});gdjs.Downhill_32Bike_32DemoCode.eventsList11 = function(runtimeScene) {
-
-{
-
-
-
-}
-
-
-{
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.common.logicalNegation(false);
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-{runtimeScene.getVariables().getFromIndex(2).setNumber(0);
-}}
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(1)) < gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(0));
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-
-{ //Subevents
-gdjs.Downhill_32Bike_32DemoCode.eventsList9(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(1)) > -(500);
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-
-{ //Subevents
-gdjs.Downhill_32Bike_32DemoCode.eventsList10(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(2)) == 0;
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-{runtimeScene.getVariables().getFromIndex(1).mul(0.99);
-}}
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects3.length = 0;
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-{gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1 = gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0;
-gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects3_1final.length = 0;gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val = false;
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Space");
-if( gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val ) {
-    gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1.val = true;
-}
-}
-{
-gdjs.copyArray(runtimeScene.getObjects("Brake"), gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects4);
-{gdjs.Downhill_32Bike_32DemoCode.conditionTrue_2 = gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1;
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val = false;
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val = gdjs.evtTools.input.cursorOnObject(gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDBrakeObjects4Objects, runtimeScene, true, false);
-}if ( gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val ) {
-{
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}}
-gdjs.Downhill_32Bike_32DemoCode.conditionTrue_2.val = true && gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val && gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val;
-}
-if( gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1.val ) {
-    gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1.val = true;
-    for(var j = 0, jLen = gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects4.length;j<jLen;++j) {
-        if ( gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects3_1final.indexOf(gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects4[j]) === -1 )
-            gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects3_1final.push(gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects4[j]);
-    }
-}
-}
-{
-gdjs.copyArray(gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects3_1final, gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects3);
-}
-}
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("BackWheel"), gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects3);
-{runtimeScene.getVariables().getFromIndex(1).setNumber(0);
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects3[i].getBehavior("Physics2").setWheelJointMaxMotorTorque(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("rearJoint")), 1000);
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects3[i].getBehavior("Physics2").setWheelJointMotorSpeed(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("rearJoint")), 0);
 }
 }}
-
+if (gdjs.GameCode.condition1IsTrue_0.val) {
+/* Reuse gdjs.GameCode.GDBrushObjects1 */
+{for(var i = 0, len = gdjs.GameCode.GDBrushObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDBrushObjects1[i].returnVariable(gdjs.GameCode.GDBrushObjects1[i].getVariables().get("lastX")).setNumber((gdjs.GameCode.GDBrushObjects1[i].getPointX("")));
 }
-
-
-{
-
-
-
+}{for(var i = 0, len = gdjs.GameCode.GDBrushObjects1.length ;i < len;++i) {
+    gdjs.GameCode.GDBrushObjects1[i].returnVariable(gdjs.GameCode.GDBrushObjects1[i].getVariables().get("lastY")).setNumber((gdjs.GameCode.GDBrushObjects1[i].getPointY("")));
 }
-
-
-{
-
-gdjs.Downhill_32Bike_32DemoCode.GDRightObjects3.length = 0;
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-{gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1 = gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0;
-gdjs.Downhill_32Bike_32DemoCode.GDRightObjects3_1final.length = 0;gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val = false;
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Right");
-if( gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val ) {
-    gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1.val = true;
-}
-}
-{
-gdjs.copyArray(runtimeScene.getObjects("Right"), gdjs.Downhill_32Bike_32DemoCode.GDRightObjects4);
-{gdjs.Downhill_32Bike_32DemoCode.conditionTrue_2 = gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1;
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val = false;
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val = gdjs.evtTools.input.cursorOnObject(gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDRightObjects4Objects, runtimeScene, true, false);
-}if ( gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val ) {
-{
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}}
-gdjs.Downhill_32Bike_32DemoCode.conditionTrue_2.val = true && gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val && gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val;
-}
-if( gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1.val ) {
-    gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1.val = true;
-    for(var j = 0, jLen = gdjs.Downhill_32Bike_32DemoCode.GDRightObjects4.length;j<jLen;++j) {
-        if ( gdjs.Downhill_32Bike_32DemoCode.GDRightObjects3_1final.indexOf(gdjs.Downhill_32Bike_32DemoCode.GDRightObjects4[j]) === -1 )
-            gdjs.Downhill_32Bike_32DemoCode.GDRightObjects3_1final.push(gdjs.Downhill_32Bike_32DemoCode.GDRightObjects4[j]);
-    }
-}
-}
-{
-gdjs.copyArray(gdjs.Downhill_32Bike_32DemoCode.GDRightObjects3_1final, gdjs.Downhill_32Bike_32DemoCode.GDRightObjects3);
-}
-}
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("MainFrame"), gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects3);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects3[i].getBehavior("Physics2").applyTorque(38);
-}
-}}
-
-}
-
-
-{
-
-gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects3.length = 0;
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-{gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1 = gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0;
-gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects3_1final.length = 0;gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val = false;
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Left");
-if( gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val ) {
-    gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1.val = true;
-}
-}
-{
-gdjs.copyArray(runtimeScene.getObjects("Left"), gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects4);
-{gdjs.Downhill_32Bike_32DemoCode.conditionTrue_2 = gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1;
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val = false;
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val = gdjs.evtTools.input.cursorOnObject(gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDLeftObjects4Objects, runtimeScene, true, false);
-}if ( gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val ) {
-{
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}}
-gdjs.Downhill_32Bike_32DemoCode.conditionTrue_2.val = true && gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val && gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val;
-}
-if( gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1.val ) {
-    gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1.val = true;
-    for(var j = 0, jLen = gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects4.length;j<jLen;++j) {
-        if ( gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects3_1final.indexOf(gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects4[j]) === -1 )
-            gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects3_1final.push(gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects4[j]);
-    }
-}
-}
-{
-gdjs.copyArray(gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects3_1final, gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects3);
-}
-}
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("MainFrame"), gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects3);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects3[i].getBehavior("Physics2").applyTorque(-(38));
-}
-}}
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("BackWheel"), gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects3);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects3[i].getBehavior("Physics2").setWheelJointMotorSpeed(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("rearJoint")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(1)));
-}
-}}
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects2.length = 0;
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-{gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1 = gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0;
-gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects2_1final.length = 0;gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val = false;
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val = gdjs.evtTools.input.isKeyPressed(runtimeScene, "Escape");
-if( gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_1.val ) {
-    gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1.val = true;
-}
-}
-{
-gdjs.copyArray(runtimeScene.getObjects("Retry"), gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects3);
-{gdjs.Downhill_32Bike_32DemoCode.conditionTrue_2 = gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1;
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val = false;
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val = gdjs.evtTools.input.cursorOnObject(gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDRetryObjects3Objects, runtimeScene, true, false);
-}if ( gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val ) {
-{
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
-}}
-gdjs.Downhill_32Bike_32DemoCode.conditionTrue_2.val = true && gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_2.val && gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_2.val;
-}
-if( gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_1.val ) {
-    gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1.val = true;
-    for(var j = 0, jLen = gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects3.length;j<jLen;++j) {
-        if ( gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects2_1final.indexOf(gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects3[j]) === -1 )
-            gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects2_1final.push(gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects3[j]);
-    }
-}
-}
-{
-gdjs.copyArray(gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects2_1final, gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects2);
-}
-}
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Downhill Bike Demo", false);
-}}
-
-}
-
-
-};gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDfloorObjects3ObjectsGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDJumpObjects3Objects = Hashtable.newFrom({"floor": gdjs.Downhill_32Bike_32DemoCode.GDfloorObjects3, "Jump": gdjs.Downhill_32Bike_32DemoCode.GDJumpObjects3});gdjs.Downhill_32Bike_32DemoCode.eventsList12 = function(runtimeScene) {
-
-{
-
-
-{
-/* Reuse gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects3 */
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects3.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects3[i].setPosition(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(8)),gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(9)));
-}
-}{gdjs.evtTools.camera.centerCamera(runtimeScene, (gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects3.length !== 0 ? gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects3[0] : null), true, "", 0);
-}}
-
-}
-
-
-};gdjs.Downhill_32Bike_32DemoCode.eventsList13 = function(runtimeScene) {
-
-{
-
-
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("Jump"), gdjs.Downhill_32Bike_32DemoCode.GDJumpObjects3);
-gdjs.copyArray(runtimeScene.getObjects("Torso"), gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3);
-gdjs.copyArray(runtimeScene.getObjects("floor"), gdjs.Downhill_32Bike_32DemoCode.GDfloorObjects3);
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.object.raycastObject(gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDfloorObjects3ObjectsGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDJumpObjects3Objects, (( gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3[0].getPointX("Center")), (( gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3[0].getPointY("Center")), 90, 5000, runtimeScene.getVariables().getFromIndex(6), runtimeScene.getVariables().getFromIndex(4), true);
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-/* Reuse gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3 */
-{runtimeScene.getVariables().getFromIndex(5).setNumber((gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(4)) - ((( gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3[0].getPointY("")) - 600)));
-}{gdjs.evtTools.camera.setCameraZoom(runtimeScene, (300 / gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(5))), "", 0);
-}}
-
-}
-
-
-{
-
-
-
-}
-
-
-{
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.common.logicalNegation(false);
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("Follow"), gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects3);
-gdjs.copyArray(runtimeScene.getObjects("Torso"), gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3);
-{runtimeScene.getVariables().getFromIndex(8).setNumber(gdjs.evtTools.common.lerp((( gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects3.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects3[0].getPointX("")), (( gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3[0].getPointX("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(7))));
-}{runtimeScene.getVariables().getFromIndex(9).setNumber(gdjs.evtTools.common.lerp((( gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects3.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects3[0].getPointY("")), (( gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3[0].getPointY("")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(7))));
 }
 { //Subevents
-gdjs.Downhill_32Bike_32DemoCode.eventsList12(runtimeScene);} //End of subevents
+gdjs.GameCode.eventsList39(runtimeScene);} //End of subevents
 }
 
 }
 
 
+};gdjs.GameCode.eventsList41 = function(runtimeScene) {
+
 {
 
 
-
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtsExt__CursorMovement__CursorIsMoving.func(runtimeScene, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("Brush"), gdjs.GameCode.GDBrushObjects2);
+{for(var i = 0, len = gdjs.GameCode.GDBrushObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDBrushObjects2[i].setPosition(gdjs.evtTools.input.getMouseX(runtimeScene, "", 0),gdjs.evtTools.input.getMouseY(runtimeScene, "", 0));
 }
-
-
-{
-
-
-{
-gdjs.copyArray(runtimeScene.getObjects("Torso"), gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2);
-{gdjs.evtTools.camera.setCameraX(runtimeScene, ((( gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2[0].getPointX("")) + 900) / 100, "Background", 0);
-}}
-
-}
-
-
-};gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDFrontWheelObjects2Objects = Hashtable.newFrom({"FrontWheel": gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects2});gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDStartObjects2Objects = Hashtable.newFrom({"Start": gdjs.Downhill_32Bike_32DemoCode.GDStartObjects2});gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDFrontWheelObjects1Objects = Hashtable.newFrom({"FrontWheel": gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects1});gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDWinObjects1Objects = Hashtable.newFrom({"Win": gdjs.Downhill_32Bike_32DemoCode.GDWinObjects1});gdjs.Downhill_32Bike_32DemoCode.eventsList14 = function(runtimeScene) {
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("FrontWheel"), gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Start"), gdjs.Downhill_32Bike_32DemoCode.GDStartObjects2);
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDFrontWheelObjects2Objects, gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDStartObjects2Objects, false, runtimeScene, false);
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "elapsedTimer");
+}{gdjs.evtsExt__Isometry__SnapObjectToIsometricVirtualGrid.func(runtimeScene, gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDBrushObjects2Objects, 62, 31, 0, 31, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }}
 
 }
@@ -1613,46 +1835,6 @@ gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.object.hi
 {
 
 
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(11)) == 0;
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("Elapsed"), gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects2);
-{runtimeScene.getVariables().getFromIndex(12).setNumber(gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSeconds(runtimeScene, "elapsedTimer"));
-}{runtimeScene.getVariables().getFromIndex(12).setString(gdjs.evtTools.string.subStr(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(12))), 0, 5));
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects2[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().getFromIndex(12)));
-}
-}}
-
-}
-
-
-{
-
-gdjs.copyArray(runtimeScene.getObjects("FrontWheel"), gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects1);
-gdjs.copyArray(runtimeScene.getObjects("Win"), gdjs.Downhill_32Bike_32DemoCode.GDWinObjects1);
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDFrontWheelObjects1Objects, gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDWinObjects1Objects, false, runtimeScene, false);
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-gdjs.copyArray(runtimeScene.getObjects("Elapsed"), gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects1);
-{runtimeScene.getVariables().getFromIndex(11).setNumber(gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSeconds(runtimeScene, "elapsedTimer"));
-}{runtimeScene.getVariables().getFromIndex(11).setString(gdjs.evtTools.string.subStr(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(12))), 0, 5));
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects1.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects1[i].setString(gdjs.evtTools.variable.getVariableString(runtimeScene.getVariables().getFromIndex(11)));
-}
-}}
-
-}
-
-
-};gdjs.Downhill_32Bike_32DemoCode.eventsList15 = function(runtimeScene) {
-
-{
-
-
 
 }
 
@@ -1660,23 +1842,16 @@ gdjs.copyArray(runtimeScene.getObjects("Elapsed"), gdjs.Downhill_32Bike_32DemoCo
 {
 
 
+gdjs.GameCode.condition0IsTrue_0.val = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("Crank"), gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2);
-gdjs.copyArray(runtimeScene.getObjects("FrontSuspensionBottom"), gdjs.Downhill_32Bike_32DemoCode.GDFrontSuspensionBottomObjects2);
-gdjs.copyArray(runtimeScene.getObjects("FrontWheel"), gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects2);
-gdjs.copyArray(runtimeScene.getObjects("MainFrame"), gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2);
-gdjs.copyArray(runtimeScene.getObjects("RearSuspension"), gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects2);
-{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDFrontSuspensionBottomObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDFrontSuspensionBottomObjects2[i].setPosition((( gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects2[0].getPointX("")),(( gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects2[0].getPointY("")));
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("Brush"), gdjs.GameCode.GDBrushObjects2);
+{for(var i = 0, len = gdjs.GameCode.GDBrushObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDBrushObjects2[i].returnVariable(gdjs.GameCode.GDBrushObjects2[i].getVariables().get("lastX")).setNumber(-(1));
 }
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDFrontSuspensionBottomObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDFrontSuspensionBottomObjects2[i].setAngle((( gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[0].getAngle()));
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects2[i].setAngle((( gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2.length === 0 ) ? 0 :gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2[0].getAngle()));
-}
-}{for(var i = 0, len = gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2.length ;i < len;++i) {
-    gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2[i].getBehavior("Physics2").setRevoluteJointMotorSpeed(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().get("crank")), gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(1)) / 4);
+}{for(var i = 0, len = gdjs.GameCode.GDBrushObjects2.length ;i < len;++i) {
+    gdjs.GameCode.GDBrushObjects2[i].returnVariable(gdjs.GameCode.GDBrushObjects2[i].getVariables().get("lastY")).setNumber(-(1));
 }
 }}
 
@@ -1686,66 +1861,51 @@ gdjs.copyArray(runtimeScene.getObjects("RearSuspension"), gdjs.Downhill_32Bike_3
 {
 
 
-gdjs.Downhill_32Bike_32DemoCode.eventsList3(runtimeScene);
+
 }
 
 
 {
 
 
-gdjs.Downhill_32Bike_32DemoCode.eventsList4(runtimeScene);
-}
-
-
+gdjs.GameCode.condition0IsTrue_0.val = false;
 {
-
-
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-{
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getVariables().getFromIndex(13)) > 1000;
-}if (gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val) {
-{gdjs.deviceVibration.startVibration(500);
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.variable.setVariableBoolean(runtimeScene.getVariables().get("cursorOnTools"), false);
 }
 { //Subevents
-gdjs.Downhill_32Bike_32DemoCode.eventsList5(runtimeScene);} //End of subevents
+gdjs.GameCode.eventsList40(runtimeScene);} //End of subevents
 }
 
 }
 
 
-{
-
-
-gdjs.Downhill_32Bike_32DemoCode.eventsList6(runtimeScene);
-}
-
+};gdjs.GameCode.eventsList42 = function(runtimeScene) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("Head"), gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Jump"), gdjs.Downhill_32Bike_32DemoCode.GDJumpObjects2);
-gdjs.copyArray(runtimeScene.getObjects("LArm"), gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects2);
-gdjs.copyArray(runtimeScene.getObjects("LUpperArm"), gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2);
-gdjs.copyArray(runtimeScene.getObjects("RArm"), gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects2);
-gdjs.copyArray(runtimeScene.getObjects("RUpperArm"), gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2);
-gdjs.copyArray(runtimeScene.getObjects("Torso"), gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2);
-gdjs.copyArray(runtimeScene.getObjects("floor"), gdjs.Downhill_32Bike_32DemoCode.GDfloorObjects2);
 
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = false;
-gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_0.val = false;
 {
-gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val = gdjs.physics2.objectsCollide(gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDHeadObjects2ObjectsGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDTorsoObjects2ObjectsGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDRArmObjects2ObjectsGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDLArmObjects2ObjectsGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDRUpperArmObjects2ObjectsGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDLUpperArmObjects2Objects, "Physics2", gdjs.Downhill_32Bike_32DemoCode.mapOfGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDfloorObjects2ObjectsGDgdjs_46Downhill_9532Bike_9532DemoCode_46GDJumpObjects2Objects, false);
-}if ( gdjs.Downhill_32Bike_32DemoCode.condition0IsTrue_0.val ) {
-{
-{gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1 = gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_0;
-gdjs.Downhill_32Bike_32DemoCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9084956);
-}
+{gdjs.evtsExt__DragCameraWithPointer__DragCameraWithPointer.func(runtimeScene, 0, "DistanceText", "both", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}{gdjs.evtsExt__DragCameraWithPointer__DragCameraWithPointer.func(runtimeScene, 0, "", "both", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }}
-if (gdjs.Downhill_32Bike_32DemoCode.condition1IsTrue_0.val) {
-{gdjs.deviceVibration.startVibration(500);
+
+}
+
+
+{
+
+
+gdjs.GameCode.condition0IsTrue_0.val = false;
+{
+gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+}if (gdjs.GameCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.camera.setCameraZoom(runtimeScene, 2, "DistanceText", 0);
+}{gdjs.evtTools.camera.setCameraZoom(runtimeScene, 2, "", 0);
 }
 { //Subevents
-gdjs.Downhill_32Bike_32DemoCode.eventsList7(runtimeScene);} //End of subevents
+gdjs.GameCode.eventsList19(runtimeScene);} //End of subevents
 }
 
 }
@@ -1754,269 +1914,104 @@ gdjs.Downhill_32Bike_32DemoCode.eventsList7(runtimeScene);} //End of subevents
 {
 
 
-gdjs.Downhill_32Bike_32DemoCode.eventsList11(runtimeScene);
-}
-
-
-{
-
-
-gdjs.Downhill_32Bike_32DemoCode.eventsList13(runtimeScene);
-}
-
-
-{
-
-
-gdjs.Downhill_32Bike_32DemoCode.eventsList14(runtimeScene);
-}
-
-
-};gdjs.Downhill_32Bike_32DemoCode.eventsList16 = function(runtimeScene) {
-
-{
-
-
-gdjs.Downhill_32Bike_32DemoCode.eventsList1(runtimeScene);
-}
-
-
-{
-
-
-gdjs.Downhill_32Bike_32DemoCode.eventsList15(runtimeScene);
+gdjs.GameCode.eventsList41(runtimeScene);
 }
 
 
 };
 
-gdjs.Downhill_32Bike_32DemoCode.func = function(runtimeScene) {
+gdjs.GameCode.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDMainFrameObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDFrontWheelObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBackWheelObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDfloorObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDfloorObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDfloorObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDfloorObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDfloorObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTimingObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTimingObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTimingObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTimingObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTimingObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDElapsedObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRearSuspensionObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDFrontSuspensionBottomObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDFrontSuspensionBottomObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDFrontSuspensionBottomObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDFrontSuspensionBottomObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDFrontSuspensionBottomObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDSeatObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDCrankObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRPedalObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLPedalObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTorsoObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRightThighObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLeftThighObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRightLegObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLeftLegObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRUpperArmObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLUpperArmObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRArmObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLArmObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDHeadObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDFollowObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDWinObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDWinObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDWinObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDWinObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDWinObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDStartObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDStartObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDStartObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDStartObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDStartObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForceObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForceObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForceObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForceObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForceObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForceStrengthObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForceStrengthObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForceStrengthObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForceStrengthObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForceStrengthObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDDesktopControlsObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDDesktopControlsObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDDesktopControlsObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDDesktopControlsObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDDesktopControlsObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDGameInstructionsObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDJumpObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDJumpObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDJumpObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDJumpObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDJumpObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForwardObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBackwardObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBrakeObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRetryObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDLeftObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRightObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRightObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRightObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRightObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDRightObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTrackObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTrackObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTrackObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTrackObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTrackObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDCliffObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDCliffObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDCliffObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDCliffObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDCliffObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBackgroundObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBackgroundObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBackgroundObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBackgroundObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBackgroundObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTreeObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTreeObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTreeObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTreeObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDTreeObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBushObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBushObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBushObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBushObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDBushObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDGrassObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDGrassObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDGrassObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDGrassObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDGrassObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDSignObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDSignObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDSignObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDSignObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDSignObjects5.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects1.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects2.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects3.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects4.length = 0;
-gdjs.Downhill_32Bike_32DemoCode.GDForceIndicatorObjects5.length = 0;
+gdjs.GameCode.GDRoadObjects1.length = 0;
+gdjs.GameCode.GDRoadObjects2.length = 0;
+gdjs.GameCode.GDRoadObjects3.length = 0;
+gdjs.GameCode.GDRoadObjects4.length = 0;
+gdjs.GameCode.GDRoadObjects5.length = 0;
+gdjs.GameCode.GDRoadLinkObjects1.length = 0;
+gdjs.GameCode.GDRoadLinkObjects2.length = 0;
+gdjs.GameCode.GDRoadLinkObjects3.length = 0;
+gdjs.GameCode.GDRoadLinkObjects4.length = 0;
+gdjs.GameCode.GDRoadLinkObjects5.length = 0;
+gdjs.GameCode.GDMarketObjects1.length = 0;
+gdjs.GameCode.GDMarketObjects2.length = 0;
+gdjs.GameCode.GDMarketObjects3.length = 0;
+gdjs.GameCode.GDMarketObjects4.length = 0;
+gdjs.GameCode.GDMarketObjects5.length = 0;
+gdjs.GameCode.GDMarketLinkObjects1.length = 0;
+gdjs.GameCode.GDMarketLinkObjects2.length = 0;
+gdjs.GameCode.GDMarketLinkObjects3.length = 0;
+gdjs.GameCode.GDMarketLinkObjects4.length = 0;
+gdjs.GameCode.GDMarketLinkObjects5.length = 0;
+gdjs.GameCode.GDWellObjects1.length = 0;
+gdjs.GameCode.GDWellObjects2.length = 0;
+gdjs.GameCode.GDWellObjects3.length = 0;
+gdjs.GameCode.GDWellObjects4.length = 0;
+gdjs.GameCode.GDWellObjects5.length = 0;
+gdjs.GameCode.GDWellLinkObjects1.length = 0;
+gdjs.GameCode.GDWellLinkObjects2.length = 0;
+gdjs.GameCode.GDWellLinkObjects3.length = 0;
+gdjs.GameCode.GDWellLinkObjects4.length = 0;
+gdjs.GameCode.GDWellLinkObjects5.length = 0;
+gdjs.GameCode.GDHouseObjects1.length = 0;
+gdjs.GameCode.GDHouseObjects2.length = 0;
+gdjs.GameCode.GDHouseObjects3.length = 0;
+gdjs.GameCode.GDHouseObjects4.length = 0;
+gdjs.GameCode.GDHouseObjects5.length = 0;
+gdjs.GameCode.GDHouseLinkObjects1.length = 0;
+gdjs.GameCode.GDHouseLinkObjects2.length = 0;
+gdjs.GameCode.GDHouseLinkObjects3.length = 0;
+gdjs.GameCode.GDHouseLinkObjects4.length = 0;
+gdjs.GameCode.GDHouseLinkObjects5.length = 0;
+gdjs.GameCode.GDMarketDistanceTextObjects1.length = 0;
+gdjs.GameCode.GDMarketDistanceTextObjects2.length = 0;
+gdjs.GameCode.GDMarketDistanceTextObjects3.length = 0;
+gdjs.GameCode.GDMarketDistanceTextObjects4.length = 0;
+gdjs.GameCode.GDMarketDistanceTextObjects5.length = 0;
+gdjs.GameCode.GDWellDistanceTextObjects1.length = 0;
+gdjs.GameCode.GDWellDistanceTextObjects2.length = 0;
+gdjs.GameCode.GDWellDistanceTextObjects3.length = 0;
+gdjs.GameCode.GDWellDistanceTextObjects4.length = 0;
+gdjs.GameCode.GDWellDistanceTextObjects5.length = 0;
+gdjs.GameCode.GDRoadDistanceTextObjects1.length = 0;
+gdjs.GameCode.GDRoadDistanceTextObjects2.length = 0;
+gdjs.GameCode.GDRoadDistanceTextObjects3.length = 0;
+gdjs.GameCode.GDRoadDistanceTextObjects4.length = 0;
+gdjs.GameCode.GDRoadDistanceTextObjects5.length = 0;
+gdjs.GameCode.GDMarketPaletteItemObjects1.length = 0;
+gdjs.GameCode.GDMarketPaletteItemObjects2.length = 0;
+gdjs.GameCode.GDMarketPaletteItemObjects3.length = 0;
+gdjs.GameCode.GDMarketPaletteItemObjects4.length = 0;
+gdjs.GameCode.GDMarketPaletteItemObjects5.length = 0;
+gdjs.GameCode.GDWellPaletteItemObjects1.length = 0;
+gdjs.GameCode.GDWellPaletteItemObjects2.length = 0;
+gdjs.GameCode.GDWellPaletteItemObjects3.length = 0;
+gdjs.GameCode.GDWellPaletteItemObjects4.length = 0;
+gdjs.GameCode.GDWellPaletteItemObjects5.length = 0;
+gdjs.GameCode.GDHousePaletteItemObjects1.length = 0;
+gdjs.GameCode.GDHousePaletteItemObjects2.length = 0;
+gdjs.GameCode.GDHousePaletteItemObjects3.length = 0;
+gdjs.GameCode.GDHousePaletteItemObjects4.length = 0;
+gdjs.GameCode.GDHousePaletteItemObjects5.length = 0;
+gdjs.GameCode.GDRoadPaletteItemObjects1.length = 0;
+gdjs.GameCode.GDRoadPaletteItemObjects2.length = 0;
+gdjs.GameCode.GDRoadPaletteItemObjects3.length = 0;
+gdjs.GameCode.GDRoadPaletteItemObjects4.length = 0;
+gdjs.GameCode.GDRoadPaletteItemObjects5.length = 0;
+gdjs.GameCode.GDEraserPaletteItemObjects1.length = 0;
+gdjs.GameCode.GDEraserPaletteItemObjects2.length = 0;
+gdjs.GameCode.GDEraserPaletteItemObjects3.length = 0;
+gdjs.GameCode.GDEraserPaletteItemObjects4.length = 0;
+gdjs.GameCode.GDEraserPaletteItemObjects5.length = 0;
+gdjs.GameCode.GDBrushObjects1.length = 0;
+gdjs.GameCode.GDBrushObjects2.length = 0;
+gdjs.GameCode.GDBrushObjects3.length = 0;
+gdjs.GameCode.GDBrushObjects4.length = 0;
+gdjs.GameCode.GDBrushObjects5.length = 0;
 
-gdjs.Downhill_32Bike_32DemoCode.eventsList16(runtimeScene);
+gdjs.GameCode.eventsList42(runtimeScene);
 return;
 
 }
 
-gdjs['Downhill_32Bike_32DemoCode'] = gdjs.Downhill_32Bike_32DemoCode;
+gdjs['GameCode'] = gdjs.GameCode;
