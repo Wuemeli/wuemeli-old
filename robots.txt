@@ -1,1 +1,3 @@
-Sitemap: https://www.wuemeli.com/sitemap.xml
+User-agent: * 
+Disallow:
+Sitemap: https://wuemeli.com/sitemap.xml
