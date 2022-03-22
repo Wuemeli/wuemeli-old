@@ -1,9 +1,3 @@
-/*
- *this edited from mr. doob's ball pool http://mrdoob.com/projects/chromeexperiments/ball-pool/
- *
- *
- */
-
 var canvas;
 
 
