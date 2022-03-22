@@ -124,7 +124,7 @@ function onDocumentMouseMove( event ) {
 	mouse.y = event.clientY;
 }
 
-if(event.key === "Escape")() {
+function onDocumentDoubleClick() {
 
 	reset();
 }
