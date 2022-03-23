@@ -1,5 +1,5 @@
 .u-section-1 .u-sheet-1 {
-  min-height: 1477px;
+  min-height: 1679px;
 }
 
 .u-section-1 .u-list-1 {
@@ -138,16 +138,15 @@
 .u-section-1 .u-group-3 {
   width: 543px;
   min-height: 288px;
-  height: auto;
   margin: 21px 0 0 auto;
 }
 
 .u-section-1 .u-container-layout-6 {
-  padding: 15px 0;
+  padding: 0;
 }
 
 .u-section-1 .u-text-6 {
-  margin: 0 -16px 0 10px;
+  margin: 13px -16px 0 10px;
 }
 
 .u-section-1 .u-image-11 {
@@ -167,8 +166,7 @@
 .u-section-1 .u-group-4 {
   width: 543px;
   min-height: 288px;
-  height: auto;
-  margin: 28px auto 60px 27px;
+  margin: 28px auto 0 27px;
 }
 
 .u-section-1 .u-container-layout-7 {
@@ -193,16 +191,41 @@
   margin: -108px 101px 0 auto;
 }
 
+.u-section-1 .u-group-5 {
+  width: 543px;
+  min-height: 278px;
+  height: auto;
+  margin: -283px 0 60px auto;
+}
+
+.u-section-1 .u-container-layout-8 {
+  padding: 15px 0;
+}
+
+.u-section-1 .u-text-8 {
+  margin: 0 -16px 0 10px;
+}
+
+.u-section-1 .u-image-15 {
+  width: 184px;
+  height: 133px;
+  margin: 26px auto 0 17px;
+}
+
+.u-section-1 .u-image-16 {
+  width: 65px;
+  height: 65px;
+  background-image: url("images/gacfe181bf189964e87a564fd432fdd62256e522d8df74fb232756ec61f605ac2fc4d04ebe3675257d3a94b466ad3dcf4ac2922f3af642c8c687e96f3a78a41c4_1280.png");
+  background-position: 50% 50%;
+  margin: -99px 121px 0 auto;
+}
+
 @media (max-width: 1199px) {
   .u-section-1 .u-repeater-1 {
     grid-template-columns: 100%;
   }
 
-  .u-section-1 .u-group-3 {
-    height: auto;
-  }
-
-  .u-section-1 .u-group-4 {
+  .u-section-1 .u-group-5 {
     height: auto;
   }
 }
@@ -226,7 +249,7 @@
   }
 
   .u-section-1 .u-text-6 {
-    margin-right: 38px;
+    margin-right: 0;
     margin-left: 0;
   }
 
@@ -240,12 +263,25 @@
   }
 
   .u-section-1 .u-text-7 {
-    margin-right: 38px;
+    margin-right: 0;
     margin-left: 0;
   }
 
   .u-section-1 .u-image-13 {
     margin-left: 0;
+  }
+
+  .u-section-1 .u-group-5 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-text-8 {
+    margin-right: 38px;
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-image-16 {
+    margin-top: 61px;
   }
 }
 
@@ -267,6 +303,10 @@
   }
 
   .u-section-1 .u-group-4 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-group-5 {
     width: 340px;
   }
 }
