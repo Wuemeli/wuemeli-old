@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: wuemeli.com
+Token: 6cc514560bed150a8d9a7df32f8d3239b2a5d472f8fbf26c4ec303a2cb87c9a4
