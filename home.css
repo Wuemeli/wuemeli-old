@@ -190,14 +190,8 @@
   background-color: var(--dl-color-primary-100);
 }
 .home-image2 {
-  width: 50%;
-  height: 386px;
-  z-index: 100;
-  box-shadow: 5px 5px 10px 0px #d4d4d4;
-  object-fit: contain;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
-  border-radius: var(--dl-radius-radius-radius4);
+  width: 610px;
+  object-fit: cover;
 }
 .home-section-separator {
   width: 100%;
@@ -545,10 +539,6 @@
   .home-cta-btn1 {
     width: 40%;
   }
-  .home-image2 {
-    width: 80%;
-    margin-bottom: var(--dl-space-space-tripleunit);
-  }
 }
 @media(max-width: 767px) {
   .home-heading {
@@ -604,9 +594,6 @@
     padding-right: var(--dl-space-space-doubleunit);
   }
   .home-hero-text-container {
-    width: 100%;
-  }
-  .home-image2 {
     width: 100%;
   }
   .home-service-card {
