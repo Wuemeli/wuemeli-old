@@ -191,8 +191,13 @@
 }
 .home-image2 {
   width: 50%;
-  height: 596px;
+  height: 386px;
+  z-index: 100;
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
   object-fit: contain;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-radius4);
 }
 .home-section-separator {
   width: 100%;
