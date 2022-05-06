@@ -9,58 +9,44 @@
 
 <url>
   <loc>https://wuemeli.com/</loc>
-  <lastmod>2022-03-19T20:13:17+00:00</lastmod>
+  <lastmod>2022-05-06T09:39:30+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://wuemeli.com/home</loc>
-  <lastmod>2022-03-19T20:13:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wuemeli.com/privacy-and-policy</loc>
-  <lastmod>2022-03-19T20:13:17+00:00</lastmod>
+  <loc>https://wuemeli.com/browser-games</loc>
+  <lastmod>2022-05-06T09:39:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://wuemeli.com/cat</loc>
-  <lastmod>2022-03-19T20:13:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2022-05-06T09:39:30+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://wuemeli.com/2048</loc>
-  <lastmod>2022-03-19T20:13:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wuemeli.com/snake</loc>
-  <lastmod>2022-03-19T20:13:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2022-05-06T09:39:30+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://wuemeli.com/car</loc>
-  <lastmod>2022-03-19T20:13:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://wuemeli.com/space</loc>
-  <lastmod>2022-03-19T20:13:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2022-05-06T09:39:30+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://wuemeli.com/zombie</loc>
-  <lastmod>2022-03-19T20:13:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2022-05-06T09:39:30+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://wuemeli.com/cowbive/index.html</loc>
-  <lastmod>2022-03-19T20:13:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://wuemeli.com/hexgl/</loc>
+  <lastmod>2022-05-06T09:39:30+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://wuemeli.com/fpsgame/fps/index.html</loc>
-  <lastmod>2022-03-19T20:13:17+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://wuemeli.com/cowbive/</loc>
+  <lastmod>2022-05-06T09:39:30+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
+
 
 </urlset>
