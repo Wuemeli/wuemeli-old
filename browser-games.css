@@ -98,28 +98,15 @@
   justify-content: space-between;
 }
 .browser-games-image1 {
-  height: 2rem;
+  width: 86px;
+  height: 86px;
 }
 .browser-games-menu-close {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.browser-games-icon02 {
-  width: 16px;
-  height: 16px;
-}
-.browser-games-icon04 {
-  width: 16px;
-  height: 16px;
-  margin-right: 32px;
-}
-.browser-games-icon06 {
-  width: 16px;
-  height: 16px;
-  margin-right: 32px;
-}
-.browser-games-icon08 {
+.browser-games-icon2 {
   width: 16px;
   height: 16px;
 }
