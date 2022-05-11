@@ -240,10 +240,11 @@
   font-weight: 500;
   margin-bottom: var(--dl-space-space-unit);
 }
-.home-text5 {
+.home-navlink {
   font-size: 0.75rem;
   margin-top: var(--dl-space-space-unit);
   font-weight: 500;
+  text-decoration: none;
 }
 .home-section-separator1 {
   width: 100%;
@@ -372,7 +373,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .home-text6 {
+  .home-text5 {
     margin-bottom: 24px;
   }
 }
@@ -415,7 +416,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .home-text6 {
+  .home-text5 {
     text-align: center;
     margin-bottom: 24px;
   }
