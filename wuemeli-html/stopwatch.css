@@ -1,0 +1,237 @@
+.navigation-links11-nav {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.navigation-links11-link {
+  text-decoration: none;
+}
+.navigation-links11-navlink {
+  margin-left: 32px;
+  text-decoration: none;
+}
+.navigation-links11-navlink1 {
+  margin-left: 32px;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 767px) {
+  .navigation-links11-nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .navigation-links11-link {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links11-navlink {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .navigation-links11-navlink1 {
+    margin-left: 0;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
+
+.stopwatch-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.stopwatch-header {
+  width: 100%;
+  height: 153px;
+  display: flex;
+  max-width: 1400px;
+  align-items: center;
+  padding-top: 32px;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-bottom: 32px;
+  justify-content: space-between;
+}
+.stopwatch-image {
+  width: 86px;
+  height: 86px;
+}
+.stopwatch-nav {
+  display: flex;
+}
+.stopwatch-burger-menu {
+  display: none;
+}
+.stopwatch-icon {
+  width: 16px;
+  height: 16px;
+}
+.stopwatch-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: 32px;
+  z-index: 100;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.stopwatch-nav1 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.stopwatch-container1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+  justify-content: space-between;
+}
+.stopwatch-image1 {
+  width: 86px;
+  height: 86px;
+}
+.stopwatch-menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stopwatch-icon2 {
+  width: 16px;
+  height: 16px;
+}
+.stopwatch-iframe {
+  width: 206px;
+  height: 209px;
+}
+.stopwatch-footer {
+  width: 100%;
+  display: flex;
+  max-width: 1400px;
+  align-items: center;
+  padding-top: 32px;
+  padding-left: 48px;
+  padding-right: 48px;
+  flex-direction: column;
+  padding-bottom: 32px;
+  justify-content: space-between;
+}
+.stopwatch-container2 {
+  display: flex;
+  max-width: 1400px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.stopwatch-image2 {
+  width: 118px;
+  height: 117px;
+  margin-bottom: 32px;
+}
+.stopwatch-separator {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 0px;
+  display: flex;
+  margin-top: 32px;
+  align-items: flex-start;
+  margin-left: 0px;
+  border-color: var(--dl-color-gray-900);
+  border-style: solid;
+  border-width: 1px;
+  margin-right: 0px;
+  margin-bottom: 32px;
+  flex-direction: row;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+.stopwatch-container3 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media(max-width: 767px) {
+  .stopwatch-header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .stopwatch-nav {
+    display: none;
+  }
+  .stopwatch-burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .stopwatch-footer {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .stopwatch-image2 {
+    margin-bottom: 24px;
+  }
+  .stopwatch-separator {
+    margin-top: 24px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 24px;
+  }
+  .stopwatch-container3 {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .stopwatch-text {
+    margin-bottom: 24px;
+  }
+}
+@media(max-width: 479px) {
+  .stopwatch-header {
+    padding: var(--dl-space-space-unit);
+    padding-right: 8px;
+  }
+  .stopwatch-mobile-menu {
+    padding: 16px;
+  }
+  .stopwatch-footer {
+    padding: var(--dl-space-space-unit);
+  }
+  .stopwatch-separator {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .stopwatch-container3 {
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .stopwatch-text {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+}
