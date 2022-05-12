@@ -1,0 +1,116 @@
+.portfolio-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.portfolio-hero {
+  width: 100%;
+  display: flex;
+  padding: 48px;
+  max-width: 1400px;
+  min-height: 80vh;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.portfolio-container1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+.portfolio-container2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+.portfolio-container3 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+.portfolio-container4 {
+  display: flex;
+  padding-right: 48px;
+  flex-direction: column;
+}
+.portfolio-text {
+  font-size: 3rem;
+  max-width: 450px;
+}
+.portfolio-text1 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.portfolio-link {
+  display: contents;
+}
+.portfolio-icon {
+  width: 304px;
+  height: 145px;
+  text-decoration: none;
+}
+.portfolio-image {
+  width: 540px;
+  height: 387px;
+  object-fit: cover;
+}
+.portfolio-image1 {
+  width: 100px;
+  object-fit: cover;
+}
+@media(max-width: 991px) {
+  .portfolio-hero {
+    flex-direction: column;
+  }
+  .portfolio-container4 {
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: 32px;
+    padding-right: 0px;
+  }
+  .portfolio-text {
+    text-align: center;
+  }
+  .portfolio-text1 {
+    text-align: center;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+@media(max-width: 767px) {
+  .portfolio-hero {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .portfolio-text1 {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+  .portfolio-image {
+    width: 80%;
+  }
+}
+@media(max-width: 479px) {
+  .portfolio-hero {
+    padding-top: 32px;
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: 32px;
+  }
+  .portfolio-container4 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+}
