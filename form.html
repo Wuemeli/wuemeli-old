@@ -4,7 +4,7 @@
 <title>Form</title>
 </head>
 <body>
-<form name="contact" netlify>
+<form name="Contact" netlify>
   <p>
     <label>Name <input type="text" name="name" /></label>
   </p>
@@ -12,11 +12,15 @@
     <label>Email <input type="email" name="email" /></label>
   </p>
   <p>
-    <label>Wählen Sie eine Textdatei (*.txt, *.html usw.) von Ihrem Rechner aus.
+    <label>Choose an File from your Computer.
     <input name="datei" type="file" size="50" accept="text/*"> 
   </p>
    <p>
-    <button type="submit">Send</button>
+     <label for="w3review">Review of W3Schools:</label></p>
+     <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+  </p>
+   <p>
+    <button type="submit">Submit</button>
   </p>
 </form>
 </body>
