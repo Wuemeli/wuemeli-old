@@ -108,16 +108,16 @@
 .portfolio-link1 {
   top: 16px;
   left: -100px;
-  width: 161px;
-  height: 40px;
+  width: 158px;
+  height: 41px;
   position: absolute;
   font-size: 0.75rem;
   transition: 0.3s;
   padding-top: var(--dl-space-space-unit);
   border-width: 0px;
   padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: 0px;
   text-transform: uppercase;
   text-decoration: none;
 }
