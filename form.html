@@ -53,7 +53,12 @@ div {
 <title>Form</title>
 </head>
 <body>
-<form name="Contact" netlify>
+<form name="Contact" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+  <p class="hidden">
+    <label>
+      Don’t fill this out if you’re human: <input name="bot-field" />
+    </label>
+  </p>
   <p>
     <label>Name <input type="text" name="name" required/></label>
   </p>
