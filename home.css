@@ -99,6 +99,17 @@
   width: 86px;
   height: 86px;
 }
+.home-container1 {
+  top: 32px;
+  flex: 0 0 auto;
+  right: 71px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
 .home-nav {
   display: flex;
 }
@@ -127,7 +138,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.home-container1 {
+.home-container2 {
   width: 100%;
   display: flex;
   align-items: center;
@@ -215,7 +226,7 @@
   font-size: 3rem;
   margin-bottom: 32px;
 }
-.home-container2 {
+.home-container3 {
   width: 100%;
   display: grid;
   grid-gap: 32px;
@@ -257,6 +268,7 @@
 .home-footer {
   width: 100%;
   display: flex;
+  position: relative;
   max-width: 1400px;
   align-items: center;
   padding-top: 32px;
@@ -266,7 +278,7 @@
   padding-bottom: 32px;
   justify-content: space-between;
 }
-.home-container3 {
+.home-container4 {
   display: flex;
   max-width: 1400px;
   align-items: center;
@@ -296,21 +308,13 @@
   border-left-width: 0px;
   border-right-width: 0px;
 }
-.home-container4 {
+.home-container5 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-}
-.home-container5 {
-  flex: 0 0 auto;
-  width: 200px;
-  height: 100px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
 }
 @media(max-width: 991px) {
   .home-hero {
@@ -333,7 +337,7 @@
   .home-text1 {
     text-align: center;
   }
-  .home-container2 {
+  .home-container3 {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -376,7 +380,7 @@
     margin-right: 0px;
     margin-bottom: 24px;
   }
-  .home-container4 {
+  .home-container5 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
@@ -409,7 +413,7 @@
     padding-right: var(--dl-space-space-unit);
     padding-bottom: 32px;
   }
-  .home-container2 {
+  .home-container3 {
     grid-template-columns: 1fr;
   }
   .home-footer {
@@ -419,7 +423,7 @@
     margin-top: 24px;
     margin-bottom: 24px;
   }
-  .home-container4 {
+  .home-container5 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
