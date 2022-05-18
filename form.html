@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html>
 <style>
-input[type=bot-field], select {
-  width: 0%;
-  padding: 0px 0px;
-  margin: 0px 0;
-  display: inline-block;
-  border: 0px solid #ccc;
-  border-radius: 0px;
-  box-sizing: border-box;
-}
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -62,12 +53,7 @@ div {
 <title>Form</title>
 </head>
 <body>
-<form name="Contact" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-  <p class="hidden">
-    <label>
-      Don’t fill this out if you’re human: <input name="bot-field" />
-    </label>
-  </p>
+<form name="Contact" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
   <p>
     <label>Name <input type="text" name="name" required/></label>
   </p>
@@ -82,6 +68,8 @@ div {
      <label for="message">Message:</label></p>
      <textarea id="message" name="message" required rows="4" cols="50"></textarea>
   </p>
+   </p>
+   <div data-netlify-recaptcha="true"></div
    <p>
     <button type="submit">Submit</button>
   </p>
