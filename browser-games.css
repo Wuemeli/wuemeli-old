@@ -375,6 +375,45 @@
   text-decoration: none;
   background-color: var(--dl-color-primary-100);
 }
+.browser-games-service-card6 {
+  width: 49%;
+  display: flex;
+  min-height: 500px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-gray-900);
+}
+.browser-games-card-content6 {
+  margin: var(--dl-space-space-fiveunits);
+  display: flex;
+  padding: var(--dl-space-space-fiveunits);
+  max-width: 500px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.browser-games-text12 {
+  text-align: center;
+  margin-bottom: var(--dl-space-space-fourunits);
+}
+.browser-games-text13 {
+  color: var(--dl-color-primary-700);
+  text-align: center;
+  margin-bottom: var(--dl-space-space-fourunits);
+}
+.browser-games-link6 {
+  color: var(--dl-color-gray-white);
+  width: 182px;
+  align-self: center;
+  text-align: center;
+  padding-top: var(--dl-space-space-doubleunit);
+  border-width: 0px;
+  border-radius: 34px;
+  padding-bottom: var(--dl-space-space-doubleunit);
+  text-decoration: none;
+  background-color: var(--dl-color-primary-100);
+}
 .browser-games-footer {
   width: 100%;
   display: flex;
@@ -456,6 +495,9 @@
   .browser-games-card-content5 {
     margin: 0px;
   }
+  .browser-games-card-content6 {
+    margin: 0px;
+  }
   .browser-games-footer {
     padding-left: 32px;
     padding-right: 32px;
@@ -474,7 +516,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .browser-games-text12 {
+  .browser-games-text14 {
     margin-bottom: 24px;
   }
 }
@@ -505,6 +547,10 @@
     width: 100%;
     margin-bottom: var(--dl-space-space-fourunits);
   }
+  .browser-games-service-card6 {
+    width: 100%;
+    margin-bottom: var(--dl-space-space-fourunits);
+  }
   .browser-games-footer {
     padding: var(--dl-space-space-unit);
   }
@@ -517,7 +563,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .browser-games-text12 {
+  .browser-games-text14 {
     text-align: center;
     margin-bottom: 24px;
   }
