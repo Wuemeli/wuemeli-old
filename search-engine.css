@@ -143,15 +143,12 @@
   height: 16px;
 }
 .search-engine-iframe {
-  width: 670px;
-  height: 365px;
+  width: 1132px;
+  height: 445px;
 }
 .search-engine-footer {
-  right: -14px;
   width: 100%;
-  bottom: 168px;
   display: flex;
-  position: absolute;
   max-width: 1400px;
   align-items: center;
   padding-top: 32px;
