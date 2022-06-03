@@ -59,7 +59,7 @@
   }
 }
 
-.stopwatch-container {
+.search-engine-container {
   width: 100%;
   display: flex;
   overflow: auto;
@@ -67,7 +67,7 @@
   align-items: center;
   flex-direction: column;
 }
-.stopwatch-header {
+.search-engine-header {
   width: 100%;
   height: 153px;
   display: flex;
@@ -79,21 +79,32 @@
   padding-bottom: 32px;
   justify-content: space-between;
 }
-.stopwatch-image {
+.search-engine-image {
   width: 86px;
   height: 86px;
 }
-.stopwatch-nav {
+.search-engine-container1 {
+  top: 35px;
+  flex: 0 0 auto;
+  right: 691px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.search-engine-nav {
   display: flex;
 }
-.stopwatch-burger-menu {
+.search-engine-burger-menu {
   display: none;
 }
-.stopwatch-icon {
+.search-engine-icon {
   width: 16px;
   height: 16px;
 }
-.stopwatch-mobile-menu {
+.search-engine-mobile-menu {
   top: 0px;
   left: 0px;
   width: 100%;
@@ -106,38 +117,41 @@
   justify-content: space-between;
   background-color: #fff;
 }
-.stopwatch-nav1 {
+.search-engine-nav1 {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.stopwatch-container1 {
+.search-engine-container2 {
   width: 100%;
   display: flex;
   align-items: center;
   margin-bottom: 48px;
   justify-content: space-between;
 }
-.stopwatch-image1 {
+.search-engine-image1 {
   width: 86px;
   height: 86px;
 }
-.stopwatch-menu-close {
+.search-engine-menu-close {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.stopwatch-icon2 {
+.search-engine-icon2 {
   width: 16px;
   height: 16px;
 }
-.stopwatch-iframe {
-  width: 206px;
-  height: 209px;
+.search-engine-iframe {
+  width: 670px;
+  height: 365px;
 }
-.stopwatch-footer {
+.search-engine-footer {
+  right: -14px;
   width: 100%;
+  bottom: 168px;
   display: flex;
+  position: absolute;
   max-width: 1400px;
   align-items: center;
   padding-top: 32px;
@@ -147,19 +161,19 @@
   padding-bottom: 32px;
   justify-content: space-between;
 }
-.stopwatch-container2 {
+.search-engine-container3 {
   display: flex;
   max-width: 1400px;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
 }
-.stopwatch-image2 {
+.search-engine-image2 {
   width: 118px;
   height: 117px;
   margin-bottom: 32px;
 }
-.stopwatch-separator {
+.search-engine-separator {
   flex: 0 0 auto;
   width: 100%;
   height: 0px;
@@ -177,7 +191,7 @@
   border-left-width: 0px;
   border-right-width: 0px;
 }
-.stopwatch-container3 {
+.search-engine-container4 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
@@ -186,61 +200,61 @@
   justify-content: space-between;
 }
 @media(max-width: 767px) {
-  .stopwatch-header {
+  .search-engine-header {
     padding-left: 32px;
     padding-right: 32px;
   }
-  .stopwatch-nav {
+  .search-engine-nav {
     display: none;
   }
-  .stopwatch-burger-menu {
+  .search-engine-burger-menu {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .stopwatch-footer {
+  .search-engine-footer {
     padding-left: 32px;
     padding-right: 32px;
   }
-  .stopwatch-image2 {
+  .search-engine-image2 {
     margin-bottom: 24px;
   }
-  .stopwatch-separator {
+  .search-engine-separator {
     margin-top: 24px;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 24px;
   }
-  .stopwatch-container3 {
+  .search-engine-container4 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
   }
-  .stopwatch-text {
+  .search-engine-text {
     margin-bottom: 24px;
   }
 }
 @media(max-width: 479px) {
-  .stopwatch-header {
+  .search-engine-header {
     padding: var(--dl-space-space-unit);
     padding-right: 8px;
   }
-  .stopwatch-mobile-menu {
+  .search-engine-mobile-menu {
     padding: 16px;
   }
-  .stopwatch-footer {
+  .search-engine-footer {
     padding: var(--dl-space-space-unit);
   }
-  .stopwatch-separator {
+  .search-engine-separator {
     margin-top: 24px;
     margin-bottom: 24px;
   }
-  .stopwatch-container3 {
+  .search-engine-container4 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
   }
-  .stopwatch-text {
+  .search-engine-text {
     text-align: center;
     margin-bottom: 24px;
   }
