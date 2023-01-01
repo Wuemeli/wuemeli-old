@@ -66,10 +66,26 @@ if (window.innerWidth > 600) {
 }
 
 //Scroll
-  function scrollToElement() {
+  function scrollToElement1() {
     // Find the element
     var element = document.getElementById("projects");
 
     // Scroll to the element
     element.scrollIntoView({ behavior: 'smooth' });
   }
+
+    function scrollToElement2() {
+    // Find the element
+    var element = document.getElementById("skills");
+
+    // Scroll to the element
+    element.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function scrollToElement3() {
+    // Find the element
+    var element = document.getElementById("home");
+
+    // Scroll to the element
+    element.scrollIntoView({ behavior: 'smooth' });
+}
