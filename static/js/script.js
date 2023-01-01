@@ -76,7 +76,7 @@ if (window.innerWidth > 600) {
 // Projects
 
 const container = document.querySelector('.project-content');
-fetch('/data/projects').then(r => r.json()).then(projects => {
+fetch('projects.json').then(r => r.json()).then(projects => {
     console.log(projects);
     projects.forEach((project) => {
         container.innerHTML +=
