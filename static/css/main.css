@@ -195,17 +195,12 @@ body {
     align-items: center;
 }
 
-#youtube:hover {
-    color: #FF0000;
-}
-#reddit:hover {
-    color: #FE4702;
-}
+
 #github:hover {
     color: #f700ff;
 }
 
-#instagram:hover {
+#twitter:hover {
     color: #e4405f;
 }
 
@@ -950,3 +945,15 @@ i.fa-step-backward {
         transform: scale(1.3);
     }
 }
+
+/* Add the slide-in animation to the element with the ID "slide-in-element" */
+#slide-in-element {
+    animation: slide-in 1s;
+  }
+  
+  /* Create the slide-in animation */
+  @keyframes slide-in {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+  }
+  
