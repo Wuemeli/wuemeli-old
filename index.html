@@ -27,13 +27,6 @@
         <span></span>
         <span></span>
       </div>
-      <ul class="nav-list">
-        <li><a class="nav-link" data-scroll="#home">Home</a></li>
-        <li><a class="nav-link" data-scroll="#skills">Skills</a></li>
-        <li><a class="nav-link" target="_blank" data-scroll="#jobs">Experience</a> </li>
-        <li><a class="nav-link" data-scroll="#projects">Projects</a></li>
-        </li>
-
     </div>
   </nav>
   <div id="home" class="main-container">
@@ -130,57 +123,11 @@
           </div>
           <div class="skill-text" style="visibility: visible;">
             <h4 class="skill-title c-white" style="visibility: visible;">Technologies</h4>
-            <p class="skill-description grey" style="visibility: visible;">Express.js, MongoDB, puppeteer, NPM.
+            <p class="skill-description grey" style="visibility: visible;">MySQL, Ubuntu, Git, NPM.
             </p>
           </div>
         </div>
       </section>
-    </div>
-  </div>
-
-  <div id="jobs" class="skills border-t border-[#333] pt-6">
-    <div class="skills-container py-12 mx-6 rounded-3xl">
-      <h1 class="text-center text-7xl">Work History</h1>
-      <ul class="timeline">
-        <li class="timeline-event">
-          <label class="timeline-event-icon"></label>
-          <div class="timeline-event-copy  border border-white">
-            <p class="timeline-event-thumbnail bg-white text-black">April 2021 - January 2022</p>
-            <h3>Weky</h3>
-            <h4 class="text-gray-200 leading">Owner / Developer</h4>
-            <p>A fun NPM package to play games within Discord with buttons! With 28 games and old API version
-              compatibility!</p>
-            <button style="transition-duration: 50ms;"
-              onclick='window.location.href = "https://www.npmjs.com/package/weky"' type="button"
-              class="text-white bg-[#000] border-2 border-[#ff0080] hover:bg-[#ff0080] hover:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 flex items-center justify-center">
-
-              <span style="font-weight: 900;">&nbsp;Visit Weky</span>
-            </button>
-          </div>
-        </li>
-        <li class="timeline-event mt-12">
-          <label class="timeline-event-icon"></label>
-          <div class="timeline-event-copy  border border-white"
-            style="border-radius: 16px 50px 1px 50px / 0px 25px 1px 25px;">
-            <p class="timeline-event-thumbnail bg-white text-black">January 2022 - Present</p>
-            <h3>Scoops</h3>
-            <h4 class="text-gray-200 leading">Administrator / Developer</h4>
-            <p>A bot to send people scoops for showing gratitude, the main aim being to incentivize being nice to each
-              other! Each scoop is a crypto token that you would be able to withdraw directly to your wallet and either
-              sell or stake for real money</p>
-          </div>
-        </li>
-        <li class="timeline-event mt-12">
-          <label class="timeline-event-icon"></label>
-          <div class="timeline-event-copy  border border-white"
-            style="border-radius: 16px 50px 1px 50px / 0px 25px 1px 25px;">
-            <p class="timeline-event-thumbnail bg-white text-black">November 2022 - Present</p>
-            <h3>Gunguessr</h3>
-            <h4 class="text-gray-200 leading">Owner / Developer</h4>
-            <p>A browser game designed to teach people more history about guns, with interactive and competitive niches. Play it <a style='color:#ff0080' href="https://gunguessr.afwgerj54.repl.co/">here</a>, open source <a style='color:#ff0080' href="https://github.com/face-hh/gunguessr">here</a>.</p>
-          </div>
-        </li>
-      </ul>
     </div>
   </div>
   <div id="projects" class="skills border-t border-[#333] pt-6 flex justify-center items-center">
@@ -193,59 +140,9 @@
       </div>
     </div>
   </div>
-  <div class="music border-t border-[#333]">
-    <div class="wrapper">
-      <div class="details">
-        <div class="now-playing">PLAYING x OF y</div>
-        <div class="track-name shine uppercase">Track Name</div>
-        <div class="track-artist">Track Artist</div>
-      </div>
-
-      <div class="slider_container">
-        <div class="current-time">00:00</div>
-        <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-        <div class="total-duration">00:00</div>
-      </div>
-
-      <div class="slider_container">
-        <i class="fa fa-volume-down"></i>
-        <input type="range" min="1" max="100" value="40" class="volume_slider" onchange="setVolume()">
-        <i class="fa fa-volume-up"></i>
-      </div>
-
-      <div class="music-buttons">
-        <div class="random-track" onclick="randomTrack()">
-          <i class="fas fa-random fa-2x" title="random"></i>
-        </div>
-        <div class="prev-track" onclick="prevTrack()">
-          <i class="fa fa-step-backward fa-2x"></i>
-        </div>
-        <div class="playpause-track" onclick="playpauseTrack()">
-          <i class="fa fa-play-circle fa-5x"></i>
-        </div>
-        <div class="next-track" onclick="nextTrack()">
-          <i class="fa fa-step-forward fa-2x"></i>
-        </div>
-        <div class="repeat-track" onclick="repeatTrack()">
-          <i class="fa fa-repeat fa-2x" title="repeat"></i>
-        </div>
-      </div>
-
-      <div id="wave">
-        <span class="stroke"></span>
-        <span class="stroke"></span>
-        <span class="stroke"></span>
-        <span class="stroke"></span>
-        <span class="stroke"></span>
-        <span class="stroke"></span>
-        <span class="stroke"></span>
-      </div>
-    </div>
-  </div>
   <footer>
     <div class="footer-content">
       <h3>Face - Portfolio</h3>
-      <p>Made with ♥ by Zero Two#7177</p>
     </div>
   </footer>
   <style>
@@ -255,7 +152,7 @@
       background-image: url(static/img/download.html);
     }
   </style>
-  <script src="../cdn.jsdelivr.net/npm/%40srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/%40srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
   <script src="static/js/script.js"></script>
 </body>
 </html>
