@@ -47,6 +47,14 @@ sr.reveal('.timeline-event', ops);
 sr.reveal('.project-content', ops);
 sr.reveal('.project-card-whole', ops);
 
+// Links
+const links = document.querySelectorAll(".nav-link");
+Array.from(links).forEach(link => {
+    if (link.getAttribute('data-scroll')) {
+        link.onclick = () => window.scrollTo({ top: document.querySelector(link.getAttribute("data-scroll")).offsetTop, behavior: 'smooth' })
+    }
+})
+
 // Counter
 if (window.innerWidth > 600) {
     new PureCounter({
@@ -65,6 +73,26 @@ if (window.innerWidth > 600) {
     });
 }
 
+// Projects
+
+const container = document.querySelector('.project-content');
+fetch('/data/projects').then(r => r.json()).then(projects => {
+    console.log(projects);
+    projects.forEach((project) => {
+        container.innerHTML +=
+            `<div class="card">
+                <div class="card-content">
+                <h3 class="card-heading">${project.name}</h3>
+                <p class="card-description">${project.description.slice(0, 20) + "..."}</p>
+                <div class="buttons">
+                  <button onclick="window.location.href='/projects/${project.id}'" class="card-button">Read More</button>
+                </div>
+                </div>
+              </div>`
+    })
+})
+
+
 //Scroll
   function scrollToElement() {
     // Find the element
@@ -74,10 +102,3 @@ if (window.innerWidth > 600) {
     element.scrollIntoView({ behavior: 'smooth' });
   }
 
-// Links
-const links = document.querySelectorAll(".nav-link");
-Array.from(links).forEach(link => {
-    if (link.getAttribute('data-scroll')) {
-        link.onclick = () => window.scrollTo({ top: document.querySelector(link.getAttribute("data-scroll")).offsetTop, behavior: 'smooth' })
-    }
-})
