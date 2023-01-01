@@ -47,14 +47,6 @@ sr.reveal('.timeline-event', ops);
 sr.reveal('.project-content', ops);
 sr.reveal('.project-card-whole', ops);
 
-// Links
-const links = document.querySelectorAll(".text");
-Array.from(links).forEach(link => {
-    if (link.getAttribute('data-scroll')) {
-        link.onclick = () => window.scrollTo({ top: document.querySelector(link.getAttribute("data-scroll")).offsetTop, behavior: 'smooth' })
-    }
-})
-
 // Counter
 if (window.innerWidth > 600) {
     new PureCounter({
@@ -72,3 +64,12 @@ if (window.innerWidth > 600) {
         separator: false,
     });
 }
+
+//Scroll
+  function scrollToElement() {
+    // Find the element
+    var element = document.getElementById("projects");
+
+    // Scroll to the element
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
