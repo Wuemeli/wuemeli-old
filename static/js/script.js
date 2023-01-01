@@ -48,7 +48,7 @@ sr.reveal('.project-content', ops);
 sr.reveal('.project-card-whole', ops);
 
 // Links
-const links = document.querySelectorAll(".nav-link");
+const links = document.querySelectorAll(".text");
 Array.from(links).forEach(link => {
     if (link.getAttribute('data-scroll')) {
         link.onclick = () => window.scrollTo({ top: document.querySelector(link.getAttribute("data-scroll")).offsetTop, behavior: 'smooth' })
