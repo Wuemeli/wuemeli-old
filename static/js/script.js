@@ -72,22 +72,3 @@ if (window.innerWidth > 600) {
         separator: false,
     });
 }
-
-// Projects
-
-const container = document.querySelector('.project-content');
-fetch('projects.json').then(r => r.json()).then(projects => {
-    console.log(projects);
-    projects.forEach((project) => {
-        container.innerHTML +=
-            `<div class="card">
-                <div class="card-content">
-                <h3 class="card-heading">${project.name}</h3>
-                <p class="card-description">${project.description.slice(0, 20) + "..."}</p>
-                <div class="buttons">
-                  <button onclick="window.location.href='/projects/${project.id}'" class="card-button">Read More</button>
-                </div>
-                </div>
-              </div>`
-    })
-})
