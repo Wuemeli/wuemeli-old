@@ -44,15 +44,15 @@
     font-size: 30px;
 }
 
-.nav-wrapper ul.nav-list li a {
+.nav-wrapper ul.nav-list li button {
     color: var(--pure);
     text-decoration: none;
     letter-spacing: 1px;
     transition: all .5s ease-in-out;
 }
 
-.nav-wrapper ul.nav-list li a:hover,
-.nav-wrapper ul.nav-list li.active a {
+.nav-wrapper ul.nav-list li button:hover,
+.nav-wrapper ul.nav-list li.active button {
     color: var(--primary);
 }
 
@@ -140,7 +140,7 @@
     transition: all .3s ease-in-out;
 }
 
-.mobile ul.nav-list li a {
+.mobile ul.nav-list li button {
     font-size: 18px;
 }
 
