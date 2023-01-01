@@ -1,0 +1,12 @@
+HTTrack3.49-2+htsswf+htsjava launched on Sun, 01 Jan 2023 12:14:32 at https://facedev.xyz/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "de, en, *" https://facedev.xyz/ -O1 "C:\Meine Webseiten\sssss" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+12:14:40	Error: 	"Not Found" (404) at link https://facedev.xyz/static/img/download.svg (from https://facedev.xyz/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 8 seconds : 14 links scanned, 12 files written (657408 bytes overall) [275557 bytes received at 34444 bytes/sec], 472982 bytes transferred using HTTP compression in 3 files, ratio 17%
+(1 errors, 0 warnings, 0 messages)
