@@ -66,7 +66,7 @@ if (window.innerWidth > 600) {
 }
 
 //Scroll
-  function scrollToElement1() {
+  function scrollToElement() {
     // Find the element
     var element = document.getElementById("projects");
 
@@ -74,18 +74,10 @@ if (window.innerWidth > 600) {
     element.scrollIntoView({ behavior: 'smooth' });
   }
 
-    function scrollToElement2() {
-    // Find the element
-    var element = document.getElementById("skills");
-
-    // Scroll to the element
-    element.scrollIntoView({ behavior: 'smooth' });
+// Links
+const links = document.querySelectorAll(".nav-link");
+Array.from(links).forEach(link => {
+    if (link.getAttribute('data-scroll')) {
+        link.onclick = () => window.scrollTo({ top: document.querySelector(link.getAttribute("data-scroll")).offsetTop, behavior: 'smooth' })
     }
-
-    function scrollToElement3() {
-    // Find the element
-    var element = document.getElementById("home");
-
-    // Scroll to the element
-    element.scrollIntoView({ behavior: 'smooth' });
-}
+})
