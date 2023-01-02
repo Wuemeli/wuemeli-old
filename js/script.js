@@ -90,3 +90,8 @@ if (window.innerWidth > 600) {
     element.scrollIntoView({ behavior: 'smooth' });
   }
 
+// Game Button
+
+function openGame() {
+    window.open('snake.html', 'Snake Game Window', 'height=600,width=800');
+  }
