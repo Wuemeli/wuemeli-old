@@ -4,8 +4,8 @@
   "description": "Website from wuemeli.com",
   "main": "index.js",
   "scripts": {
-    "server": "json-server --watch db.json --port 5000",
-    "client": "npm start --prefix wuemeli",
+    "server": "json-server --watch db.json --port 5000 --middlewares ./range.js",
+    "client": "cd ../wuemeli-admin && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
