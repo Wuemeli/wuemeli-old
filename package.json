@@ -1,0 +1,27 @@
+{
+  "name": "wuemeli-website",
+  "version": "1.0.0",
+  "description": "Website from wuemeli.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wuemeli/wuemeli-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wuemeli/wuemeli-website/issues"
+  },
+  "homepage": "https://github.com/Wuemeli/wuemeli-website#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "nodemon": "^2.0.20"
+  }
+}
