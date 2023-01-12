@@ -95,3 +95,12 @@ if (window.innerWidth > 600) {
 function openGame() {
     window.open('snake.html', 'Snake Game Window', 'height=608,width=608');
   }
+
+//Music
+
+var music = document.getElementById("music");
+
+document.getElementById("play-button").addEventListener("click", function() {
+  music.play();
+});
+
