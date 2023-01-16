@@ -208,6 +208,10 @@ body {
     color: #7289da;
 }
 
+#telegram:hover {
+    color: #0088cc;
+}
+
 nav {
     position: fixed;
     height: 84px;
