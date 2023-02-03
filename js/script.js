@@ -95,3 +95,4 @@ if (window.innerWidth > 600) {
 function openGame() {
     window.open('snake.html', 'Snake Game Window', 'height=608,width=608');
   }
+
