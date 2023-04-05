@@ -90,6 +90,13 @@ if (window.innerWidth > 600) {
     element.scrollIntoView({ behavior: 'smooth' });
   }
 
+  function scrollToElementstats() {
+    // Find the element
+    var element = document.getElementById("stats");
+
+    // Scroll to the element
+    element.scrollIntoView({ behavior: 'smooth' });
+    }
 // Game Button
 
 function openGame() {
