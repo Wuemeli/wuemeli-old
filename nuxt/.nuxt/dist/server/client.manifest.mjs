@@ -1,0 +1,1 @@
+export { default } from "file:///home/wuemeli/Documents/GitHub/wuemeli-website/nuxt/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
